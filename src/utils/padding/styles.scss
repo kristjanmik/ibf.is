@@ -1,0 +1,52 @@
+@import '../functions';
+@import '../variables';
+@import '../responsive';
+
+// Padding top
+
+.u-paddingTopXLarge {
+  padding-top: $ms5;
+}
+
+.u-paddingTopLarge {
+  padding-top: $ms4;
+}
+
+.u-paddingTopMedium {
+  padding-top: $ms3;
+}
+
+.u-paddingTopSmall {
+  padding-top: $ms2;
+}
+
+.u-paddingTopXSmall {
+  padding-top: $ms1;
+}
+
+// Padding bottom
+
+.u-paddinBottomXLarge {
+  padding-bottom: $ms5;
+}
+
+.u-paddinBottomLarge {
+  padding-bottom: $ms4;
+}
+
+.u-paddinBottomMedium {
+  padding-bottom: $ms3;
+}
+
+.u-paddinBottomSmall {
+  padding-bottom: $ms2;
+}
+
+.u-paddinBottomXSmall {
+  padding-bottom: $ms1;
+}
+
+
+@include respond-to(xlg) {
+  //todo
+}

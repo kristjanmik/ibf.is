@@ -1,0 +1,25 @@
+@import './variables';
+
+@mixin respond-to($media) {
+  // Max width queries
+  @if $media == onlySmall {
+    @media only screen and (max-width: $md - 1) { @content; }
+  }
+
+  // Min width queries
+  @else if $media == sm {
+    @media only screen and (min-width: $sm) { @content; }
+  }
+
+  @else if $media == md {
+    @media only screen and (min-width: $md) { @content; }
+  }
+
+  @else if $media == lg {
+    @media only screen and (min-width: $lg) { @content; }
+  }
+
+  @else if $media == xlg {
+    @media only screen and (min-width: $xlg) { @content; }
+  }
+}

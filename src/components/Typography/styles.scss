@@ -1,0 +1,79 @@
+@import '../../utils/functions';
+@import '../../utils/variables';
+@import '../../utils/responsive';
+
+::selection {
+    background-color: $blue;
+    color: $white;
+  }
+  
+  .t-h1 {
+    font-size: $ms5;
+    font-weight: 600;
+    margin: 0;
+  
+    @include respond-to(onlySmall) {
+      font-size: 37px;
+    }
+  }
+  
+  .t-h2 {
+    font-size: $ms4;
+    font-weight: 700;
+  
+    @include respond-to(onlySmall) {
+      font-size: 28px;
+    }
+  }
+  
+  .t-h3 {
+    font-size: $ms3;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+  
+    @include respond-to(onlySmall) {
+      font-size: 21px;
+    }
+  }
+  
+  .t-h4 {
+    font-size: $ms2;
+    font-weight: 400;
+  
+    @include respond-to(onlySmall) {
+      font-size: 16px;
+    }
+  }
+  
+  .t-body1 {
+    font-size: $ms2;
+    font-weight: 400;
+    margin: 0;
+  
+    @include respond-to(onlySmall) {
+      font-size: 16px;
+    }
+  }
+  
+  .t-body2 {
+    font-size: $ms1;
+    font-weight: 400;
+    margin: 0;
+  
+    @include respond-to(onlySmall) {
+      font-size: 12px;
+    }
+  }
+  
+  .t-light {
+    font-weight: 300;
+  }
+  
+  .t-medium {
+    font-weight: 500;
+  }
+  
+  .t-center {
+    text-align: center;
+  }

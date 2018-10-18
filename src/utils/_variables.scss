@@ -1,0 +1,31 @@
+@import "./functions.scss";
+
+$sm: 375px;
+$md: 768px;
+$lg: 1024px;
+$xlg: 1440px;
+
+// modularscale = base: 16px/1rem, ratio: 1.666
+
+$ms1: between(10px, 16px, $sm, $xlg);
+$ms2: between(12px, 20px, $sm, $xlg);
+$ms3: between(30px, 50px, $sm, $xlg);
+$ms4: between(45px, 76px, $sm, $xlg);
+$ms5: between(63px, 105px, $sm, $xlg);
+
+$dark: #454545;
+$blue: #00488e;
+$white: #ffffff;
+$offWhite: #fbfbfb ;
+
+$easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+$easeInOutCustom: cubic-bezier(0.5, 0.11, 0.17, 1);
+$easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeSmooth: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+$z-level-1: 1;
+$z-level-2: 2;
+$z-level-3: 3;
+$z-level-4: 4;
+$z-level-header: 5;
