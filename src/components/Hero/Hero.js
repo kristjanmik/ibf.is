@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Hero.module.scss";
 import { H1 } from "../Typography";
-import ChapterLegend from "../ChapterLegend";
+import SectionLegend from "../SectionLegend";
 
-const Hero = ({ heading }) => (
+const Hero = ({ children }) => (
   <div className={styles.root}>
-    <ChapterLegend number="01" text="Icelandic Blockchain Foundation" />
-    <H1 top="xlarge" bottom="xlarge">
-      {heading}
+    <SectionLegend number="01" text="Icelandic Blockchain Foundation" />
+    <H1 bottom="xlarge" className={styles.heading}>
+      {children}
     </H1>
   </div>
 );

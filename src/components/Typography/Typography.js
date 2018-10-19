@@ -35,28 +35,45 @@ const createStyle = (defaultComponent, style, substyles = {}) => {
 
 export const H1 = createStyle("h1", "t-h1", {
   light: "t-light",
+  bold: "t-bold",
   center: "t-center",
+  uppercase: "t-uppercase",
 });
 
 export const H2 = createStyle("h2", "t-h2", {
   light: "t-light",
+  bold: "t-bold",
   center: "t-center",
+  uppercase: "t-uppercase",
 });
 
 export const H3 = createStyle("h3", "t-h3", {
   light: "t-light",
+  bold: "t-bold",
   center: "t-center",
+  uppercase: "t-uppercase",
 });
 
 export const H4 = createStyle("h4", "t-h4", {
   light: "t-light",
+  bold: "t-bold",
   center: "t-center",
+  uppercase: "t-uppercase",
 });
 
 export const Body1 = createStyle("p", "t-body1", {
+  light: "t-light",
   center: "t-center",
+  bold: "t-bold",
+  uppercase: "t-uppercase",
+  monospace: "t-monospace",
 });
 
 export const Body2 = createStyle("p", "t-body2", {
+  light: "t-light",
   center: "t-center",
+  bold: "t-bold",
+  uppercase: "t-uppercase",
+  monospace: "t-monospace",
 });
+

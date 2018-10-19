@@ -3,6 +3,9 @@
 @import '../responsive';
 
 // Padding top
+.u-paddingTopHuge {
+  padding-top: $ms6;
+}
 
 .u-paddingTopXLarge {
   padding-top: $ms5;
@@ -25,6 +28,9 @@
 }
 
 // Padding bottom
+.u-paddingBottomHuge {
+  padding-bottom: $ms6;
+}
 
 .u-paddingBottomXLarge {
   padding-bottom: $ms5;

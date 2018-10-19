@@ -4,6 +4,7 @@ import './styles.scss'
 
 const classMap = {
   top: {
+    huge: 'u-paddingTopHuge',
     xlarge: 'u-paddingTopXLarge',
     large: 'u-paddingTopLarge',
     medium: 'u-paddingTopMedium',
@@ -11,6 +12,7 @@ const classMap = {
     xsmall: 'u-paddingTopXSmall',
   },
   bottom: {
+    huge: 'u-paddingBottomHuge',
     xlarge: 'u-paddingBottomXLarge',
     large: 'u-paddingBottomLarge',
     medium: 'u-paddingBottomMedium',
@@ -24,8 +26,8 @@ const padding = (top, bottom) => {
 }
 
 padding.propTypes = {
-  top: PropTypes.oneOf(['xlarge', 'large', 'medium', 'small', 'xsmall']),
-  bottom: PropTypes.oneOf(['xlarge', 'large', 'medium', 'small', 'xsmall']),
+  top: PropTypes.oneOf(['huge', 'xlarge', 'large', 'medium', 'small', 'xsmall']),
+  bottom: PropTypes.oneOf(['huge', 'xlarge', 'large', 'medium', 'small', 'xsmall']),
 }
 
 export default padding

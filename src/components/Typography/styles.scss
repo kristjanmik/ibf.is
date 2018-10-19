@@ -8,9 +8,9 @@
 }
 
 .t-h1 {
-  font-size: $ms4;
-  font-weight: 600;
+  font-size: $t6;
   margin: 0;
+  line-height: 1.35;
 
   @include respond-to(onlySmall) {
     font-size: 16px;
@@ -18,8 +18,7 @@
 }
 
 .t-h2 {
-  font-size: $ms2;
-  font-weight: 700;
+  font-size: $t5;
 
   @include respond-to(onlySmall) {
     font-size: 20px;
@@ -27,18 +26,8 @@
 }
 
 .t-h3 {
-  font-size: $ms3;
+  font-size: $t4;
   text-transform: uppercase;
-  font-weight: 700;
-
-  @include respond-to(onlySmall) {
-    font-size: 16px;
-  }
-}
-
-.t-h4 {
-  font-size: $ms2;
-  font-weight: 400;
 
   @include respond-to(onlySmall) {
     font-size: 16px;
@@ -46,8 +35,7 @@
 }
 
 .t-body1 {
-  font-size: $ms2;
-  font-weight: 400;
+  font-size: $t3;
   margin: 0;
 
   @include respond-to(onlySmall) {
@@ -56,8 +44,7 @@
 }
 
 .t-body2 {
-  font-size: $ms1;
-  font-weight: 400;
+  font-size: $t2;
   margin: 0;
 
   @include respond-to(onlySmall) {
@@ -65,14 +52,26 @@
   }
 }
 
+.t-monospace {
+  font-family: $serif;
+}
+
 .t-light {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .t-medium {
   font-weight: 500;
 }
 
+.t-bold {
+  font-weight: 600;
+}
+
 .t-center {
   text-align: center;
+}
+
+.t-uppercase {
+  text-transform: uppercase;
 }

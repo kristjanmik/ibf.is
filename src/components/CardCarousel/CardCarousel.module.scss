@@ -1,0 +1,7 @@
+.root {
+  display: flex;
+
+  > * + * {
+    margin-left: 48px;
+  }
+}

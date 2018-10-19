@@ -1,0 +1,23 @@
+@import '../../utils/variables';
+
+.root {
+  display: flex;
+  align-items: center;
+  color: $blue;
+  padding: $ms4 0;
+}
+
+.light {
+  color: $white;
+}
+
+.decorator {
+  margin: 0 $ms1;
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 87px;
+    background: currentColor;
+  }
+}

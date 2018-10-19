@@ -1,7 +1,13 @@
 @import "../../utils/variables";
+@import '../../utils/mixins';
 
 .root {
-  background: linear-gradient($blue, #00213f);
   color: $white;
   min-height: 1024px; //temp
+  padding-top: 200px;
+  @include horizontalPadding();
+  @include gradient();
+}
+
+.heading {
 }

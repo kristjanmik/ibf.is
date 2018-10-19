@@ -6,7 +6,6 @@ $lg: 1024px;
 $xlg: 1440px;
 
 // modularscale = base: 16px/1rem, ratio: 1.5
-
 $ms1: between(8px, 16px, $sm, $xlg);
 $ms2: between(12px, 24px, $sm, $xlg);
 $ms3: between(16px, 36px, $sm, $xlg);
@@ -14,20 +13,20 @@ $ms4: between(27px, 54px, $sm, $xlg);
 $ms5: between(40px, 81px, $sm, $xlg);
 $ms6: between(60px, 121px, $sm, $xlg);
 
-$t-xsmall: 10px;
-$t-small: 12px;
-$t-regular: 16px;
-$t-medium: 18px;
-$large: 32px;
-
+// typographic constants
+$t1: 12px;
+$t2: 14px;
+$t3: 16px;
+$t4: 18px;
+$t5: 24px;
+$t6: 45px;
 
 $dark: #454545;
-$blue: #00488e;
-$red: #ff0036;
+$blue: #00468A;
+$red: #f61740;
 $white: #ffffff;
 $offWhite: #fbfbfb;
-$turquoise: #3ddaca;
-
+$turquoise: #70D8CA;
 $pastelYellow: #ffd800;
 $pastelRed: #ff6272;
 $pastelGreen: #b8d85e;
@@ -35,7 +34,6 @@ $pastelBlue: #7c87f5;
 $pastelPink: #ff95bb;
 $pastelOrange: #ff8c35;
 $pastelPurple: #b493d3;
-
 
 $easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
 $easeInOutCustom: cubic-bezier(0.5, 0.11, 0.17, 1);
@@ -48,3 +46,6 @@ $z-level-2: 2;
 $z-level-3: 3;
 $z-level-4: 4;
 $z-level-header: 5;
+
+$serif: 'Courier New';
+$sans-serif: 'Montserrat';

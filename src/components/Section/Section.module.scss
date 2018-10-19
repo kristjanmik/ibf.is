@@ -1,0 +1,11 @@
+@import "../../utils/variables";
+@import '../../utils/mixins';
+
+.root {
+  @include horizontalPadding()
+}
+
+.colored {
+  @include gradient();
+}
+

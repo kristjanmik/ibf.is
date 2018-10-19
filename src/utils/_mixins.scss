@@ -1,0 +1,10 @@
+@import './variables';
+
+@mixin horizontalPadding() {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@mixin gradient() {
+  background: linear-gradient($blue, #05223D);
+}
