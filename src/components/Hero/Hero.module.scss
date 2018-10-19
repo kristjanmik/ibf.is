@@ -1,0 +1,7 @@
+@import "../../utils/variables";
+
+.root {
+  background: linear-gradient($blue, #00213f);
+  color: $white;
+  min-height: 1024px; //temp
+}
