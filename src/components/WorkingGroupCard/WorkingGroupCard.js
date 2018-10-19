@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./WorkingGroupCard.module.scss";
-import { availableWorkingGroups } from "../../constants";
+import { availableWorkingGroups } from "../../data";
 
 const WorkingGroupCard = ({ workingGroup }) => {
   const group = availableWorkingGroups[workingGroup];

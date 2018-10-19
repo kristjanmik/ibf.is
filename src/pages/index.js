@@ -25,7 +25,7 @@ const IndexPage = () => (
         blockchain technology can have on the Icelandic economy.
       </Body1>
     </Section>
-    <Section top="xlarge" bottom="xlarge" colored>
+    <Section top="xlarge" bottom="xlarge" colored backgroundText="events">
       <SectionLegend number="03" text="Upcoming events" />
       <CardCarousel>
         <EventCard

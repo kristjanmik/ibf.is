@@ -2,10 +2,27 @@
 @import '../../utils/mixins';
 
 .root {
-  @include horizontalPadding()
+  position: relative;
+  z-index: 1;
+  @include horizontalPadding();
 }
 
 .colored {
   @include gradient();
 }
 
+.backgroundText {
+  position: absolute;
+  font-size: 200px;
+  text-transform: lowercase;
+  top: 0;
+  z-index: -1;
+  font-weight: 600;
+  line-height: 2;
+  color: #FBFBFB;
+  right: $horizontalPadding;
+  
+  .root.colored & {
+    color: #0E4C88;
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./EventCard.module.scss";
-import { availableWorkingGroups } from "../../constants";
+import { availableWorkingGroups } from "../../data/working-groups";
 import { Body1, Body2, H2 } from "../Typography";
 
 const EventCard = ({

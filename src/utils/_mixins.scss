@@ -1,8 +1,8 @@
 @import './variables';
 
 @mixin horizontalPadding() {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: $horizontalPadding;
+  padding-right: $horizontalPadding;
 }
 
 @mixin gradient() {
