@@ -7,6 +7,7 @@ import SectionLegend from "../components/SectionLegend";
 import { H1, Body1 } from "../components/Typography";
 import EventCard from "../components/EventCard";
 import CardCarousel from "../components/CardCarousel";
+import WorkingGroupCard from "../components/WorkingGroupCard";
 
 const IndexPage = () => (
   <Layout>
@@ -57,6 +58,13 @@ const IndexPage = () => (
           color="purple"
         />
       </CardCarousel>
+    </Section>
+    <Section backgroundText="Recent posts">
+      <SectionLegend number="03" text="Recent posts" textColor="dark" />
+    </Section>
+    <Section colored>
+      <SectionLegend number="04" text="Working Groups" />
+      <WorkingGroupCard workingGroupName="Developers"></WorkingGroupCard>
     </Section>
   </Layout>
 );

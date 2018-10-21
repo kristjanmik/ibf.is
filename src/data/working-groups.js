@@ -16,7 +16,11 @@ export const availableWorkingGroups = [
       },
       {
         name: "Vigdís Finnbogadóttir",
-        image: "https://randomuser.me/api/portraits/women/48.jpg",
+        image: "https://randomuser.me/api/portraits/women/24.jpg",
+      },
+      {
+        name: "Priscilla Chan",
+        image: "https://randomuser.me/api/portraits/women/90.jpg",
       },
     ],
   },
@@ -39,6 +43,10 @@ export const availableWorkingGroups = [
         name: "Vigdís Finnbogadóttir",
         image: "https://randomuser.me/api/portraits/women/48.jpg",
       },
+      {
+        name: "Priscilla Chan",
+        image: "https://randomuser.me/api/portraits/women/90.jpg",
+      },
     ],
   },
   {
@@ -59,6 +67,10 @@ export const availableWorkingGroups = [
       {
         name: "Vigdís Finnbogadóttir",
         image: "https://randomuser.me/api/portraits/women/48.jpg",
+      },
+      {
+        name: "Priscilla Chan",
+        image: "https://randomuser.me/api/portraits/women/90.jpg",
       },
     ],
   },
@@ -81,6 +93,10 @@ export const availableWorkingGroups = [
         name: "Vigdís Finnbogadóttir",
         image: "https://randomuser.me/api/portraits/women/48.jpg",
       },
+      {
+        name: "Priscilla Chan",
+        image: "https://randomuser.me/api/portraits/women/90.jpg",
+      },
     ],
   },
   {
@@ -102,6 +118,10 @@ export const availableWorkingGroups = [
         name: "Vigdís Finnbogadóttir",
         image: "https://randomuser.me/api/portraits/women/48.jpg",
       },
+      {
+        name: "Priscilla Chan",
+        image: "https://randomuser.me/api/portraits/women/90.jpg",
+      },
     ],
   },
   {
@@ -122,6 +142,10 @@ export const availableWorkingGroups = [
       {
         name: "Vigdís Finnbogadóttir",
         image: "https://randomuser.me/api/portraits/women/48.jpg",
+      },
+      {
+        name: "Priscilla Chan",
+        image: "https://randomuser.me/api/portraits/women/90.jpg",
       },
     ],
   },
