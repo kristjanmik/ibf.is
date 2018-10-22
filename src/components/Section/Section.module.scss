@@ -1,5 +1,7 @@
 @import "../../utils/variables";
 @import '../../utils/mixins';
+@import '../../utils/functions';
+@import '../../utils/responsive';
 
 .root {
   position: relative;
@@ -14,7 +16,7 @@
 
 .backgroundText {
   position: absolute;
-  font-size: 200px;
+  font-size: between(80px, 200px, $sm, $xlg);
   text-transform: lowercase;
   top: 0;
   z-index: -1;
@@ -25,5 +27,9 @@
   
   .root.colored & {
     color: #0E4C88;
+  }
+
+  @include respond-to(onlySmall) {
+    display: none;
   }
 }

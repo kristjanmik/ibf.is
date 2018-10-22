@@ -14,15 +14,15 @@ $ms5: between(40px, 81px, $sm, $xlg);
 $ms6: between(60px, 121px, $sm, $xlg);
 
 // typographic constants
-$t1: 12px;
-$t2: 14px;
-$t3: 16px;
-$t4: 18px;
-$t5: 24px;
-$t6: 45px;
+$t1: between(10px, 12px, $sm, $xlg);
+$t2: between(11px, 14px, $sm, $xlg);
+$t3: between(12px, 16px, $sm, $xlg);
+$t4: between(14px, 18px, $sm, $xlg);
+$t5: between(20px, 24px, $sm, $xlg);
+$t6: between(36px, 45px, $sm, $xlg);
 
 // spacing constants
-$horizontalPadding: 100px;
+$horizontalPadding: between(66px, 100px, $sm, $xlg);
 
 $dark: #454545;
 $blue: #00468A;
