@@ -1,0 +1,9 @@
+.root {
+  width: 90px;
+  margin-left: auto;
+
+  > svg {
+    display: block;
+    width: 100%;
+  }
+}

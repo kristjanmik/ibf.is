@@ -1,0 +1,41 @@
+@import '../../utils/variables';
+
+.root {
+  position: relative;
+  height: 494px;
+  width: 655px;
+}
+
+.card {
+  background: $white;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: $ms3 $ms2 $ms3 $ms1;
+  box-shadow: 0 9px 21px 0 rgba(214,214,214,0.50);
+}
+
+.image {
+  background-color: red;
+  width: calc(100% - 137px);
+  padding-bottom: 50%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: 0;
+  background-size: cover;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    background: $white;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%) translateY(-50%) rotateZ(-45deg);
+  }
+}
+

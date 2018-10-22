@@ -1,0 +1,20 @@
+@import '../../utils/variables';
+
+.root {
+}
+
+.featured {
+
+
+}
+
+.posts {
+  display: flex;
+  display: none;
+  flex-wrap: wrap;
+
+  > * {
+    flex: 0 0 50%;
+  }
+
+}

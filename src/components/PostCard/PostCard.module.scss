@@ -1,0 +1,12 @@
+@import "../../utils/variables";
+
+.root {
+  background: $white;
+  width: 260px;
+  padding: $ms1;
+  box-shadow: 0 9px 21px 0 rgba(214,214,214,0.50);
+
+  &.featured {
+    width: 340px;
+  }
+}

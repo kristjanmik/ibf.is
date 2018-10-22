@@ -8,6 +8,8 @@ import { H1, Body1 } from "../components/Typography";
 import EventCard from "../components/EventCard";
 import CardCarousel from "../components/CardCarousel";
 import WorkingGroupCard from "../components/WorkingGroupCard";
+import RecentPosts from '../components/RecentPosts';
+import { posts } from '../data/posts'
 
 const IndexPage = () => (
   <Layout>
@@ -59,8 +61,9 @@ const IndexPage = () => (
         />
       </CardCarousel>
     </Section>
-    <Section backgroundText="Recent posts">
+    <Section top="xlarge" bottom="xlarge" backgroundText="Recent posts">
       <SectionLegend number="03" text="Recent posts" textColor="dark" />
+      <RecentPosts posts={posts} />
     </Section>
     <Section colored>
       <SectionLegend number="04" text="Working Groups" />
