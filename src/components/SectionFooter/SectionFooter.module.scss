@@ -1,0 +1,23 @@
+@import '../../utils/variables';
+
+.root {
+  color: $blue;
+  display: flex;
+
+  &.light {
+    color: $white;
+  }
+  &.dark {
+    color: $blue;
+  }
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.text {
+  margin-right: 30px;
+}

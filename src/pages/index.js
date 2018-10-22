@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SectionLegend from "../components/SectionLegend";
+import SectionFooter from "../components/SectionFooter";
 import { H1, Body1 } from "../components/Typography";
 import UpcomingEvents from '../components/UpcomingEvents'
 import WorkingGroupCard from "../components/WorkingGroupCard";
@@ -31,10 +32,12 @@ const IndexPage = () => (
     <Section top="xlarge" bottom="xlarge" colored backgroundText="events">
       <SectionLegend number="03" text="Upcoming events" />
       <UpcomingEvents events={events} />
+      <SectionFooter text="go to events" textColor="light" />
     </Section>
     <Section top="xlarge" bottom="xlarge" backgroundText="posts">
       <SectionLegend number="03" text="Recent posts" textColor="dark" />
       <RecentPosts posts={posts} />
+      <SectionFooter text="visit blog" textColor="dark" />
     </Section>
     <Section colored top="xlarge" bottom="xlarge">
       <SectionLegend number="04" text="Working Groups" />
