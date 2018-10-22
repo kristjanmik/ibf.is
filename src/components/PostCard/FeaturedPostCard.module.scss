@@ -2,7 +2,7 @@
 
 .root {
   position: relative;
-  height: 494px;
+  height: 100%;
   width: 655px;
 }
 
@@ -14,6 +14,18 @@
   right: 0;
   padding: $ms3 $ms2 $ms3 $ms1;
   box-shadow: 0 9px 21px 0 rgba(214,214,214,0.50);
+
+  &::after {
+    content: '';
+    background: url('/assets/dots-decorator.svg') no-repeat;
+    position: absolute;
+    width: 139px;
+    height: 151px;
+    z-index: -1;
+    left: 0;
+    transform: translateX(-60%) translateY(-30%);
+    bottom: 0;
+  }
 }
 
 .image {

@@ -4,17 +4,13 @@ import cn from "classnames";
 import styles from "./Section.module.scss";
 import padding from "../../utils/padding";
 
-const Section = ({
-  children,
-  top,
-  bottom,
-  colored,
-  backgroundText = "Section",
-}) => (
+const Section = ({ children, top, bottom, colored, backgroundText }) => (
   <div
     className={cn(styles.root, padding(top, bottom), colored && styles.colored)}
   >
-    <span className={styles.backgroundText}>{backgroundText}</span>
+    {backgroundText && (
+      <span className={styles.backgroundText}>{backgroundText}</span>
+    )}
     {children}
   </div>
 );

@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import cn from "classnames";
 import styles from "./EventCard.module.scss";
 import { availableWorkingGroups } from "../../data/working-groups";
 import { Body1, Body2, H2 } from "../Typography";
@@ -20,11 +19,11 @@ const EventCard = ({
   if (!group) return null;
 
   return (
-    <div className={cn(styles.root, color && styles[color])}>
-      <div className={styles.date}>
+    <div className={styles.root}>
+      <div className={styles.date} style={{ background: color }}>
         <span>{date}</span>
       </div>
-      <div className={styles.decorator}>{group.name}</div>
+      <div className={styles.decorator} style={{ color }}>{group.name}</div>
       <H2 bottom="xsmall" bold className={styles.title}>
         {title}
       </H2>
@@ -41,15 +40,7 @@ EventCard.propTypes = {
   subtitle: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   date: PropTypes.string,
-  color: PropTypes.oneOf([
-    "turquoise",
-    "yellow",
-    "pink",
-    "purple",
-    "orange",
-    "blue",
-    "green",
-  ]),
+  color: PropTypes.string.isRequired,
 };
 
 export default EventCard;

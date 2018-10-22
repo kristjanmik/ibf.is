@@ -5,10 +5,10 @@ import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SectionLegend from "../components/SectionLegend";
 import { H1, Body1 } from "../components/Typography";
-import EventCard from "../components/EventCard";
-import CardCarousel from "../components/CardCarousel";
+import UpcomingEvents from '../components/UpcomingEvents'
 import WorkingGroupCard from "../components/WorkingGroupCard";
 import RecentPosts from '../components/RecentPosts';
+import { events } from '../data/events'
 import { posts } from '../data/posts'
 
 const IndexPage = () => (
@@ -30,42 +30,13 @@ const IndexPage = () => (
     </Section>
     <Section top="xlarge" bottom="xlarge" colored backgroundText="events">
       <SectionLegend number="03" text="Upcoming events" />
-      <CardCarousel>
-        <EventCard
-          workingGroupName="Developers"
-          title="Cryptocurrency Scavenger Hunt"
-          subtitle="1 p.m. @ KEX hostel"
-          text="The IBF is hosting a scavenger hunt! It is an opportunity to have fun with friends! The IBF is hosting a scavenger hunt!"
-          color="turquoise"
-        />
-        <EventCard
-          workingGroupName="Developers"
-          title="Cryptocurrency Scavenger Hunt"
-          subtitle="1 p.m. @ KEX hostel"
-          text="The IBF is hosting a scavenger hunt! It is an opportunity to have fun with friends! The IBF is hosting a scavenger hunt!"
-          color="yellow"
-        />
-        <EventCard
-          workingGroupName="Developers"
-          title="Cryptocurrency Scavenger Hunt"
-          subtitle="1 p.m. @ KEX hostel"
-          text="The IBF is hosting a scavenger hunt! It is an opportunity to have fun with friends! The IBF is hosting a scavenger hunt!"
-          color="pink"
-        />
-        <EventCard
-          workingGroupName="Developers"
-          title="Cryptocurrency Scavenger Hunt"
-          subtitle="1 p.m. @ KEX hostel"
-          text="The IBF is hosting a scavenger hunt! It is an opportunity to have fun with friends! The IBF is hosting a scavenger hunt!"
-          color="purple"
-        />
-      </CardCarousel>
+      <UpcomingEvents events={events} />
     </Section>
-    <Section top="xlarge" bottom="xlarge" backgroundText="Recent posts">
+    <Section top="xlarge" bottom="xlarge" backgroundText="posts">
       <SectionLegend number="03" text="Recent posts" textColor="dark" />
       <RecentPosts posts={posts} />
     </Section>
-    <Section colored>
+    <Section colored top="xlarge" bottom="xlarge">
       <SectionLegend number="04" text="Working Groups" />
       <div style={{ display: "flex", flexWrap: 'wrap' }}>
         <div style={{ flex: "0 1 50%" }}>
@@ -87,6 +58,9 @@ const IndexPage = () => (
           <WorkingGroupCard workingGroupName="Community" />
         </div>
       </div>
+    </Section>
+    <Section top="xlarge" bottom="xlarge">
+      <SectionLegend number="05" text="Register" textColor="dark" />
     </Section>
   </Layout>
 );

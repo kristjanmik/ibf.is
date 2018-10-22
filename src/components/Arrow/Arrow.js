@@ -10,7 +10,7 @@ const Arrow = ({ color = "blue", rotation = "0deg", top, bottom }) => (
       xmlns="http://www.w3.org/2000/svg"
       style={{ transform: `rotateZ({rotation})` }}
     >
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path
           d="M88 8H1"
           stroke="#00468A"
