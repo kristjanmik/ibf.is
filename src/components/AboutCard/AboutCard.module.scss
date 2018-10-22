@@ -1,0 +1,31 @@
+@import "../../utils/variables";
+
+.root {
+  flex: 0 1 50%;
+  position: relative;
+  background: $white;
+  padding: $ms4;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
+
+  &::after {
+    content: "";
+    background: url("/assets/dots-decorator.svg") no-repeat;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    left: 0;
+    transform: translateX(-50%) translateY(50%);
+    bottom: 0;
+  }
+}
+
+.heading {
+  color: $blue;
+  padding: $ms1 0;
+}
+
+.block {
+  padding-bottom: $ms2;
+  line-height: 1.75;
+}

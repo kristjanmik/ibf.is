@@ -1,0 +1,11 @@
+@import '../../utils/variables';
+
+.root {
+  display: flex;
+}
+
+.text {
+  flex: 0 1 50%;
+  margin-right: $ms4;
+  line-height: 2;
+}

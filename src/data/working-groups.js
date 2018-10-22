@@ -1,4 +1,4 @@
-export const availableWorkingGroups = [
+export const workingGroups = [
   {
     name: "Developers",
     leader: "Einar Eymundsson",

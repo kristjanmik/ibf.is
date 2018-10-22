@@ -18,7 +18,6 @@ const SectionLegend = ({ number, text, textColor = "light" }) => (
 
 SectionLegend.propTypes = {
   textColor: PropTypes.oneOf(['light', 'dark']),
-  children: PropTypes.node.isRequired,
 };
 
 export default SectionLegend;

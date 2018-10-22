@@ -10,7 +10,6 @@ const Input = () => (
 )
 
 Input.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Input

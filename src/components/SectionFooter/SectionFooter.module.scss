@@ -12,10 +12,22 @@
   }
 }
 
-.wrap {
+.url {
   display: flex;
   align-items: center;
   margin-left: auto;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 0;
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(10px);
+    }
+  }
 }
 
 .text {

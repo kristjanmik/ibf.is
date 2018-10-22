@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./EventCard.module.scss";
-import { availableWorkingGroups } from "../../data/working-groups";
+import { workingGroups } from "../../data/working-groups";
 import { Body1, Body2, H2 } from "../Typography";
 
 const EventCard = ({
@@ -12,7 +12,7 @@ const EventCard = ({
   date = "01 jan",
   color,
 }) => {
-  const group = availableWorkingGroups.find(
+  const group = workingGroups.find(
     group => group.name === workingGroupName
   );
 
