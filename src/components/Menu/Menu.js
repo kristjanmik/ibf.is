@@ -21,16 +21,16 @@ const Menu = ({}) => (
       <Link className={styles.link} to="/#about">
         <Body1>About</Body1>
       </Link>
-      <Link className={styles.link} to="/#about">
+      <Link className={styles.link} to="/#events">
         <Body1>Events</Body1>
       </Link>
-      <Link className={styles.link} to="/#about">
+      <Link className={styles.link} to="/#posts">
         <Body1>Posts</Body1>
       </Link>
-      <Link className={styles.link} to="/#about">
+      <Link className={styles.link} to="/#working-groups">
         <Body1>Working Groups</Body1>
       </Link>
-      <Link className={styles.link} to="/#about">
+      <Link className={styles.link} to="/#newsletter">
         <Body1>Newsletter</Body1>
       </Link>
     </div>
