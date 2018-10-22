@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./EventCard.module.scss";
 import { workingGroups } from "../../data/working-groups";
-import { Body1, Body2, H2 } from "../Typography";
+import { Body2, Body3, H2 } from "../Typography";
 
 const EventCard = ({
   workingGroupName,
@@ -27,10 +27,10 @@ const EventCard = ({
       <H2 bottom="xsmall" bold className={styles.title}>
         {title}
       </H2>
-      <Body2 bottom="small" className={styles.subtitle}>
+      <Body3 bottom="small" className={styles.subtitle}>
         {subtitle}
-      </Body2>
-      <Body1 light>{text}</Body1>
+      </Body3>
+      <Body2 light>{text}</Body2>
     </div>
   );
 };

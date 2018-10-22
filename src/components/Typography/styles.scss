@@ -29,11 +29,19 @@
   font-size: $t4;
 
   @include respond-to(onlySmall) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
-.t-body1 {
+.t-Body1 {
+  font-size: $t4;
+
+  @include respond-to(onlySmall) {
+    font-size: 18px;
+  }
+}
+
+.t-Body2 {
   font-size: $t3;
   margin: 0;
 
@@ -42,7 +50,7 @@
   }
 }
 
-.t-body2 {
+.t-Body3 {
   font-size: $t2;
   margin: 0;
 

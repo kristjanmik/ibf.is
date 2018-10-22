@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/Layout";
+import Menu from '../components/Menu';  
 import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SectionLegend from "../components/SectionLegend";
@@ -13,6 +14,7 @@ import { events, workingGroups, posts } from "../data";
 
 const IndexPage = () => (
   <Layout>
+    <Menu />
     <Hero title="Icelandic Blockchain Foundation">
       Our mission is to make Iceland <br /> the leader in{" "}
       <strong>blockchain</strong> <br />

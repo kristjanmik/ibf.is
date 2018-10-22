@@ -4,7 +4,7 @@ import styles from "./WorkingGroupCard.module.scss";
 import { workingGroups } from "../../data/working-groups";
 import Avatar from '../Avatar'
 import { WorkingGroupIcon } from './WorkingGroupIcon'
-import { Body1, H2, H3 } from '../Typography'
+import { Body2, H2, H3 } from '../Typography'
 
 const WorkingGroupCard = ({ name, color, members, description, leader }) => {
   return (
@@ -18,7 +18,7 @@ const WorkingGroupCard = ({ name, color, members, description, leader }) => {
       <div className={styles.content}>
         <H2 bold className={styles.title}>{name}</H2>
         <H3 bottom="xsmall" className={styles.subtitle}>Lead by {leader}</H3>
-        <Body1>{description}</Body1>
+        <Body2>{description}</Body2>
       </div>
     </div>
   );

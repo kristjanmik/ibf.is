@@ -2,17 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import cn from 'classnames'
 import styles from "./SectionLegend.module.scss";
-import { Body2 } from "../Typography";
+import { Body3 } from "../Typography";
 
 const SectionLegend = ({ number, text, textColor = "light" }) => (
   <div className={cn(styles.root, styles[textColor])}>
-    <Body2 uppercase monospace>
+    <Body3 uppercase monospace>
       {number}
-    </Body2>
+    </Body3>
     <span className={styles.decorator} />
-    <Body2 uppercase bold>
+    <Body3 uppercase bold>
       {text}
-    </Body2>
+    </Body3>
   </div>
 );
 

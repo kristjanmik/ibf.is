@@ -1,0 +1,26 @@
+@import '../../utils/variables';
+
+.root {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  color: $white;
+  width: 100%;
+  padding: 100px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  margin: $ms1 $ms3;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.links {
+  display: flex;
+
+}

@@ -61,7 +61,7 @@ export const H4 = createStyle("h4", "t-h4", {
   uppercase: "t-uppercase",
 });
 
-export const Body1 = createStyle("p", "t-body1", {
+export const Body1 = createStyle("p", "t-Body1", {
   light: "t-light",
   center: "t-center",
   bold: "t-bold",
@@ -69,7 +69,15 @@ export const Body1 = createStyle("p", "t-body1", {
   monospace: "t-monospace",
 });
 
-export const Body2 = createStyle("p", "t-body2", {
+export const Body2 = createStyle("p", "t-Body2", {
+  light: "t-light",
+  center: "t-center",
+  bold: "t-bold",
+  uppercase: "t-uppercase",
+  monospace: "t-monospace",
+});
+
+export const Body3 = createStyle("p", "t-Body3", {
   light: "t-light",
   center: "t-center",
   bold: "t-bold",
