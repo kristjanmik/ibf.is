@@ -1,9 +1,23 @@
+@import '../../utils/variables';
+
 .root {
-  background: #fff;
+  background: $white;
+  padding: $ms3 $ms3 $ms4;
+  margin: $ms1;
 }
 
 .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $ms1;
+}
 
+.title {
+  color: $blue;
+}
+
+.subtitle {
+  color: rgba($blue, 0.5);
 }
 
 .members {

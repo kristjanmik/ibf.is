@@ -27,7 +27,6 @@
 
 .t-h3 {
   font-size: $t4;
-  text-transform: uppercase;
 
   @include respond-to(onlySmall) {
     font-size: 16px;
@@ -39,7 +38,7 @@
   margin: 0;
 
   @include respond-to(onlySmall) {
-    font-size: 16px;
+    font-size: $t3;
   }
 }
 

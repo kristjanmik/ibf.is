@@ -64,7 +64,26 @@ const IndexPage = () => (
     </Section>
     <Section colored>
       <SectionLegend number="04" text="Working Groups" />
-      <WorkingGroupCard workingGroupName="Developers"></WorkingGroupCard>
+      <div style={{ display: "flex", flexWrap: 'wrap' }}>
+        <div style={{ flex: "0 1 50%" }}>
+          <WorkingGroupCard workingGroupName="Developers" />
+        </div>
+        <div style={{ flex: "0 1 50%" }}>
+          <WorkingGroupCard workingGroupName="Mining" />
+        </div>
+        <div style={{ flex: "0 1 50%" }}>
+          <WorkingGroupCard workingGroupName="Legislation" />
+        </div>
+        <div style={{ flex: "0 1 50%" }}>
+          <WorkingGroupCard workingGroupName="PR and Social" />
+        </div>
+        <div style={{ flex: "0 1 50%" }}>
+          <WorkingGroupCard workingGroupName="Education" />
+        </div>
+        <div style={{ flex: "0 1 50%" }}>
+          <WorkingGroupCard workingGroupName="Community" />
+        </div>
+      </div>
     </Section>
   </Layout>
 );

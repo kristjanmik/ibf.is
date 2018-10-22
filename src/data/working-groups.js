@@ -4,7 +4,7 @@ export const availableWorkingGroups = [
     leader: "Einar Eymundsson",
     description:
       "The developer group hosts regular meetups on blockchain implementations, cryptography and other related topics",
-    icon: "//placehold.it/150x150",
+    color: "#70D8CA",
     members: [
       {
         name: "Einar Eymundsson",
@@ -29,7 +29,7 @@ export const availableWorkingGroups = [
     leader: "Atli Óðinsson",
     description:
       "The mining group works on educating people on how to set up their mining equipment. Meets up every two months.",
-    icon: "//placehold.it/150x150",
+    color: "#FF7816",
     members: [
       {
         name: "Einar Eymundsson",
@@ -52,7 +52,7 @@ export const availableWorkingGroups = [
   {
     name: "Legislation",
     leader: "Einar Eymundsson",
-    icon: "//placehold.it/150x150",
+    color: "#FFD800",
     description:
       "The developer group hosts regular meetups on blockchain implementations, cryptography and other related topics",
     members: [
@@ -77,7 +77,7 @@ export const availableWorkingGroups = [
   {
     name: "PR and Social",
     leader: "Einar Eymundsson",
-    icon: "//placehold.it/150x150",
+    color: "#B8D85E",
     description:
       "The developer group hosts regular meetups on blockchain implementations, cryptography and other related topics",
     members: [
@@ -102,7 +102,7 @@ export const availableWorkingGroups = [
   {
     name: "Education",
     leader: "Einar Eymundsson",
-    icon: "//placehold.it/150x150",
+    color: "#FF6272",
     description:
       "The developer group hosts regular meetups on blockchain implementations, cryptography and other related topics",
     members: [
@@ -127,7 +127,7 @@ export const availableWorkingGroups = [
   {
     name: "Community",
     leader: "Einar Eymundsson",
-    icon: "//placehold.it/150x150",
+    color: "#7E8AEE",
     description:
       "The developer group hosts regular meetups on blockchain implementations, cryptography and other related topics",
     members: [

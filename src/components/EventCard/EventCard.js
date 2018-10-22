@@ -11,7 +11,7 @@ const EventCard = ({
   subtitle,
   text,
   date = "01 jan",
-  color = "turquoise",
+  color,
 }) => {
   const group = availableWorkingGroups.find(
     group => group.name === workingGroupName
