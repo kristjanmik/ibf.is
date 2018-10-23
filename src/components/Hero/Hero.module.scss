@@ -1,5 +1,5 @@
 @import "../../utils/variables";
-@import '../../utils/mixins';
+@import "../../utils/mixins";
 @import "../../utils/responsive";
 @import "../../utils/functions";
 
@@ -7,7 +7,7 @@
   color: $white;
   @include horizontalPadding();
   @include gradient();
-  padding-top: between(200px, 400px, $sm, $xlg);
+  padding-top: between(160px, 400px, $sm, $xlg);
 
   @include respond-to(md) {
     min-height: 1024px; //temp
@@ -15,4 +15,9 @@
 }
 
 .heading {
+  @include respond-to(onlySmall) {
+    br {
+      display: none;
+    }
+  }
 }

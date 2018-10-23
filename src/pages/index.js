@@ -17,10 +17,6 @@ const IndexPage = () => (
   <Layout>
     <Menu />
     <Hero title="Icelandic Blockchain Foundation">
-      Our mission is to make Iceland <br /> the leader in{" "}
-      <strong>blockchain</strong> <br />
-      and <strong>cryptocurrency</strong> innovation <br /> and adoption.
-      <br />
       <NewsletterForm placeholder="Enter your email and join our newsletter" />
     </Hero>
     <Section top="xlarge" bottom="xlarge" backgroundText="foundation" id="about">

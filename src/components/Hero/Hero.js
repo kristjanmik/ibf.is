@@ -4,12 +4,16 @@ import styles from "./Hero.module.scss";
 import { H1 } from "../Typography";
 import SectionLegend from "../SectionLegend";
 
-const Hero = ({ children }) => (
+const Hero = ({ heading, children }) => (
   <div className={styles.root}>
     <SectionLegend number="01" text="Icelandic Blockchain Foundation" />
     <H1 bottom="xlarge" className={styles.heading}>
-      {children}
+      Our mission is to make Iceland <br /> the leader in{" "}
+      <strong>blockchain</strong> <br />
+      and <strong>cryptocurrency</strong> innovation <br /> and adoption.
+      <br />
     </H1>
+    {children}
   </div>
 );
 

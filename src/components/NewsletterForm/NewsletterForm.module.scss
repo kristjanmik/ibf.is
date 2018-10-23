@@ -5,6 +5,10 @@
   display: flex;
   padding-top: $ms6;
   padding-bottom: $ms2;
+  
+    @include respond-to(md) {
+      width: 585px;
+    }
 }
 
 .inputWrap {
@@ -14,11 +18,7 @@
   background: $white;
   padding: $ms2;
   width: 100%;
-
-  @include respond-to(md) {
-    min-width: 500px;
-  }
-
+  
   &::before {
     content: "@";
     font-size: $t3;
@@ -48,6 +48,7 @@
   justify-content: center;
   width: 72px;
   height: 72px;
+  flex: none;
 }
 
 .submitArrow {

@@ -5,7 +5,11 @@
   display: flex;
   align-items: center;
   color: $blue;
-  padding: $ms4 0;
+  padding: $ms4 0 $ms6 0;
+
+  @include respond-to(md) {
+    padding: $ms4 0;
+  }
 }
 
 .light {
