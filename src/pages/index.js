@@ -29,16 +29,16 @@ const IndexPage = () => (
       <SectionFooter text="go to events" textColor="light" />
     </Section>
     <Section top="xlarge" bottom="xlarge" backgroundText="posts" id="posts">
-      <SectionLegend number="03" text="Recent posts" textColor="dark" />
+      <SectionLegend number="04" text="Recent posts" textColor="dark" />
       <RecentPosts posts={posts} />
       <SectionFooter text="visit blog" textColor="dark" />
     </Section>
     <Section colored top="xlarge" bottom="xlarge" id="working-groups">
-      <SectionLegend number="04" text="Working Groups" />
+      <SectionLegend number="05" text="Working Groups" />
       <WorkingGroups groups={workingGroups} />
     </Section>
     <Section top="xlarge" bottom="xlarge" id="register">
-      <SectionLegend number="05" text="Register" textColor="dark" />
+      <SectionLegend number="06" text="Register" textColor="dark" />
     </Section>
   </Layout>
 );

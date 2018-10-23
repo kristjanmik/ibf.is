@@ -6,7 +6,7 @@ import { Body3 } from "../Typography";
 
 const SectionLegend = ({ number, text, textColor = "light" }) => (
   <div className={cn(styles.root, styles[textColor])}>
-    <Body3 uppercase monospace>
+    <Body3 uppercase monospace bold>
       {number}
     </Body3>
     <span className={styles.decorator} />

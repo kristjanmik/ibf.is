@@ -1,12 +1,8 @@
 @import '../../utils/variables';
 
 .root {
-  width: 90px;
-  margin-left: auto;
-
   > svg {
     display: block;
-    width: 100%;
     transition: transform 0.15s $easeSmooth;
   }
 }

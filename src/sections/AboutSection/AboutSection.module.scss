@@ -18,3 +18,18 @@
     margin-right: $ms4;
   }
 }
+
+@keyframes arrow {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+.arrow {
+  animation: arrow 2s infinite;
+  animation-direction: alternate;
+  margin-top: $ms6;
+}

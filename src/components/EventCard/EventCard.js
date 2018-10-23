@@ -24,7 +24,7 @@ const EventCard = ({
         <span>{date}</span>
       </div>
       <div className={styles.decorator} style={{ color }}>{group.name}</div>
-      <H2 bottom="xsmall" bold className={styles.title}>
+      <H2 bold bottom="xsmall" bold className={styles.title}>
         {title}
       </H2>
       <Body3 bottom="small" className={styles.subtitle}>
