@@ -10,7 +10,7 @@ export const posts = [
   },
   {
     date: "Mon Oct 21 2018 10:30:00 GMT+0000",
-    title: "Ek Aur Mahabharat",
+    title: "Cryptocurrency Scavenger Hunt",
     text: "Ek Aur Mahabharat (English language translation: One More Mahabharat) is an Indian television series based on the Mahabharata directed by Dr. Chandraprakash Dwivedi It was telecast on Zee Tv in 1997 while Dwivedi was the channel's programming head, but was terminated after 14 episodes The series wasn't as successful as Dwivedi's Doordarshan epic Chanakya",
     image: "//placehold.it/518x345",
     url: "https://medium.com",
@@ -26,7 +26,7 @@ export const posts = [
   },
   {
     date: "Mon Oct 21 2018 10:30:00 GMT+0000",
-    title: "Ek Aur Mahabharat",
+    title: "Cryptocurrency Scavenger Hunt",
     text: "Ek Aur Mahabharat (English language translation: One More Mahabharat) is an Indian television series based on the Mahabharata directed by Dr. Chandraprakash Dwivedi It was telecast on Zee Tv in 1997 while Dwivedi was the channel's programming head, but was terminated after 14 episodes The series wasn't as successful as Dwivedi's Doordarshan epic Chanakya",
     image: "//placehold.it/518x345",
     url: "https://medium.com",

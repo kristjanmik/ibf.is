@@ -1,8 +1,18 @@
+@import "../../utils/responsive";
+@import "../../utils/variables";
+
 .root {
   display: flex;
   justify-content: space-between;
+  overflow: auto;
+  margin-right: -16px;
 
   > * + * {
     margin-left: 48px;
+  }
+
+  @include respond-to(md) {
+    overflow: hidden;
+    margin-right: 0;
   }
 }

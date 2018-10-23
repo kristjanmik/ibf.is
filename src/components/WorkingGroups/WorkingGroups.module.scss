@@ -1,8 +1,13 @@
+@import "../../utils/responsive";
+@import "../../utils/variables";
+
 .root {
-  display: flex;
-  flex-wrap: wrap;
+  @include respond-to(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $ms2;
+  }
 }
 
 .card {
-  flex: 0 1 50%;
 }

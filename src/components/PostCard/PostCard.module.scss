@@ -1,12 +1,17 @@
 @import "../../utils/variables";
+@import "../../utils/responsive";
 
 .root {
   background: $white;
+  box-shadow: 0 9px 21px 0 rgba(214, 214, 214, 0.5);
+  padding: 40px 20px 75px;
   width: 260px;
-  padding: $ms1;
-  box-shadow: 0 9px 21px 0 rgba(214,214,214,0.50);
+  flex: none;
 
-  &.featured {
-    width: 340px;
+  @include respond-to(md) {
+    padding: $ms1;
+    &.featured {
+      width: 340px;
+    }
   }
 }

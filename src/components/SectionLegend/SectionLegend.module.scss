@@ -1,4 +1,5 @@
 @import '../../utils/variables';
+@import '../../utils/responsive';
 
 .root {
   display: flex;
@@ -12,12 +13,17 @@
 }
 
 .decorator {
-  margin: 0 $ms1;
-  &::before {
-    content: "";
+  padding-left: $ms1;
+  @include respond-to(md) {
     display: block;
-    height: 1px;
-    width: 87px;
-    background: currentColor;
+    padding: 0;
+    margin: 0 $ms1;
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 87px;
+      background: currentColor;
+    }
   }
 }

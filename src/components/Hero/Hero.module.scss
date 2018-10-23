@@ -1,12 +1,17 @@
 @import "../../utils/variables";
 @import '../../utils/mixins';
+@import "../../utils/responsive";
+@import "../../utils/functions";
 
 .root {
   color: $white;
-  min-height: 1024px; //temp
-  padding-top: 400px; //temp
   @include horizontalPadding();
   @include gradient();
+  padding-top: between(200px, 400px, $sm, $xlg);
+
+  @include respond-to(md) {
+    min-height: 1024px; //temp
+  }
 }
 
 .heading {

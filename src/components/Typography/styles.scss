@@ -21,7 +21,7 @@
   font-size: $t5;
 
   @include respond-to(onlySmall) {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
@@ -55,7 +55,7 @@
   margin: 0;
 
   @include respond-to(onlySmall) {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 

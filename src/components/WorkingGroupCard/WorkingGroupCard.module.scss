@@ -1,14 +1,21 @@
+
+@import '../../utils/responsive';
 @import '../../utils/variables';
 
 .root {
   background: $white;
   padding: $ms3 $ms3 $ms4;
-  margin: $ms1;
+  margin-bottom: $ms3;
+
+  @include respond-to(md) {
+    margin-bottom: 0;
+  }
 }
 
 .top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: $ms1;
 }
 
@@ -21,5 +28,7 @@
 }
 
 .members {
-
+  display: flex;
+  align-items: flex-end;
+  margin-right: -32px;
 }

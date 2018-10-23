@@ -1,24 +1,27 @@
 @import '../../utils/variables';
+@import '../../utils/responsive';
 
 .root {
-  display: flex;
-  min-height: 545px;
-}
-
-.featured {
-
+  @include respond-to(onlySmall) {
+    margin-right: -16px;
+  }  
+  @include respond-to(md) {
+    display: flex;
+    min-height: 545px;
+  }
 }
 
 .posts {
   display: flex;
-  flex-wrap: wrap;
-
-  > * {
-    flex: 0 0 calc(50% - 32px);
-    margin: 16px;
-    &:nth-child(n + 3) {
-      margin-bottom: 0;
-    }
+  overflow: auto;
+  
+  @include respond-to(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $ms2;
+    margin-left: $ms3;
+    overflow: visible;
+    flex-wrap: wrap;
   }
 
 }

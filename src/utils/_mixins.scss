@@ -1,10 +1,16 @@
-@import './variables';
+@import "./variables";
+@import "./responsive";
 
 @mixin horizontalPadding() {
-  padding-left: $horizontalPadding;
-  padding-right: $horizontalPadding;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include respond-to(md) {
+    padding-left: $horizontalPadding;
+    padding-right: $horizontalPadding;
+  }
 }
 
 @mixin gradient() {
-  background: linear-gradient($blue, #05223D);
+  background: linear-gradient($blue, #05223d);
 }

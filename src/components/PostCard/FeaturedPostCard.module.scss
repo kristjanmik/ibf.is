@@ -1,46 +1,74 @@
-@import '../../utils/variables';
+@import "../../utils/variables";
+@import "../../utils/responsive";
 
 .root {
   position: relative;
-  height: 100%;
-  width: 655px;
+
+  @include respond-to(md) {
+    width: 655px;
+    height: 100%;
+  }
 }
 
 .card {
   background: $white;
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: $ms3 $ms2 $ms3 $ms1;
-  box-shadow: 0 9px 21px 0 rgba(214,214,214,0.50);
+  box-shadow: 0 9px 21px 0 rgba(214, 214, 214, 0.5);
+  position: relative;
+  padding: 40px 18px;
+  left: 60px;
+  top: -30px;
+  width: calc(100% - 76px);
+
+  @include respond-to(md) {
+    position: absolute;
+    right: 0;
+    padding: $ms3 $ms2 $ms3 $ms1;
+    bottom: 0;
+    left: auto;
+    top: auto;
+    width: 50%;
+  }
 
   &::after {
-    content: '';
-    background: url('/assets/dots-decorator.svg') no-repeat;
+    content: "";
+    background-image: url("/assets/dots-decorator.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
-    width: 139px;
-    height: 151px;
     z-index: -1;
-    left: 0;
-    transform: translateX(-60%) translateY(-30%);
-    bottom: 0;
+    left: -30px;
+    top: 0;
+    width: 100px;
+    height: 100px;
+
+    @include respond-to(md) {
+      // todo?
+      transform: translateX(-60%) translateY(-30%);
+      width: 139px;
+      height: 151px;
+      bottom: 0;
+      top: initial;
+    }
   }
 }
 
 .image {
-  background-color: red;
-  width: calc(100% - 137px);
-  padding-bottom: 50%;
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  top: 0;
   background-size: cover;
   overflow: hidden;
+  position: relative;
+  padding-bottom: 66%;
+  width: calc(100% - 32px);
+
+  @include respond-to(md) {
+    width: calc(100% - 137px);
+    padding-bottom: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
   &::after {
-    content: '';
+    content: "";
     background: $white;
     width: 60px;
     height: 60px;
@@ -50,4 +78,3 @@
     transform: translateX(50%) translateY(-50%) rotateZ(-45deg);
   }
 }
-

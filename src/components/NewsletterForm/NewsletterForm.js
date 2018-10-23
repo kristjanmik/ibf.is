@@ -16,9 +16,11 @@ const SubmitArrow = () => (
   </svg>
 );
 
-const NewsletterForm = ({ placeholder, onSubmit }) => (
+const noop = () => {}
+
+const NewsletterForm = ({ placeholder, onSubmit = noop }) => (
   <>
-    <form onSubmit={() => {}} className={styles.root}>
+    <form onSubmit={onSubmit} className={styles.root}>
       <div className={styles.inputWrap}>
         <input className={styles.input} placeholder={placeholder} />
       </div>

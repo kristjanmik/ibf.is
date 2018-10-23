@@ -1,9 +1,9 @@
 import React from "react";
+import styles from "./WorkingGroupIcon.module.scss";
 
 export const WorkingGroupIcon = ({ color }) => {
-
   return (
-    <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+    <svg className={styles.root} viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
       <g fillRule="nonzero" fill="none">
         <path
           d="M10.154 51.034c11.683 10.895 29.985 10.255 40.88-1.428 10.895-11.683 10.255-29.985-1.428-40.88C37.923-2.168 19.621-1.529 8.726 10.154A28.804 28.804 0 0 0 2.14 21.665a29.05 29.05 0 0 0-.653 13.744"

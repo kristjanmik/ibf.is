@@ -1,4 +1,5 @@
 @import "../../utils/variables";
+@import "../../utils/responsive";
 
 .root {
   display: flex;
@@ -12,7 +13,11 @@
   align-items: center;
   background: $white;
   padding: $ms2;
-  min-width: 500px;
+  width: 100%;
+
+  @include respond-to(md) {
+    min-width: 500px;
+  }
 
   &::before {
     content: "@";
