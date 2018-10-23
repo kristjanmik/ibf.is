@@ -1,13 +1,24 @@
+@import '../../utils/responsive';
 @import "../../utils/variables";
+@import "../../utils/functions";
 
 $dateOffset: 20px;
 
 .root {
-  width: 275px;
+  width: between(200px, 275px, $sm, $xlg);
   background: $white;
-  padding: 40px 30px;
   margin-top: $dateOffset;
   position: relative;
+  padding: between(26px, 40px, $sm, $xlg) between(20px, 30px, $sm, $xlg);
+  
+  @include respond-to(onlySmall) {
+    width: 275px;
+    padding: 40px 30px;
+  }
+
+  @include respond-to(md) {
+
+  }
 }
 
 .decorator {

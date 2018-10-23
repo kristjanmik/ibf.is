@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./WorkingGroups.module.scss";
 import WorkingGroupCard from "../WorkingGroupCard";
 
@@ -23,7 +22,5 @@ const WorkingGroups = ({ groups }) => {
     </div>
   );
 };
-
-WorkingGroups.propTypes = {};
 
 export default WorkingGroups;

@@ -8,6 +8,7 @@ import SectionLegend from "../components/SectionLegend";
 import SectionFooter from "../components/SectionFooter";
 import WorkingGroups from "../components/WorkingGroups";
 import UpcomingEvents from "../components/UpcomingEvents";
+import NewsletterForm from "../components/NewsletterForm";
 import RecentPosts from "../components/RecentPosts";
 import AboutSection from "../sections/AboutSection";
 import { events, workingGroups, posts } from "../data";
@@ -18,7 +19,9 @@ const IndexPage = () => (
     <Hero title="Icelandic Blockchain Foundation">
       Our mission is to make Iceland <br /> the leader in{" "}
       <strong>blockchain</strong> <br />
-      and <strong>cryptocurrency</strong> innovation <br /> and adoption
+      and <strong>cryptocurrency</strong> innovation <br /> and adoption.
+      <br />
+      <NewsletterForm placeholder="Enter your email and join our newsletter" />
     </Hero>
     <Section top="xlarge" bottom="xlarge" backgroundText="foundation" id="about">
       <SectionLegend number="02" text="About the foundation" textColor="dark" />
