@@ -30,6 +30,29 @@
 }
 
 .block {
-  padding-bottom: $ms2;
+  padding-bottom: $ms3;
   line-height: 1.75;
+
+  @include respond-to(md) {
+    padding-bottom: $ms2;
+  }
+}
+
+.icon {
+  margin-right: $ms2;
+  display: flex;
+
+  @include respond-to(md) {
+    margin-right: $ms1;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding-bottom: $ms1;
+
+  @include respond-to(md) {
+    padding: 0;
+  }
 }
