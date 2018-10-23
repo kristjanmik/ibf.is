@@ -1,18 +1,19 @@
 @import "../../utils/responsive";
+@import "../../utils/functions";
 @import "../../utils/variables";
+@import "../../utils/mixins";
 
 .root {
   display: flex;
   justify-content: space-between;
   overflow: auto;
-  margin-right: -16px;
+  @include negativeHorizontalSpacing();
 
   > * + * {
-    margin-left: 48px;
+    margin-left: between(20px, 48px, $sm, $xlg);
   }
 
   @include respond-to(md) {
     overflow: hidden;
-    margin-right: 0;
   }
 }

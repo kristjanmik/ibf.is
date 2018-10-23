@@ -5,7 +5,7 @@
 
 .root {
   color: $white;
-  @include horizontalPadding();
+  @include horizontalSpacing();
   @include gradient();
   padding-top: between(160px, 360px, $sm, $xlg);
   padding-bottom: $ms4;

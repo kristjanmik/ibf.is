@@ -1,13 +1,26 @@
 @import "./variables";
 @import "./responsive";
 
-@mixin horizontalPadding() {
+$horizontalSpacing: between(66px, 100px, $sm, $xlg);
+$negativeHorizontalSpacing: between(-66px, -100px, $sm, $xlg);
+
+@mixin horizontalSpacing() {
   padding-left: 16px;
   padding-right: 16px;
 
   @include respond-to(md) {
-    padding-left: $horizontalPadding;
-    padding-right: $horizontalPadding;
+    padding-left: $horizontalSpacing;
+    padding-right: $horizontalSpacing;
+  }
+}
+
+@mixin negativeHorizontalSpacing() {
+  margin-left: -16px;
+  margin-right: -16px;
+
+  @include respond-to(md) {
+    margin-left: $negativeHorizontalSpacing;
+    margin-right: $negativeHorizontalSpacing;
   }
 }
 

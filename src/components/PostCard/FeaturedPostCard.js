@@ -13,7 +13,7 @@ const FeaturedPostCard = ({ title, text, imageUrl, url }) => (
     <div className={styles.card}>
       <H2 bottom="small">{title}</H2>
       <Body3 light>{text}</Body3>
-      <Arrow top="medium" />
+      <Arrow className={styles.arrow} top="medium" />
     </div>
   </div>
 );

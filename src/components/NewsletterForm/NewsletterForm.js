@@ -1,4 +1,5 @@
 import React from "react";
+import cn from 'classnames'
 import styles from "./NewsletterForm.module.scss";
 import { Body3 } from "../Typography";
 
@@ -18,9 +19,9 @@ const SubmitArrow = () => (
 
 const noop = () => {}
 
-const NewsletterForm = ({ placeholder, onSubmit = noop }) => (
+const NewsletterForm = ({ placeholder, onSubmit = noop, tempStyle }) => (
   <>
-    <form onSubmit={onSubmit} className={styles.root}>
+    <form onSubmit={onSubmit} className={cn(styles.root, tempStyle && styles.tempStyle)}>
       <div className={styles.inputWrap}>
         <input className={styles.input} placeholder={placeholder} />
       </div>

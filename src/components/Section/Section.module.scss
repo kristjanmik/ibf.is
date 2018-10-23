@@ -7,7 +7,7 @@
   position: relative;
   z-index: 1;
   min-height: 500px;
-  @include horizontalPadding();
+  @include horizontalSpacing();
 }
 
 .colored {
@@ -23,7 +23,7 @@
   font-weight: 600;
   line-height: 2;
   color: #FBFBFB;
-  right: $horizontalPadding;
+  right: $horizontalSpacing;
   
   .root.colored & {
     color: #0E4C88;

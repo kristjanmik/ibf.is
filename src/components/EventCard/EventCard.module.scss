@@ -8,6 +8,7 @@ $dateOffset: 20px;
   width: between(200px, 275px, $sm, $xlg);
   background: $white;
   margin-top: $dateOffset;
+  flex: none;
   position: relative;
   padding: between(26px, 40px, $sm, $xlg) between(20px, 30px, $sm, $xlg);
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../components/Layout";
-import Menu from '../components/Menu';  
+import Menu from "../components/Menu";
 import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SectionLegend from "../components/SectionLegend";
@@ -11,6 +11,7 @@ import UpcomingEvents from "../components/UpcomingEvents";
 import NewsletterForm from "../components/NewsletterForm";
 import RecentPosts from "../components/RecentPosts";
 import AboutSection from "../sections/AboutSection";
+import NewsletterSection from "../sections/NewsletterSection"
 import { events, workingGroups, posts } from "../data";
 
 const IndexPage = () => (
@@ -19,11 +20,22 @@ const IndexPage = () => (
     <Hero title="Icelandic Blockchain Foundation">
       <NewsletterForm placeholder="Enter your email and join our newsletter" />
     </Hero>
-    <Section top="xlarge" bottom="xlarge" backgroundText="foundation" id="about">
+    <Section
+      top="xlarge"
+      bottom="xlarge"
+      backgroundText="foundation"
+      id="about"
+    >
       <SectionLegend number="02" text="About the foundation" textColor="dark" />
       <AboutSection />
     </Section>
-    <Section top="xlarge" bottom="xlarge" colored backgroundText="events" id="events">
+    <Section
+      top="xlarge"
+      bottom="xlarge"
+      colored
+      backgroundText="events"
+      id="events"
+    >
       <SectionLegend number="03" text="Upcoming events" />
       <UpcomingEvents events={events} />
       <SectionFooter text="go to events" textColor="light" />
@@ -37,8 +49,9 @@ const IndexPage = () => (
       <SectionLegend number="05" text="Working Groups" />
       <WorkingGroups groups={workingGroups} />
     </Section>
-    <Section top="xlarge" bottom="xlarge" id="register">
+    <Section top="huge" bottom="huge" id="register">
       <SectionLegend number="06" text="Register" textColor="dark" />
+      <NewsletterSection />
     </Section>
   </Layout>
 );
