@@ -13,6 +13,7 @@
 
   @include respond-to(md) {
     padding: $ms1;
+    width: auto;
     &.featured {
       width: 340px;
     }
