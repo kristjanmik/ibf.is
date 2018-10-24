@@ -5,7 +5,7 @@ import logo from "../../images/logo.svg";
 import ScrollLink from '../ScrollLink'
 
 
-const Menu = ({}) => (
+const Menu = () => (
   <nav className={styles.root}>
     <img className={styles.logo} src={logo} />
     <div className={styles.links}>

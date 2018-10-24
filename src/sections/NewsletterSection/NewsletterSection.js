@@ -3,7 +3,7 @@ import styles from "./NewsletterSection.module.scss";
 import { H1 } from "../../components/Typography";
 import NewsletterForm from "../../components/NewsletterForm";
 
-const NewsletterSection = ({}) => (
+const NewsletterSection = () => (
   <div className={styles.root}>
     <div className={styles.heading}>
       <H1 bottom="large">

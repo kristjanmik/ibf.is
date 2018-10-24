@@ -28,6 +28,7 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
           .slice(0, 1)
           .map(post => (
             <FeaturedPostCard
+              key={post.title}
               title={post.title}
               text={truncate.apply(post.text)}
               imageUrl={post.image}
@@ -39,6 +40,7 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
       <div className={styles.posts}>
         {posts.filter(post => !post.isFeatured).map(post => (
           <PostCard
+            key={post.title}
             title={post.title}
             text={truncate.apply(post.text)}
             date={post.date}

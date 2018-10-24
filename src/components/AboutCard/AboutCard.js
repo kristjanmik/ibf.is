@@ -12,7 +12,7 @@ const Icon = ({ icon }) => (
   </div>
 );
 
-const AboutCard = ({}) => (
+const AboutCard = () => (
   <aside className={styles.root}>
     <div className={styles.block}>
       <div className={styles.top}>

@@ -12,6 +12,7 @@ import NewsletterForm, {
   NewsletterAnchorButton,
 } from "../components/NewsletterForm";
 import RecentPosts from "../components/RecentPosts";
+import Footer from "../components/Footer";
 import AboutSection from "../sections/AboutSection";
 import NewsletterSection from "../sections/NewsletterSection";
 import { events, workingGroups, posts } from "../data";
@@ -57,6 +58,7 @@ const IndexPage = () => (
       <SectionLegend number="06" text="Newsletter" textColor="dark" />
       <NewsletterSection />
     </Section>
+    <Footer />
   </Layout>
 );
 

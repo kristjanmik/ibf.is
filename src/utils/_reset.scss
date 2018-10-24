@@ -32,6 +32,14 @@
     margin: 0;
     font-weight: inherit;
   }
+
+  /**
+   * Correct the padding on list elements 
+   */
+
+   ul, li {
+     padding: 0;
+   }
   
   /* Grouping content
      ========================================================================== */
