@@ -1,9 +1,10 @@
-@import '../../utils/variables';
+@import "../../utils/variables";
 @import "../../utils/responsive";
 @import "../../utils/functions";
 
 .root {
   display: flex;
+  align-items: flex-start;
   position: absolute;
   justify-content: space-between;
   color: $white;
@@ -19,9 +20,30 @@
   color: inherit;
   text-transform: uppercase;
   margin: $ms1 $ms3;
+  position: relative;
+
+  &::after {
+    background: currentColor;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+    width: 100%;
+  }
 
   &:visited {
     color: inherit;
+  }
+
+  @include respond-to(md) {
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
   }
 }
 

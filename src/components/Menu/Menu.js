@@ -4,7 +4,6 @@ import { Body1 } from "../Typography";
 import logo from "../../images/logo.svg";
 import ScrollLink from '../ScrollLink'
 
-
 const Menu = () => (
   <nav className={styles.root}>
     <img className={styles.logo} src={logo} />
