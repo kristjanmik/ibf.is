@@ -11,7 +11,7 @@
     flex: 0 1 50%;
     &::after {
       content: "";
-      background: url("/assets/dots-decorator.svg") no-repeat;
+      background: url("../../images/dots-decorator.svg") no-repeat;
       position: absolute;
       width: 150px;
       height: 150px;
