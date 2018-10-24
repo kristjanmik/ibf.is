@@ -4,11 +4,10 @@
 
 
 .root {
-  display: flex;
   padding-top: $ms6;
   padding-bottom: $ms2;
-  
-    @include respond-to(md) {
+  @include respond-to(md) {
+      display: flex;
       width: between(200px, 500px, $sm, $xlg);
 
       &.alternative {
@@ -22,8 +21,8 @@
   position: relative;
   align-items: center;
   background: $white;
-  padding: $ms2;
   width: 100%;
+  padding: 27px;
   
   &::before {
     content: "@";
@@ -32,10 +31,14 @@
     z-index: 1;
     padding-right: $ms2;
   }
-
+  
   .alternative & {
     border: 2px solid $blue;
     color: $blue;
+  }
+  
+  @include respond-to(md) {
+    padding: $ms2;
   }
 }
 
@@ -52,14 +55,23 @@
   background: $blue;
   color: $white;
   border: 0;
-  display: flex;
   align-items: center;
   padding: $ms1;
-  margin-left: $ms1;
   justify-content: center;
-  width: between(40px, 72px, $sm, $xlg);
-  height: between(40px, 72px, $sm, $xlg);
   flex: none;
+  
+  @include respond-to(md) {
+    display: flex;
+    width: between(40px, 72px, $sm, $xlg);
+    margin-left: $ms1;
+
+  }
+}
+
+.submitText {
+  @include respond-to(md) {
+    display: none;
+  }
 }
 
 .submitArrow {

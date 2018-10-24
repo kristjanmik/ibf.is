@@ -26,6 +26,7 @@ const NewsletterForm = ({ placeholder, onSubmit = noop, alternative }) => (
         <input className={styles.input} placeholder={placeholder} />
       </div>
       <button className={styles.submit} type="submit">
+        <span className={styles.submitText}>Join</span>
         <SubmitArrow />
       </button>
     </form>

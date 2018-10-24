@@ -21,6 +21,9 @@ $t4: between(14px, 18px, $sm, $xlg);
 $t5: between(20px, 24px, $sm, $xlg);
 $t6: between(36px, 45px, $sm, $xlg);
 
+$horizontalSpacing: between(66px, 100px, $sm, $xlg);
+$negativeHorizontalSpacing: between(-66px, -100px, $sm, $xlg);
+
 $dark: #454545;
 $blue: #00468A;
 $red: #f61740;

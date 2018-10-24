@@ -1,9 +1,6 @@
 @import "./variables";
 @import "./responsive";
 
-$horizontalSpacing: between(66px, 100px, $sm, $xlg);
-$negativeHorizontalSpacing: between(-66px, -100px, $sm, $xlg);
-
 @mixin horizontalSpacing() {
   padding-left: 16px;
   padding-right: 16px;

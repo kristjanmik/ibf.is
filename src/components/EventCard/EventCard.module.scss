@@ -15,6 +15,7 @@ $dateOffset: 20px;
   @include respond-to(onlySmall) {
     width: 275px;
     padding: 40px 30px;
+    margin-right: 30px;
   }
 
   @include respond-to(md) {

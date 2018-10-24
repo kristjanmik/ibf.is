@@ -8,12 +8,20 @@
   justify-content: space-between;
   overflow: auto;
   @include negativeHorizontalSpacing();
-
-  > * + * {
-    margin-left: between(20px, 48px, $sm, $xlg);
+  > *:first-child {
+    margin-left: 16px;
+  }
+  > *:last-child {
+    margin-right: 16px;
   }
 
   @include respond-to(md) {
     overflow: hidden;
+    > *:first-child {
+      margin-left: $horizontalSpacing;
+    }
+    > *:last-child {
+      margin-right: $horizontalSpacing;
+    }
   }
 }

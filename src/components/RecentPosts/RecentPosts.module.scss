@@ -14,12 +14,14 @@
 .posts {
   display: flex;
   overflow: auto;
+  padding: 32px 16px;
   
   @include respond-to(md) {
     flex: 0 1 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: $ms2;
+    padding: 0;
     margin-left: $ms3;
     overflow: visible;
     flex-wrap: wrap;

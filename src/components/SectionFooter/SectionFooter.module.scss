@@ -1,14 +1,19 @@
+@import '../../utils/mixins';
 @import '../../utils/variables';
 
 .root {
   color: $blue;
-  display: flex;
+  display: none;
 
   &.light {
     color: $white;
   }
   &.dark {
     color: $blue;
+  }
+
+  @include respond-to(md) {
+    display: flex;
   }
 }
 

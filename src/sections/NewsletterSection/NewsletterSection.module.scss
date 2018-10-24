@@ -1,9 +1,11 @@
 @import '../../utils/responsive';
 
 .root {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include respond-to(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .heading {
