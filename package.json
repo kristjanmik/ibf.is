@@ -13,7 +13,8 @@
     "node-sass": "^4.9.4",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "scroll-to-element": "^2.0.2"
   },
   "keywords": [
     "gatsby"
