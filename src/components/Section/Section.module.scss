@@ -6,7 +6,6 @@
 .root {
   position: relative;
   z-index: 1;
-  min-height: 500px;
   @include horizontalSpacing();
 }
 
@@ -31,5 +30,21 @@
 
   @include respond-to(onlySmall) {
     display: none;
+  }
+}
+
+.newsletter {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    z-index: -1;
+    right: $horizontalSpacing;
+    background-image: url('../../images/section-dots-decorator.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }

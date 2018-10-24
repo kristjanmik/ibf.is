@@ -2,18 +2,17 @@
 @import "../../utils/functions";
 @import "../../utils/responsive";
 
-
 .root {
   padding-top: $ms6;
   padding-bottom: $ms2;
   @include respond-to(md) {
-      display: flex;
-      width: between(200px, 500px, $sm, $xlg);
+    display: flex;
+    width: between(200px, 500px, $sm, $xlg);
 
-      &.alternative {
-        padding: 0;
-      }
+    &.alternative {
+      padding: 0;
     }
+  }
 }
 
 .inputWrap {
@@ -22,33 +21,44 @@
   align-items: center;
   background: $white;
   width: 100%;
+  margin-bottom: 20px;
   padding: 27px;
-  
+
   &::before {
     content: "@";
-    font-size: $t3;
+    font-size: 16px;
     color: $blue;
+    font-weight: 600;
     z-index: 1;
     padding-right: $ms2;
+
+    @include respond-to(md) {
+      font-size: $t3;
+    }
   }
-  
+
   .alternative & {
     border: 2px solid $blue;
     color: $blue;
   }
-  
+
   @include respond-to(md) {
     padding: $ms2;
+    margin: 0;
   }
 }
 
 .input {
-  font-size: $t3;
   border: 0;
   background: none;
+  font-size: 16px;
   font-weight: 500;
   color: #868686;
   width: 100%;
+  
+  @include respond-to(md) {
+    font-size: $t3;
+  }
 }
 
 .submit {
@@ -56,15 +66,17 @@
   color: $white;
   border: 0;
   align-items: center;
-  padding: $ms1;
   justify-content: center;
   flex: none;
-  
+  position: relative;
+  width: 100%;
+  padding: 24px;
+
   @include respond-to(md) {
+    padding: $ms1;
     display: flex;
     width: between(40px, 72px, $sm, $xlg);
     margin-left: $ms1;
-
   }
 }
 
@@ -77,6 +89,14 @@
 .submitArrow {
   width: 20px;
   height: 12px;
+
+  @include respond-to(onlySmall) {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 
 .fineprint {

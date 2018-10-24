@@ -1,7 +1,7 @@
 import React from "react";
 import cn from 'classnames'
 import styles from "./NewsletterForm.module.scss";
-import { Body3 } from "../Typography";
+import { H2, Body3 } from "../Typography";
 
 const SubmitArrow = () => (
   <svg
@@ -26,7 +26,7 @@ const NewsletterForm = ({ placeholder, onSubmit = noop, alternative }) => (
         <input className={styles.input} placeholder={placeholder} />
       </div>
       <button className={styles.submit} type="submit">
-        <span className={styles.submitText}>Join</span>
+        <H2 className={styles.submitText}>Join</H2>
         <SubmitArrow />
       </button>
     </form>
