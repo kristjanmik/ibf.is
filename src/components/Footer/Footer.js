@@ -1,6 +1,7 @@
 import React from "react";
+import cn from 'classnames'
 import styles from "./Footer.module.scss";
-import { H3 } from "../Typography";
+import { H3, Body3 } from "../Typography";
 
 import facebookIcon from "../../images/social/facebook.svg";
 import twitterIcon from "../../images/social/twitter.svg";
@@ -113,7 +114,7 @@ const Footer = () => (
           <li>105 Reykjavík</li>
         </ul>
       </div>
-      <div className={styles.group}>
+      <div className={cn(styles.group, styles.socialGroup)}>
         <H3 bold className={styles.heading} bottom="xsmall">
           Follow us
         </H3>
@@ -129,7 +130,7 @@ const Footer = () => (
       </div>
     </div>
     <div className={styles.toes}>
-      © 2015 - {currentYear() || "present"} Icelandic Blockchain Foundation
+     <Body3>© 2015 - {currentYear() || "present"} Icelandic Blockchain Foundation</Body3>
     </div>
   </>
 );
