@@ -6,20 +6,20 @@ import SectionLegend from "../../components/SectionLegend";
 import Members from "../../components/Members";
 import WorkingGroups from "../../components/WorkingGroups";
 import AboutSection from "../../sections/AboutSection";
-import { workingGroups } from '../../data/working-groups'
+import { workingGroups, aboutDevelopersGroup } from '../../data'
 
 const DevelopersPage = () => (
   <Layout>
     <Menu />
-    <Section top="xlarge" bottom="xlarge" id="working-groups">
+    <Section top="xlarge" bottom="xlarge" backgroundText="About">
       <SectionLegend number="01" text="About" textColor="dark" />
-      <AboutSection heading="Developers" text="The developers working group was created on the 29th of March 2015 (originally Auraráð). The Foundation was established by a collective of individuals with a shared vision of the positive impact that cryptocurrencies and blockchain technology can have on the Icelandic economy."></AboutSection>
+      <AboutSection data={aboutDevelopersGroup} />
     </Section>
-    <Section top="xlarge" bottom="xlarge" id="working-groups">
+    <Section top="xlarge" bottom="xlarge" backgroundText="board">
       <SectionLegend number="02" text="Board Members" textColor="dark" />
       <Members of="developers" />
     </Section>
-    <Section colored top="xlarge" bottom="xlarge" backgroundText="groups" id="working-groups">
+    <Section colored top="xlarge" bottom="xlarge" backgroundText="groups">
       <SectionLegend number="03" text="Working Groups" />
       <WorkingGroups groups={workingGroups} />
     </Section>

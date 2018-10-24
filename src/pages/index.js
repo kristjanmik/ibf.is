@@ -14,7 +14,7 @@ import NewsletterForm, {
 import RecentPosts from "../components/RecentPosts";
 import AboutSection from "../sections/AboutSection";
 import NewsletterSection from "../sections/NewsletterSection";
-import { events, workingGroups, posts } from "../data";
+import { events, workingGroups, posts, aboutIBF } from "../data";
 
 const IndexPage = () => (
   <Layout>
@@ -30,7 +30,7 @@ const IndexPage = () => (
       id="about"
     >
       <SectionLegend number="02" text="About the foundation" textColor="dark" />
-      <AboutSection heading="Icelandic Blockchain Foundation" text=" The Foundation was created on the 29th of March 2015 (originally Auraráð). The Foundation was established by a collective of individuals with a shared vision of the positive impact that cryptocurrencies and blockchain technology can have on the Icelandic economy."></AboutSection>
+      <AboutSection data={aboutIBF} />
     </Section>
     <Section
       top="xlarge"

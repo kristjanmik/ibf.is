@@ -11,47 +11,19 @@ const Icon = ({ icon }) => (
   </div>
 );
 
-const AboutCard = () => (
+const AboutCard = ({ data = [] }) => (
   <aside className={styles.root}>
-    <div className={styles.block}>
-      <div className={styles.top}>
-        <Icon icon={serveIcon} />
-        <H2 bold className={styles.heading}>
-          Serve
-        </H2>
+    {data.map(block => (
+      <div key={block.title} className={styles.block}>
+        <div className={styles.top}>
+          <Icon icon={serveIcon} />
+          <H2 bold className={styles.heading}>
+            {block.title}
+          </H2>
+        </div>
+        <Body2>{block.text}</Body2>
       </div>
-      <Body2>
-        The Foundation serves as a self-governed council for cryptocurrencies
-        and blockchain entities in Iceland
-      </Body2>
-    </div>
-    <div className={styles.block}>
-      <div className={styles.top}>
-        <Icon icon={educateIcon} />
-        <H2 bold className={styles.heading}>
-          Educate
-        </H2>
-      </div>
-      <Body2>
-        The Foundation educates the public, industry, and government on the
-        benefits of the cryptocurrency and blockchain technology. We organize
-        outreach and marketing efforts, support and promote Icelandic companies
-        and attract foreign companies and talent to come to Iceland.
-      </Body2>
-    </div>
-    <div className={styles.block}>
-      <div className={styles.top}>
-        <Icon icon={advocateIcon} />
-        <H2 bold className={styles.heading}>
-          Advocate
-        </H2>
-      </div>
-      <Body2>
-        We advocate for parliament and government agencies to pass fair and
-        clear laws on cryptocurrencies and blockchain technology, as a means of
-        attracting consumers, businesses, and industry to Iceland.
-      </Body2>
-    </div>
+    ))}
   </aside>
 );
 

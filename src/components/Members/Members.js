@@ -1,6 +1,7 @@
 import React from "react";
 import { workingGroups } from "../../data/working-groups";
 import styles from "./Members.module.scss";
+import MemberProfile from "./MemberProfile";
 
 const Members = ({ of }) => {
   const group = workingGroups.find(
@@ -14,7 +15,13 @@ const Members = ({ of }) => {
   return (
     <div className={styles.root}>
       {group.members.map(member => (
-        <img key={member.name} alt={`Board member ${member.name}`} src={member.image} />
+        <MemberProfile
+          key={member.name}
+          name={member.name}
+          title={member.title}
+          image={member.image}
+          email={member.email}
+        />
       ))}
     </div>
   );
