@@ -1,13 +1,15 @@
 import React from "react";
+import cn from 'classnames'
 import styles from "./WorkingGroups.module.scss";
 import WorkingGroupCard from "../WorkingGroupCard";
+import padding from '../../utils/padding';
 
 const WorkingGroups = ({ groups }) => {
   if (!groups || !groups.length) {
     return null;
   }
   return (
-    <div className={styles.root}>
+    <div className={cn(styles.root, padding(null, "xlarge"))}>
       {groups.map(group => (
         <div className={styles.card} key={group.name}>
           <WorkingGroupCard

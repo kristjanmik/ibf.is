@@ -3,14 +3,19 @@
 @import "../../utils/responsive";
 
 .root {
-  padding-top: $ms6;
-  padding-bottom: $ms2;
+  @include respond-to(onlySmall) {
+    &.inHero {
+      display: none;
+    }
+  }
+
   @include respond-to(md) {
     display: flex;
     width: between(200px, 500px, $sm, $xlg);
-
-    &.alternative {
-      padding: 0;
+    
+    &.inHero {
+      padding-top: $ms6;
+      padding-bottom: $ms2;
     }
   }
 }
@@ -23,6 +28,8 @@
   width: 100%;
   margin-bottom: 20px;
   padding: 27px;
+  border: 2px solid $blue;
+  color: $blue;
 
   &::before {
     content: "@";
@@ -37,9 +44,8 @@
     }
   }
 
-  .alternative & {
-    border: 2px solid $blue;
-    color: $blue;
+  .inHero & {
+    border: none;
   }
 
   @include respond-to(md) {
@@ -101,8 +107,13 @@
 
 .fineprint {
   color: rgba($white, 0.75);
+  display: none;
 
-  .alternative + & {
-    display: none;
+  .inHero + & {
+    display: block;
+  
+    @include respond-to(onlySmall) {
+      display: none;
+    }
   }
 }

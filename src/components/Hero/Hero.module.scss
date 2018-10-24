@@ -8,8 +8,11 @@
   @include horizontalSpacing();
   @include gradient();
   padding-top: between(160px, 360px, $sm, $xlg);
-  padding-bottom: $ms4;
-  height: 100vh;
+  
+  @include respond-to(md) {
+    height: 100vh;
+    padding-bottom: $ms4;
+  }
 }
 
 .heading {

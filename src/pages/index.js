@@ -8,17 +8,20 @@ import SectionLegend from "../components/SectionLegend";
 import SectionFooter from "../components/SectionFooter";
 import WorkingGroups from "../components/WorkingGroups";
 import UpcomingEvents from "../components/UpcomingEvents";
-import NewsletterForm from "../components/NewsletterForm";
+import NewsletterForm, {
+  NewsletterAnchorButton,
+} from "../components/NewsletterForm";
 import RecentPosts from "../components/RecentPosts";
 import AboutSection from "../sections/AboutSection";
-import NewsletterSection from "../sections/NewsletterSection"
+import NewsletterSection from "../sections/NewsletterSection";
 import { events, workingGroups, posts } from "../data";
 
 const IndexPage = () => (
   <Layout>
     <Menu />
     <Hero title="Icelandic Blockchain Foundation">
-      <NewsletterForm placeholder="Enter your email and join our newsletter" />
+      <NewsletterAnchorButton />
+      <NewsletterForm inHero placeholder="Enter your email and join our newsletter" />
     </Hero>
     <Section
       top="xlarge"
@@ -48,6 +51,7 @@ const IndexPage = () => (
     <Section colored top="xlarge" bottom="xlarge" id="working-groups">
       <SectionLegend number="05" text="Working Groups" />
       <WorkingGroups groups={workingGroups} />
+      <SectionFooter text="visit working groups" textColor="light" />
     </Section>
     <Section top="huge" bottom="huge" id="newsletter">
       <SectionLegend number="06" text="Newsletter" textColor="dark" />
