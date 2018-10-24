@@ -43,31 +43,31 @@ const footer = {
 const socialMedia = [
   {
     name: "Facebook",
-    url: "//facebook.com/ibf",
+    url: "//facebook.ibf.is",
     icon: facebookIcon,
   },
 
   {
     name: "Twitter",
-    url: "//facebook.com/ibf",
+    url: "//twitter.ibf.is",
     icon: twitterIcon,
   },
 
   {
     name: "Instagram",
-    url: "//facebook.com/ibf",
+    url: "//instagram.ibf.is",
     icon: instagramIcon,
   },
 
   {
     name: "Telegram",
-    url: "//facebook.com/ibf",
+    url: "//telegram.ibf.is",
     icon: telegramIcon,
   },
 
   {
     name: "Youtube",
-    url: "//facebook.com/ibf",
+    url: "//youtube.ibf.is",
     icon: youtubeIcon,
   },
 ];

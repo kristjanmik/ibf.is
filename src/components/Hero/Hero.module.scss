@@ -10,7 +10,7 @@
   padding-top: between(160px, 360px, $sm, $xlg);
   
   @include respond-to(md) {
-    height: 100vh;
+    min-height: 100vh;
     padding-bottom: $ms4;
   }
 }
