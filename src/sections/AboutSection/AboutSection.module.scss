@@ -33,7 +33,9 @@
   animation-direction: alternate;
   margin-top: $ms6;
   display: none;
-
+  > svg {
+    transform: translateX(-50%);
+  }
   @include respond-to(md) {
     display: block;
   }

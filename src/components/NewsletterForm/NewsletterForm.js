@@ -19,9 +19,9 @@ const SubmitArrow = () => (
 
 const noop = () => {}
 
-const NewsletterForm = ({ placeholder, onSubmit = noop, tempStyle }) => (
+const NewsletterForm = ({ placeholder, onSubmit = noop, alternative }) => (
   <>
-    <form onSubmit={onSubmit} className={cn(styles.root, tempStyle && styles.tempStyle)}>
+    <form onSubmit={onSubmit} className={cn(styles.root, alternative && styles.alternative)}>
       <div className={styles.inputWrap}>
         <input className={styles.input} placeholder={placeholder} />
       </div>

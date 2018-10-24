@@ -16,7 +16,7 @@ const AboutSection = () => (
         with a shared vision of the positive impact that cryptocurrencies and
         blockchain technology can have on the Icelandic economy.
       </Body1>
-        <Arrow alignment="vertical" className={styles.arrow} rotation="90deg" />
+        <Arrow alignment="vertical" className={styles.arrow} />
     </div>
     <AboutCard />
   </div>

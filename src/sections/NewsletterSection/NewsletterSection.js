@@ -13,7 +13,7 @@ const NewsletterSection = ({}) => (
       </H1>
     </div>
     <div className={styles.form}>
-      <NewsletterForm placeholder="Enter your email here" tempStyle />
+      <NewsletterForm placeholder="Enter your email here" alternative />
     </div>
   </div>
 );

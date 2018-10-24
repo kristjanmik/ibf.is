@@ -9,7 +9,7 @@
     @include respond-to(md) {
       width: 585px;
 
-      &.tempStyle {
+      &.alternative {
         width: 400px;
       }
     }
@@ -31,7 +31,7 @@
     padding-right: $ms2;
   }
 
-  .tempStyle & {
+  .alternative & {
     border: 2px solid $blue;
     color: $blue;
   }
@@ -68,7 +68,7 @@
 .fineprint {
   color: rgba($white, 0.75);
 
-  .tempStyle + & {
+  .alternative + & {
     display: none;
   }
 }
