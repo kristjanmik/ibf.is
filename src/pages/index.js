@@ -49,7 +49,7 @@ const IndexPage = () => (
       <RecentPosts posts={posts} />
       <SectionFooter text="visit blog" textColor="dark" />
     </Section>
-    <Section colored top="xlarge" bottom="xlarge" id="working-groups">
+    <Section colored top="xlarge" bottom="xlarge" backgroundText="groups" id="working-groups">
       <SectionLegend number="05" text="Working Groups" />
       <WorkingGroups groups={workingGroups} />
       <SectionFooter text="visit working groups" textColor="light" />

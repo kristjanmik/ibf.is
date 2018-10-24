@@ -11,7 +11,7 @@
 
   @include respond-to(md) {
     display: flex;
-    width: between(200px, 500px, $sm, $xlg);
+    width: between(200px, 550px, $sm, $xlg);
     
     &.inHero {
       padding-top: $ms6;
