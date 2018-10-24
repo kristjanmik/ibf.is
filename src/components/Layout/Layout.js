@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import "./global.scss";
 import styles from "./Layout.module.scss";
-import { ParallaxProvider } from 'react-scroll-parallax'
+import { ParallaxProvider } from "react-scroll-parallax";
+import Footer from "../Footer";
 
 const Layout = ({ children }) => (
   <ParallaxProvider>
@@ -14,6 +15,7 @@ const Layout = ({ children }) => (
       />
     </Helmet>
     <div className={styles.root}>{children}</div>
+    <Footer />
   </ParallaxProvider>
 );
 

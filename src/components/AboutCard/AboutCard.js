@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./AboutCard.module.scss";
 import { H2, Body2 } from "../Typography";
 import serveIcon from "../../images/icon_serve.svg";
@@ -55,7 +54,5 @@ const AboutCard = () => (
     </div>
   </aside>
 );
-
-AboutCard.propTypes = {};
 
 export default AboutCard;

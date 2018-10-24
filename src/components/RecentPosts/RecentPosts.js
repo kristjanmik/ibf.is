@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./RecentPosts.module.scss";
 import PostCard, { FeaturedPostCard } from "../PostCard";
@@ -50,7 +49,5 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
     </div>
   );
 };
-
-RecentPosts.propTypes = {};
 
 export default RecentPosts;

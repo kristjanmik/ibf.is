@@ -12,14 +12,13 @@ import NewsletterForm, {
   NewsletterAnchorButton,
 } from "../components/NewsletterForm";
 import RecentPosts from "../components/RecentPosts";
-import Footer from "../components/Footer";
 import AboutSection from "../sections/AboutSection";
 import NewsletterSection from "../sections/NewsletterSection";
 import { events, workingGroups, posts } from "../data";
 
 const IndexPage = () => (
   <Layout>
-    <Menu />
+    <Menu inHero />
     <Hero title="Icelandic Blockchain Foundation">
       <NewsletterAnchorButton />
       <NewsletterForm inHero placeholder="Enter your email and join our newsletter" />
@@ -31,7 +30,7 @@ const IndexPage = () => (
       id="about"
     >
       <SectionLegend number="02" text="About the foundation" textColor="dark" />
-      <AboutSection />
+      <AboutSection heading="Icelandic Blockchain Foundation" text=" The Foundation was created on the 29th of March 2015 (originally Auraráð). The Foundation was established by a collective of individuals with a shared vision of the positive impact that cryptocurrencies and blockchain technology can have on the Icelandic economy."></AboutSection>
     </Section>
     <Section
       top="xlarge"
@@ -58,7 +57,6 @@ const IndexPage = () => (
       <SectionLegend number="06" text="Newsletter" textColor="dark" />
       <NewsletterSection />
     </Section>
-    <Footer />
   </Layout>
 );
 

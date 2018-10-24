@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./FeaturedPostCard.module.scss";
 import { H2, Body3 } from "../Typography";
 import Arrow from "../Arrow";
@@ -17,7 +16,5 @@ const FeaturedPostCard = ({ title, text, imageUrl, url }) => (
     </div>
   </div>
 );
-
-FeaturedPostCard.propTypes = {};
 
 export default FeaturedPostCard;

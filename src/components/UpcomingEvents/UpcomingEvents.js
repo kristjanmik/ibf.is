@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./UpcomingEvents.module.scss";
 import CardCarousel from "../CardCarousel";
@@ -28,7 +27,5 @@ const UpcomingEvents = ({ events }) => {
     </div>
   );
 };
-
-UpcomingEvents.propTypes = {};
 
 export default UpcomingEvents;

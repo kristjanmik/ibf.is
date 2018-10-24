@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import cn from 'classnames'
 import styles from "./SectionFooter.module.scss";
 import Arrow from "../Arrow";
@@ -13,7 +12,5 @@ const SectionFooter = ({ text, url = '/', textColor = "light" }) => (
     </a>
   </div>
 );
-
-SectionFooter.propTypes = {};
 
 export default SectionFooter;

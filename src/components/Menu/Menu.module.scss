@@ -5,13 +5,17 @@
 .root {
   display: flex;
   align-items: flex-start;
-  position: absolute;
   justify-content: space-between;
-  color: $white;
+  color: $dark;
   width: 100%;
   padding: 32px 16px;
   @include respond-to(md) {
-    padding: 100px;
+    padding: 100px 100px 0;
+  }
+  
+  &.inHero {
+    color: $white;
+    position: absolute;
   }
 }
 
