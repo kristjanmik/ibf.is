@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./Section.module.scss";
 import padding from "../../utils/padding";
+import { Parallax } from "react-scroll-parallax";
 
 const Section = ({ children, top, bottom, colored, backgroundText, id }) => (
   <div
@@ -10,7 +11,15 @@ const Section = ({ children, top, bottom, colored, backgroundText, id }) => (
     id={id}
   >
     {backgroundText && (
-      <span className={styles.backgroundText}>{backgroundText}</span>
+      <Parallax
+        className={styles.backgroundText}
+        offsetXMax="50px"
+        offsetXMin="0px"
+        slowerScrollRate
+        tag="figure"
+      >
+        <span>{backgroundText}</span>
+      </Parallax>
     )}
     {children}
   </div>

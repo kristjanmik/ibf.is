@@ -49,8 +49,8 @@ const IndexPage = () => (
       <SectionLegend number="05" text="Working Groups" />
       <WorkingGroups groups={workingGroups} />
     </Section>
-    <Section top="huge" bottom="huge" id="register">
-      <SectionLegend number="06" text="Register" textColor="dark" />
+    <Section top="huge" bottom="huge" id="newsletter">
+      <SectionLegend number="06" text="Newsletter" textColor="dark" />
       <NewsletterSection />
     </Section>
   </Layout>

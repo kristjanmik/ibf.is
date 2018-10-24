@@ -1,5 +1,7 @@
 @import "../../utils/variables";
+@import "../../utils/functions";
 @import "../../utils/responsive";
+
 
 .root {
   display: flex;
@@ -7,10 +9,10 @@
   padding-bottom: $ms2;
   
     @include respond-to(md) {
-      width: 585px;
+      width: between(200px, 500px, $sm, $xlg);
 
       &.alternative {
-        width: 400px;
+        padding: 0;
       }
     }
 }
@@ -55,8 +57,8 @@
   padding: $ms1;
   margin-left: $ms1;
   justify-content: center;
-  width: 72px;
-  height: 72px;
+  width: between(40px, 72px, $sm, $xlg);
+  height: between(40px, 72px, $sm, $xlg);
   flex: none;
 }
 
