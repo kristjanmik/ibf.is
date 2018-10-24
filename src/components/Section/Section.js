@@ -5,7 +5,7 @@ import padding from "../../utils/padding";
 import { Parallax } from "react-scroll-parallax";
 
 const Section = ({ children, top, bottom, colored, backgroundText, id }) => (
-  <div
+  <section
     className={cn(styles.root, styles[id], padding(top, bottom), colored && styles.colored)}
     id={id}
   >
@@ -21,7 +21,7 @@ const Section = ({ children, top, bottom, colored, backgroundText, id }) => (
       </Parallax>
     )}
     {children}
-  </div>
+  </section>
 );
 
 Section.propTypes = {};
