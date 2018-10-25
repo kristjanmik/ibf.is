@@ -23,6 +23,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "heroku-postbuild": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
