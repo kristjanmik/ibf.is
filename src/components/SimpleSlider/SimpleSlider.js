@@ -40,15 +40,15 @@ class SimpleSlider extends Component {
     const { totalSlides, activeIndex } = this.state;
     var settings = {
       infinite: true,
-      speed: 500,
+      speed: 300,
       slidesToShow: 4,
       slidesToScroll: 1,
       dots: false,
       beforeChange: this.handleChange,
       variableWidth: false,
       responsive: [
-        { breakpoint: 600, settings: { slidesToShow: 1, arrows: false } },
-        { breakpoint: 960, settings: { slidesToShow: 2, arrows: false } },
+        { breakpoint: 600, settings: { slidesToShow: 1 } },
+        { breakpoint: 960, settings: { slidesToShow: 2 } },
         { breakpoint: 1300, settings: { slidesToShow: 3 } },
       ],
     };
