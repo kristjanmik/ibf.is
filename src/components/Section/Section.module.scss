@@ -1,11 +1,11 @@
 @import "../../utils/variables";
-@import '../../utils/mixins';
-@import '../../utils/functions';
-@import '../../utils/responsive';
+@import "../../utils/mixins";
+@import "../../utils/functions";
+@import "../../utils/responsive";
 
 %sectionDecorator {
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 150px;
@@ -13,7 +13,7 @@
     top: 0;
     z-index: -1;
     right: $horizontalSpacing;
-    background-image: url('../../images/section-dots-decorator.svg');
+    background-image: url("../../images/section-dots-decorator.svg");
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -37,15 +37,14 @@
   z-index: -1;
   font-weight: 600;
   line-height: 2;
-  color: #FBFBFB;
-  right: $horizontalSpacing;
-  
-  .root.colored & {
-    color: #0E4C88;
+  color: #fbfbfb;
+
+  @include respond-to(md) {
+    right: $horizontalSpacing;
   }
 
-  @include respond-to(onlySmall) {
-    display: none;
+  .root.colored & {
+    color: #0e4c88;
   }
 }
 

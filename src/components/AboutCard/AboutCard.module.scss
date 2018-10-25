@@ -4,10 +4,11 @@
 .root {
   position: relative;
   background: $white;
-  padding: $ms4;
   box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
-  
+  padding: 28px;
+
   @include respond-to(md) {
+    padding: $ms4;
     flex: 0 1 50%;
     &::after {
       content: "";
@@ -30,8 +31,12 @@
 }
 
 .block {
-  padding-bottom: $ms3;
+  padding-bottom: 32px;
   line-height: 1.75;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 
   @include respond-to(md) {
     padding-bottom: $ms2;

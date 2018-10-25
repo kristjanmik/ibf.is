@@ -6,8 +6,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: $ms2;
+    padding-bottom: $ms5;
   }
-}
-
-.card {
 }

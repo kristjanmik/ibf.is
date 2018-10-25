@@ -1,8 +1,6 @@
 import React from "react";
-import cn from "classnames";
 import styles from "./RecentPosts.module.scss";
 import PostCard, { FeaturedPostCard } from "../PostCard";
-import padding from "../../utils/padding";
 
 function truncate(maxChars = 100) {
   if (this.length <= maxChars) {
@@ -20,7 +18,7 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
   const posts = _posts.slice(0, maxPosts);
 
   return (
-    <div className={cn(styles.root, padding(null, "xlarge"))}>
+    <div className={styles.root}>
       <div className={styles.featured}>
         {posts
           .filter(post => post.isFeatured)

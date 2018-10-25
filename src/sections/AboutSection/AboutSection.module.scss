@@ -7,11 +7,13 @@
 
   @include respond-to(md) {
     flex-wrap: nowrap;
+    padding-bottom: $ms5;
   }
 }
 
 .text {
   line-height: 2;
+  padding-bottom: 36px;
   
   @include respond-to(md) {
     flex: 0 1 50%;

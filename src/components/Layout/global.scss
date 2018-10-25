@@ -8,6 +8,11 @@ html {
   box-sizing: border-box;
   color: $dark;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
 }
 
 *,
