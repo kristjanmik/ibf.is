@@ -1,3 +1,4 @@
+@import '../../utils/functions';
 @import '../../utils/responsive';
 
 .root {
@@ -9,8 +10,9 @@
 }
 
 .heading {
-  margin-right: between(20px, 30px, $sm, $xlg);
+  @include respond-to(md) {
+    margin-right: between(20px, 30px, $sm, $xlg);
+  }
 }
 
-.form {
-}
+.form {}

@@ -12,10 +12,14 @@
     height: 150px;
     top: 0;
     z-index: -1;
-    right: $horizontalSpacing;
     background-image: url("../../images/section-dots-decorator.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+    right: 16px;
+
+    @include respond-to(md) {
+      right: $horizontalSpacing;
+    }
   }
 }
 

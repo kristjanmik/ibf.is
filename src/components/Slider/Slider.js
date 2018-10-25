@@ -1,6 +1,6 @@
 import React, { Component, Children } from "react";
-import Slider from "react-slick";
-import styles from "./SimpleSlider.module.scss";
+import Slick from "react-slick";
+import styles from "./Slider.module.scss";
 
 const Paging = ({ totalSlides, activeIndex }) => {
   const WIDTH = 260;
@@ -20,7 +20,7 @@ const Paging = ({ totalSlides, activeIndex }) => {
   );
 };
 
-class SimpleSlider extends Component {
+class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,11 +54,11 @@ class SimpleSlider extends Component {
     };
     return (
       <>
-        <Slider {...settings}>{this.props.children}</Slider>
+        <Slick {...settings}>{this.props.children}</Slick>
         <Paging totalSlides={totalSlides} activeIndex={activeIndex} />
       </>
     );
   }
 }
 
-export default SimpleSlider;
+export default Slider;

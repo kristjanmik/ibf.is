@@ -59,11 +59,15 @@
   background: none;
   font-size: 16px;
   font-weight: 500;
-  color: #868686;
+  color: $blue;
   width: 100%;
   
   @include respond-to(md) {
     font-size: $t3;
+  }
+
+  &:focus {
+    outline: 0;
   }
 }
 

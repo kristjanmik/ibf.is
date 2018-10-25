@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./UpcomingEvents.module.scss";
-import CardCarousel from "../CardCarousel";
+import Slider from "../Slider";
 import EventCard from "../EventCard";
 
 const UpcomingEvents = ({ events }) => {
@@ -10,7 +10,7 @@ const UpcomingEvents = ({ events }) => {
 
   return (
     <div className={styles.root}>
-      <CardCarousel>
+      <Slider>
         {events.map(event => (
           <EventCard
             key={event.title + String(Math.random()).substr(4, 6)}
@@ -21,7 +21,7 @@ const UpcomingEvents = ({ events }) => {
             color={event.color}
           />
         ))}
-      </CardCarousel>
+      </Slider>
     </div>
   );
 };

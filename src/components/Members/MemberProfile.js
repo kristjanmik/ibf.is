@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MemberProfile.module.scss";
-import { Body1, Body2, Body4 } from "../Typography";
+import { Body2, Body4 } from "../Typography";
 
 const MemberProfile = ({ name, title, email, image, themeColor }) => {
   return (

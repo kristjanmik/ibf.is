@@ -40,5 +40,13 @@ export const posts = [
     url: "https://medium.com",
     isFeatured: false,
   },
+  {
+    date: "Mon Oct 20 2018 9:30:00 GMT+0000",
+    title: "EWMA chart",
+    text: "In statistical quality control, the EWMA chart (or exponentially weighted moving average chart) is a type of control chart used to monitor either variables or attributes-type data using the monitored business or industrial process's entire history of output.[1] While other control charts treat rational subgroups of samples individually, the EWMA chart tracks the exponentially-weighted moving average of all prior sample means. EWMA weights samples in geometrically decreasing order so that the most recent samples are weighted most highly while the most distant samples contribute very little.",
+    image: "//placehold.it/518x345",
+    url: "https://medium.com",
+    isFeatured: false,
+  },
 
 ];
