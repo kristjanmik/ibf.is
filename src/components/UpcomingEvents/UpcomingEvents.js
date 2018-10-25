@@ -1,9 +1,7 @@
 import React from "react";
-import cn from "classnames";
 import styles from "./UpcomingEvents.module.scss";
 import CardCarousel from "../CardCarousel";
 import EventCard from "../EventCard";
-import padding from "../../utils/padding";
 
 const UpcomingEvents = ({ events }) => {
   if (!events.length) {
@@ -11,7 +9,7 @@ const UpcomingEvents = ({ events }) => {
   }
 
   return (
-    <div className={cn(styles.root, padding(null, "xlarge"))}>
+    <div className={styles.root}>
       <CardCarousel>
         {events.map(event => (
           <EventCard

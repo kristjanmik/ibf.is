@@ -31,4 +31,12 @@ export const events = [
     text: 'The IBF is hosting a scavenger hunt! It is an opportunity to have fun with friends! The IBF is hosting a scavenger hunt!',
     color: '#B8D85E',
   },
+  {
+    date: '01 jan',
+    workingGroupName: 'Developers',
+    title: 'Cryptocurrency Scavenger Hunt',
+    subtitle: '1 p.m. @ KEX hostel',
+    text: 'The IBF is hosting a scavenger hunt! It is an opportunity to have fun with friends! The IBF is hosting a scavenger hunt!',
+    color: "#70D8CA",
+  },
 ]
