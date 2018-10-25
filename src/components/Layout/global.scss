@@ -17,7 +17,14 @@ html {
   margin: 0;
 }
 
+a {
+  font-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 .parallax-inner {
   position: relative;
   will-change: transform;
 }
+

@@ -1,5 +1,10 @@
+@import "../../utils/variables";
+@import "../../utils/functions";
+@import "../../utils/responsive";
+
 .root {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 64px;
+  row-gap: between(20px, 45px, $sm, $xlg);
+  column-gap: between(20px, 160px, $sm, $xlg);
 }

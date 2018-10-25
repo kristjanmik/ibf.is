@@ -6,6 +6,7 @@
   background: $white;
   padding: $ms3 $ms3 $ms4;
   margin-bottom: $ms3;
+  display: block;
 
   @include respond-to(md) {
     margin-bottom: 0;

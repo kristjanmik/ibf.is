@@ -1,5 +1,6 @@
 import React from "react";
 import cn from 'classnames'
+import { Link } from 'gatsby'
 import styles from "./Menu.module.scss";
 import { Body1 } from "../Typography";
 import darkLogo from "../../images/logo-dark.svg";
@@ -8,7 +9,7 @@ import ScrollLink from '../ScrollLink'
 
 const Menu = ({ inHero }) => (
   <nav className={cn(styles.root, inHero && styles.inHero)}>
-    <img className={styles.logo} src={inHero ? whiteLogo : darkLogo} />
+    <Link to="/"><img className={styles.logo} src={inHero ? whiteLogo : darkLogo} /></Link>
     <div className={styles.links}>
       <ScrollLink className={styles.link} to="#about">
         <Body1>About</Body1>

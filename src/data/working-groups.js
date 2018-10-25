@@ -1,6 +1,7 @@
 export const workingGroups = [
   {
     name: "Developers",
+    slug: 'developers',
     leader: "Einar Eymundsson",
     description:
       "The developer group hosts regular meetups on blockchain implementations, cryptography and other related topics",
@@ -34,6 +35,7 @@ export const workingGroups = [
   },
   {
     name: "Mining",
+    slug: 'mining',
     leader: "Atli Óðinsson",
     description:
       "The mining group works on educating people on how to set up their mining equipment. Meets up every two months.",
@@ -67,6 +69,7 @@ export const workingGroups = [
   },
   {
     name: "Legislation",
+    slug: 'legislation',
     leader: "Einar Eymundsson",
     color: "#FFD800",
     description:
@@ -100,6 +103,7 @@ export const workingGroups = [
   },
   {
     name: "PR and Social",
+    slug: "pr-and-social",
     leader: "Einar Eymundsson",
     color: "#B8D85E",
     description:
@@ -133,6 +137,7 @@ export const workingGroups = [
   },
   {
     name: "Education",
+    slug: 'education',
     leader: "Einar Eymundsson",
     color: "#FF6272",
     description:
@@ -166,6 +171,7 @@ export const workingGroups = [
   },
   {
     name: "Community",
+    slug: 'community',
     leader: "Einar Eymundsson",
     color: "#7E8AEE",
     description:

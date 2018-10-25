@@ -6,18 +6,18 @@ import SectionLegend from "../../components/SectionLegend";
 import Members from "../../components/Members";
 import WorkingGroups from "../../components/WorkingGroups";
 import AboutSection from "../../sections/AboutSection";
-import { workingGroups, aboutDevelopersGroup } from '../../data'
+import { workingGroups, aboutPRSocialGroup } from '../../data'
 
-const group = workingGroups.find(group => group.name === 'Developers')
+const group = workingGroups.find(group => group.name === 'PR and Social')
 
-const DevelopersGroupPage = () => (
+const PRSocialGroupPage = () => (
   <Layout>
     <Menu />
     <Section top="xlarge" bottom="xlarge" backgroundText="About">
       <SectionLegend number="01" text="About" textColor="dark" />
-      <AboutSection data={aboutDevelopersGroup} />
+      <AboutSection data={aboutPRSocialGroup} />
     </Section>
-    <Section top="xlarge" bottom="xlarge" backgroundText="board">
+    <Section top="xlarge" bottom="xlarge" backgroundText="members">
       <SectionLegend number="02" text="Board Members" textColor="dark" />
       <Members of={group} />
     </Section>
@@ -28,4 +28,4 @@ const DevelopersGroupPage = () => (
   </Layout>
 );
 
-export default DevelopersGroupPage;
+export default PRSocialGroupPage;

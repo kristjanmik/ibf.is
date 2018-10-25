@@ -18,6 +18,7 @@ const WorkingGroups = ({ groups }) => {
             members={group.members}
             description={group.description}
             leader={group.leader}
+            url={`/working-group/${group.slug}`}
           />
         </div>
       ))}

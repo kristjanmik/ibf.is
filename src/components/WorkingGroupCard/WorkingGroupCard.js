@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from 'gatsby'
 import styles from "./WorkingGroupCard.module.scss";
 import { workingGroups } from "../../data/working-groups";
 import Avatar from '../Avatar'
 import { WorkingGroupIcon } from './WorkingGroupIcon'
 import { Body2, H2, H3 } from '../Typography'
 
-const WorkingGroupCard = ({ name, color, members, description, leader }) => {
+const WorkingGroupCard = ({ name, color, members, description, leader, url = '/' }) => {
   return (
-    <div className={styles.root}>
+    <Link className={styles.root} to={url}>
       <div className={styles.top}>
         <WorkingGroupIcon color={color} />
         <div className={styles.members}>
@@ -20,7 +21,7 @@ const WorkingGroupCard = ({ name, color, members, description, leader }) => {
         <H3 bottom="xsmall" className={styles.subtitle}>Lead by {leader}</H3>
         <Body2>{description}</Body2>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -1,12 +1,8 @@
 import React from "react";
-import { workingGroups } from "../../data/working-groups";
 import styles from "./Members.module.scss";
 import MemberProfile from "./MemberProfile";
 
-const Members = ({ of }) => {
-  const group = workingGroups.find(
-    group => group.name && group.name.toLowerCase() === of.toLowerCase()
-  );
+const Members = ({ of: group }) => {
 
   if (!group || !group.members) {
     return null;
@@ -21,6 +17,7 @@ const Members = ({ of }) => {
           title={member.title}
           image={member.image}
           email={member.email}
+          themeColor={group.color}
         />
       ))}
     </div>

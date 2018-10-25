@@ -96,7 +96,7 @@
   padding-bottom: $ms1;
 
   @include respond-to(onlySmall) {
-    padding-bottom: 16px;
+    padding-bottom: 12px;
   }
 }
 

@@ -59,6 +59,17 @@
   }
 }
 
+.t-Body4 {
+  font-size: $t1;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include respond-to(onlySmall) {
+    font-size: 12px;
+  }
+}
+
 .t-monospace {
   font-family: $serif;
 }
