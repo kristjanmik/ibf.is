@@ -33,4 +33,16 @@
   display: flex;
   align-items: flex-end;
   margin-right: -32px;
+  position: relative;
+  
+  &::after {
+    content: '';
+    z-index: $z-level-1;
+    background: linear-gradient(to right, transparent 40%, $white 75%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 }

@@ -27,7 +27,7 @@ export const workingGroups = [
       },
       {
         name: "Priscilla Chan",
-        image: "https://randomuser.me/api/portraits/women/90.jpg",
+        image: "https://randomuser.me/api/portraits/women/11.jpg",
         title: "Managing Director",
         email: "noreply@ibf.is",
       },
@@ -61,7 +61,7 @@ export const workingGroups = [
       },
       {
         name: "Priscilla Chan",
-        image: "https://randomuser.me/api/portraits/women/90.jpg",
+        image: "https://randomuser.me/api/portraits/women/11.jpg",
         title: "Managing Director",
         email: "noreply@ibf.is",
       },
@@ -95,7 +95,7 @@ export const workingGroups = [
       },
       {
         name: "Priscilla Chan",
-        image: "https://randomuser.me/api/portraits/women/90.jpg",
+        image: "https://randomuser.me/api/portraits/women/11.jpg",
         title: "Managing Director",
         email: "noreply@ibf.is",
       },
@@ -129,7 +129,7 @@ export const workingGroups = [
       },
       {
         name: "Priscilla Chan",
-        image: "https://randomuser.me/api/portraits/women/90.jpg",
+        image: "https://randomuser.me/api/portraits/women/11.jpg",
         title: "Managing Director",
         email: "noreply@ibf.is",
       },
@@ -163,7 +163,7 @@ export const workingGroups = [
       },
       {
         name: "Priscilla Chan",
-        image: "https://randomuser.me/api/portraits/women/90.jpg",
+        image: "https://randomuser.me/api/portraits/women/11.jpg",
         title: "Managing Director",
         email: "noreply@ibf.is",
       },
@@ -197,7 +197,7 @@ export const workingGroups = [
       },
       {
         name: "Priscilla Chan",
-        image: "https://randomuser.me/api/portraits/women/90.jpg",
+        image: "https://randomuser.me/api/portraits/women/11.jpg",
         title: "Managing Director",
         email: "noreply@ibf.is",
       },

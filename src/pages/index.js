@@ -39,7 +39,7 @@ const IndexPage = () => (
       backgroundText="events"
       id="events"
     >
-      <SectionLegend number="03" text="Upcoming events" />
+      <SectionLegend number="03" text="Events" />
       <UpcomingEvents events={events} />
       <SectionFooter text="go to events" textColor="light" />
     </Section>
