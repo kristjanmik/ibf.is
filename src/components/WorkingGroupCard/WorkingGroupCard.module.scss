@@ -23,6 +23,12 @@
 .title {
   color: $blue;
   line-height: 2;
+
+  @include respond-to(md) {
+    .root:hover & {
+      text-decoration: underline;
+    }
+  }
 }
 
 .subtitle {
