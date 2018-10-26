@@ -37,8 +37,7 @@ class Slider extends Component {
   }
 
   render() {
-    const { totalSlides, activeIndex } = this.state;
-    var settings = {
+    const DEFAULT_SETTINGS = {
       infinite: true,
       speed: 300,
       slidesToShow: 4,
@@ -47,11 +46,13 @@ class Slider extends Component {
       beforeChange: this.handleChange,
       variableWidth: false,
       responsive: [
-        { breakpoint: 600, settings: { slidesToShow: 1 } },
+        { breakpoint: 600, settings: { slidesToShow: 1, infinite: false } },
         { breakpoint: 960, settings: { slidesToShow: 2 } },
         { breakpoint: 1300, settings: { slidesToShow: 3 } },
       ],
     };
+    const { settings = DEFAULT_SETTINGS } = this.props;
+    const { totalSlides, activeIndex } = this.state;
     return (
       <>
         <Slick {...settings}>{this.props.children}</Slick>
