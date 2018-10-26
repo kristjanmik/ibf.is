@@ -2,36 +2,43 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./EventCard.module.scss";
 import { workingGroups } from "../../data/working-groups";
-import { Body2, Body3, H2 } from "../Typography";
+import { Body2, Body4, H2 } from "../Typography";
 
+const splitNum = (text) => {
+  return [text.match(/\d+/g), text.match(/[a-zA-Z]+/g), ]
+}
 const EventCard = ({
   workingGroupName,
   title,
   subtitle,
   text,
-  date = "01 jan",
+  date,
   color,
+  url,
 }) => {
   const group = workingGroups.find(
     group => group.name === workingGroupName
   );
 
   if (!group) return null;
+  
+  const [dateNum, dateStr] = splitNum(date)
 
   return (
-    <div className={styles.root}>
+    <a href={url} target="_blank" className={styles.root}>
       <div className={styles.date} style={{ background: color }}>
-        <span>{date}</span>
+        <p className={styles.dateNumber}>{dateNum}</p>
+        <p className={styles.dateString}>{dateStr}</p>
       </div>
       <div className={styles.decorator} style={{ color }}>{group.name}</div>
       <H2 bold bottom="xsmall" className={styles.title}>
         {title}
       </H2>
-      <Body3 bottom="small" className={styles.subtitle}>
+      <Body4 bottom="small" className={styles.subtitle}>
         {subtitle}
-      </Body3>
+      </Body4>
       <Body2 light>{text}</Body2>
-    </div>
+    </a>
   );
 };
 

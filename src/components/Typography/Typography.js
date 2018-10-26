@@ -85,5 +85,7 @@ export const Body3 = createStyle("p", "t-Body3", {
   monospace: "t-monospace",
 });
 
-export const Body4 = createStyle("p", "t-Body4");
+export const Body4 = createStyle("p", "t-Body4", {
+  uppercase: "t-uppercase",
+});
 

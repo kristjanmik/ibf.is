@@ -15,10 +15,12 @@ const UpcomingEvents = ({ events }) => {
           <EventCard
             key={event.title + String(Math.random()).substr(4, 6)}
             workingGroupName={event.workingGroupName}
+            date={event.date}
             title={event.title}
             subtitle={event.subtitle}
             text={event.text}
             color={event.color}
+            url={event.url}
           />
         ))}
       </Slider>

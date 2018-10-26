@@ -1,14 +1,7 @@
 import React from "react";
 import styles from "./RecentPosts.module.scss";
 import PostCard, { FeaturedPostCard } from "../PostCard";
-
-function truncate(maxChars = 100) {
-  if (this.length <= maxChars) {
-    return this;
-  }
-  const subString = this.substr(0, maxChars - 1);
-  return subString.substr(0, subString.lastIndexOf(" ")) + "...";
-}
+import { truncateText } from "../../utils/truncateText";
 
 const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
   if (!_posts || !Array.isArray(_posts)) {
@@ -27,7 +20,7 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
             <FeaturedPostCard
               key={post.title}
               title={post.title}
-              text={truncate.apply(post.text)}
+              text={truncateText.apply(post.text)}
               imageUrl={post.image}
               date={post.date}
               isFeatured
@@ -39,7 +32,7 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
           <PostCard
             key={post.title}
             title={post.title}
-            text={truncate.apply(post.text)}
+            text={truncateText.apply(post.text)}
             date={post.date}
           />
         ))}

@@ -13,7 +13,7 @@ const MemberProfile = ({ name, title, email, image, themeColor }) => {
         <div className={styles.imageOverlay} />
       </div>
       <div className={styles.content}>
-        <Body4 className={styles.title}>
+        <Body4 uppercase className={styles.title}>
           <span style={{ color: themeColor }}>{title}</span>
         </Body4>
         <Body2 bold className={styles.name}>{name}</Body2>
