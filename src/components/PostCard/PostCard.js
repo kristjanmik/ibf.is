@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./PostCard.module.scss";
 import { H2, Body3 } from "../Typography";
-import cn from "classnames";
+import Arrow from '../Arrow';
 
-const PostCard = ({ title, text, imageUrl, url, isFeatured }) => (
-  <div className={cn(styles.root, { [styles.featured]: isFeatured })}>
+const PostCard = ({ title, text, url }) => (
+  <a href={url} target="_blank" className={styles.root}>
     <H2 bottom="small">{title}</H2>
     <Body3 light>{text}</Body3>
-  </div>
+    <Arrow className={styles.arrow} />
+  </a>
 );
 
 export default PostCard;

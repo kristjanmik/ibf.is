@@ -34,6 +34,7 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
             title={post.title}
             text={truncateText.apply(post.text)}
             date={post.date}
+            url={post.url}
           />
         ))}
       </div>

@@ -4,7 +4,7 @@ import { H2, Body3 } from "../Typography";
 import Arrow from "../Arrow";
 
 const FeaturedPostCard = ({ title, text, imageUrl, url }) => (
-  <div className={styles.root}>
+  <a href={url} target="_blank" className={styles.root}>
     <div
       className={styles.image}
       style={{ backgroundImage: `url(${imageUrl})` }}
@@ -14,7 +14,7 @@ const FeaturedPostCard = ({ title, text, imageUrl, url }) => (
       <Body3 light>{text}</Body3>
       <Arrow className={styles.arrow} top="medium" />
     </div>
-  </div>
+  </a>
 );
 
 export default FeaturedPostCard;
