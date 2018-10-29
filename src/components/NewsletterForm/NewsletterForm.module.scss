@@ -108,11 +108,12 @@
   @include respond-to(md) {
     padding: $ms1;
     display: flex;
+    cursor: pointer;
     width: between(40px, 72px, $sm, $xlg);
     margin-left: $ms1;
     &:hover {
       .submitArrow {
-        transform: translateX(12px);
+        transform: translateX(8px);
       }
     }
   }

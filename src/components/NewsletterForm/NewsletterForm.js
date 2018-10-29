@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import cn from "classnames";
 import styles from "./NewsletterForm.module.scss";
 import { H2, Body3 } from "../Typography";
@@ -11,6 +11,7 @@ class NewsletterForm extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.inputRef = createRef();
     this.state = {
       isSubmitted: false,
       showError: false,
@@ -19,9 +20,13 @@ class NewsletterForm extends Component {
 
   handleSubmit(event, onSubmit) {
     const { isSubmitted } = this.state;
-    const isValidEmail = validateEmail(
-      event.nativeEvent.target[0] && event.nativeEvent.target[0].value
-    );
+    const value = this.inputRef.current.value
+  
+    if (!value) {
+      return event.preventDefault();
+    }
+
+    const isValidEmail = validateEmail(value);
 
     if (isValidEmail) {
       this.setState(
@@ -41,7 +46,7 @@ class NewsletterForm extends Component {
   render() {
     const { placeholder, onSubmit = noop, inHero } = this.props;
     const { isSubmitted, showError } = this.state;
-  
+
     return isSubmitted ? (
       <div className={styles.thanks}>Thank you for joining our newsletter.</div>
     ) : (
@@ -51,7 +56,7 @@ class NewsletterForm extends Component {
           className={cn(styles.root, inHero && styles.inHero)}
         >
           <div className={cn(styles.inputWrap, showError && styles.error)}>
-            <input className={styles.input} placeholder={placeholder} />
+            <input ref={this.inputRef} className={styles.input} placeholder={placeholder} />
           </div>
           <button type="button" className={styles.submit} type="submit">
             <H2 className={styles.submitText}>Join</H2>
