@@ -8,7 +8,7 @@ export const Map = ({}) => (
     viewBox="0 0 1589.6 1150.8"
     className={styles.root}
   >
-    <image xlinkHref={world} x="0" y="0" opacity="0.4"/>
+    <image xlinkHref={world} x="0" y="0" opacity="0.4" width="1589.6" height="1150.8"/>
     <g id="location" fill="#f61740">
       <circle cx="867.6" cy="299.2" r="43.6" opacity=".6">
         <animate
