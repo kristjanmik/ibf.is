@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 const ScrollLink = ({ to, children, className }) => (
   <a
-    href="#"
+    href="/#"
     className={cn(className)}
     onClick={() =>
       scrollToElement(to, {
