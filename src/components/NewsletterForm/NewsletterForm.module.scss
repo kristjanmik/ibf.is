@@ -12,12 +12,18 @@
   @include respond-to(md) {
     display: flex;
     width: between(200px, 550px, $sm, $xlg);
-    
+
     &.inHero {
       padding-top: $ms6;
       padding-bottom: $ms2;
     }
   }
+}
+
+.thanks {
+  font-size: $t3;
+  padding-top: $ms6;
+  padding-bottom: $ms2;
 }
 
 .inputWrap {
@@ -44,6 +50,17 @@
     }
   }
 
+  &.error {
+    border-color: $red;
+    &::before {
+      color: $red;
+    }
+
+    .input {
+      color: $red;
+    }
+  }
+
   .inHero & {
     border: none;
   }
@@ -61,7 +78,7 @@
   font-weight: 500;
   color: $blue;
   width: 100%;
-  
+
   @include respond-to(md) {
     font-size: $t3;
   }
@@ -128,7 +145,7 @@
 
   .inHero + & {
     display: block;
-  
+
     @include respond-to(onlySmall) {
       display: none;
     }

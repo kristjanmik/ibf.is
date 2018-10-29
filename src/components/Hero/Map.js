@@ -25,8 +25,8 @@ export const Map = ({}) => (
         cy="299.2"
         r="12"
         stroke="#fff"
-        stroke-miterlimit="10"
-        stroke-width="3.5"
+        strokeMiterlimit="10"
+        strokeWidth="3.5"
       />
     </g>
   </svg>
