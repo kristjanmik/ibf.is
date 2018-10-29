@@ -1,7 +1,15 @@
+@import '../../utils/responsive';
+
 .root {
   position: absolute;
-  top: 25%;
-  right: 0;
-  width: 60%;
+  top: 15%;
+  width: 150%;
+  right: -45%;
   z-index: -1;
+  
+  @include respond-to(md) {
+    top: 25%;
+    width: 60%;
+    right: 0;
+  }
 }
