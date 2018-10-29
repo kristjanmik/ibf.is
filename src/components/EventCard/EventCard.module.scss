@@ -5,7 +5,8 @@
 $dateOffset: 20px;
 
 .root {
-  width: between(275px, 300px, $sm, $xlg);
+  max-width: between(275px, 350px, $sm, $xlg);
+  width: calc(100% - 30px);
   background: $white;
   margin: $dateOffset auto auto;
   display: block;
@@ -13,12 +14,12 @@ $dateOffset: 20px;
   position: relative;
   padding: between(26px, 40px, $sm, $xlg) between(20px, 30px, $sm, $xlg);
   height: 512px;
-
+  
   @include respond-to(onlySmall) {
-    width: 80%;
+    height: 400px;
     padding: 40px 30px;
   }
-
+  
   &::after {
     content: '';
     position: absolute;
@@ -31,7 +32,7 @@ $dateOffset: 20px;
 }
 
 .decorator {
-  padding: 36px 0;
+  padding: $ms3 0 $ms2 0;
   position: relative;
   display: flex;
   align-items: center;

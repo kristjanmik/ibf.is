@@ -6,6 +6,7 @@ import { workingGroups } from "../../data/working-groups";
 import Avatar from "../Avatar";
 import { WorkingGroupIcon } from "./WorkingGroupIcon";
 import { Body2, H2, H3 } from "../Typography";
+import Arrow from '../Arrow';
 
 const WorkingGroupCard = ({
   name,
@@ -36,7 +37,8 @@ const WorkingGroupCard = ({
         <H3 bottom="xsmall" className={styles.subtitle}>
           Lead by {leader}
         </H3>
-        <Body2>{description}</Body2>
+        <Body2 bottom="xsmall">{description}</Body2>
+        <Arrow className={styles.arrow} />
       </div>
     </Link>
   );

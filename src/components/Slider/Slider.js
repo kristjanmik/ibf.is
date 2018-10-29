@@ -40,15 +40,17 @@ class Slider extends Component {
     const DEFAULT_SETTINGS = {
       infinite: true,
       speed: 300,
-      slidesToShow: 4,
+      slidesToShow: 5,
       slidesToScroll: 1,
       dots: false,
       beforeChange: this.handleChange,
       variableWidth: false,
+      arrows: true,
       responsive: [
-        { breakpoint: 600, settings: { slidesToShow: 1, infinite: false } },
+        { breakpoint: 600, settings: { slidesToShow: 1.25, infinite: false, arrows: false } },
         { breakpoint: 960, settings: { slidesToShow: 2 } },
         { breakpoint: 1300, settings: { slidesToShow: 3 } },
+        { breakpoint: 1800, settings: { slidesToShow: 4 } },
       ],
     };
     const { settings = DEFAULT_SETTINGS } = this.props;

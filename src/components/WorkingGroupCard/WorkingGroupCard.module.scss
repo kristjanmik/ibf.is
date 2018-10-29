@@ -6,6 +6,7 @@
   background: $white;
   padding: $ms3 $ms3 $ms4;
   margin-bottom: $ms3;
+  position: relative;
   display: block;
   overflow: hidden;
 
@@ -27,7 +28,6 @@
 
   @include respond-to(md) {
     .root:hover & {
-      text-decoration: underline;
     }
   }
 }
@@ -51,5 +51,26 @@
     right: 0;
     top: 0;
     bottom: 0;
+  }
+}
+
+.arrow {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.25s, transform 0.25s 0.25s;
+
+  @include respond-to(md) {
+    .root:hover & {
+      opacity: 1;
+      transform: translateX(0%);
+      transition: opacity 0.3s, transform 0.25s;
+    }
+  }
+
+  @include respond-to(onlySmall) {
+    display: none;
   }
 }

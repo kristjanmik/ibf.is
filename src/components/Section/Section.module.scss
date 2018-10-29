@@ -8,8 +8,8 @@
     content: "";
     display: block;
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: between(100px, 150px, $sm, $xlg);
+    height: between(100px, 150px, $sm, $xlg);
     top: 0;
     z-index: -1;
     background-image: url("../../images/section-dots-decorator.svg");

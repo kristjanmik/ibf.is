@@ -8,14 +8,14 @@
   @include respond-to(md) {
     display: flex;
     min-height: 545px;
-    padding-bottom: $ms4;
+    margin-bottom: $ms4;
   }
 }
 
 .posts {
   display: flex;
   overflow: auto;
-  padding: 32px 16px;
+  padding: 40px 32px 16px;
   
   @include respond-to(md) {
     flex: 0 1 50%;
