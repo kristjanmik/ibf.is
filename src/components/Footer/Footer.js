@@ -9,33 +9,45 @@ import telegramIcon from "../../images/social/telegram.svg";
 import instagramIcon from "../../images/social/instagram.svg";
 import youtubeIcon from "../../images/social/youtube.svg";
 
+
 const footer = {
   resources: [
     {
-      title: "Legality of Bitcoin in Iceland",
-      url: "/",
+      title: "Bylaws",
+      url: "https://secure-storage.ibf.is/Bylaws.pdf",
     },
     {
-      title: "Iceland in the news",
-      url: "/",
-    },
-    {
-      title: "Join a working group",
-      url: "/",
+      title: "Executive Summary",
+      url: "https://secure-storage.ibf.is/Executive%20Summary.pdf",
     },
   ],
+  //@TODO Enable when content is ready
+  // resources: [
+  //   {
+  //     title: "Legality of Bitcoin in Iceland",
+  //     url: "/",
+  //   },
+  //   {
+  //     title: "Iceland in the news",
+  //     url: "/",
+  //   },
+  //   {
+  //     title: "Join a working group",
+  //     url: "/",
+  //   },
+  // ],
   learn: [
-    {
-      title: "Getting started",
-      url: "/",
-    },
+    // {
+    //   title: "Getting started",
+    //   url: "/",
+    // },
     {
       title: "What is Cryptocurrency?",
-      url: "/",
+      url: "https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies",
     },
     {
       title: "What is Blockchain?",
-      url: "/",
+      url: "https://www.ibm.com/blockchain/what-is-blockchain",
     },
   ],
 };
@@ -87,7 +99,7 @@ const Footer = () => (
         <ul className={styles.list}>
           {footer.resources.map(link => (
             <li key={link.title}>
-              <a href={link.url}>{link.title}</a>
+              <a href={link.url} target="_blank">{link.title}</a>
             </li>
           ))}
         </ul>
@@ -99,7 +111,7 @@ const Footer = () => (
         <ul className={styles.list}>
           {footer.learn.map(link => (
             <li key={link.title}>
-              <a href={link.url}>{link.title}</a>
+              <a href={link.url} target="_blank">{link.title}</a>
             </li>
           ))}
         </ul>
@@ -109,7 +121,7 @@ const Footer = () => (
           Contact
         </H3>
         <ul className={styles.list}>
-          <li>ibf@ibf.is</li>
+          <li><a href="mailto:ibf@ibf.is">ibf@ibf.is</a></li>
           <li>Engjateigur 3</li>
           <li>105 Reykjavík</li>
         </ul>
@@ -130,7 +142,7 @@ const Footer = () => (
       </div>
     </div>
     <div className={styles.toes}>
-     <Body3>© 2015 - {currentYear() || "present"} Icelandic Blockchain Foundation</Body3>
+      <Body3>© 2015 - {currentYear() || "present"} Icelandic Blockchain Foundation</Body3>
     </div>
   </>
 );
