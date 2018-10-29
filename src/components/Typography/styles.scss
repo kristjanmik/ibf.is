@@ -9,7 +9,6 @@
 
 .t-h1 {
   font-size: $t6;
-  margin: 0;
   line-height: 1.35;
 
   @include respond-to(onlySmall) {
@@ -43,7 +42,6 @@
 
 .t-Body2 {
   font-size: $t3;
-  margin: 0;
 
   @include respond-to(onlySmall) {
     font-size: 14px;
@@ -52,7 +50,6 @@
 
 .t-Body3 {
   font-size: $t2;
-  margin: 0;
 
   @include respond-to(onlySmall) {
     font-size: 14px;
@@ -62,7 +59,6 @@
 .t-Body4 {
   font-size: $t1;
   font-weight: 600;
-  margin: 0;
 
   @include respond-to(onlySmall) {
     font-size: 12px;
