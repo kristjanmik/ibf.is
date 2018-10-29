@@ -9,4 +9,6 @@ export {
   aboutLegislationGroup,
   aboutMiningGroup,
   aboutPRSocialGroup,
+  aboutBitcoinGroup,
+  aboutAuroracoinGroup,
 } from "./about";
