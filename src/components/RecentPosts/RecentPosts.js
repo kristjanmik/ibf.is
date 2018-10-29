@@ -23,6 +23,7 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
               text={truncateText.apply(post.text)}
               imageUrl={post.image}
               date={post.date}
+              url={post.url}
               isFeatured
             />
           ))}
