@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "ibf-website",
+  "description": "Icelandic Blockchain Foundation website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "IBF <ibf@ibf.is>",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.0.19",
@@ -19,7 +19,7 @@
     "scroll-to-element": "^2.0.2"
   },
   "keywords": [
-    "gatsby"
+    "ibf"
   ],
   "license": "MIT",
   "scripts": {
@@ -34,6 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/icelandic-blockchain-foundation/ibf.is"
   }
 }
