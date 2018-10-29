@@ -87,6 +87,11 @@
     display: flex;
     width: between(40px, 72px, $sm, $xlg);
     margin-left: $ms1;
+    &:hover {
+      .submitArrow {
+        transform: translateX(12px);
+      }
+    }
   }
 }
 
@@ -99,6 +104,8 @@
 .submitArrow {
   width: 20px;
   height: 12px;
+  transform: translateX(0);
+  transition: transform 0.4s;
 
   @include respond-to(onlySmall) {
     position: absolute;
