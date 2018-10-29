@@ -7,10 +7,12 @@
   color: $white;
   @include horizontalSpacing();
   @include gradient();
+  position: relative;
+  z-index: $z-level-1;
   padding-top: between(160px, 360px, $sm, $xlg);
   
   @include respond-to(md) {
-    min-height: 100vh;
+    min-height: 90vh;
     padding-bottom: $ms4;
   }
 }

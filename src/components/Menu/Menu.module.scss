@@ -16,6 +16,7 @@
   &.inHero {
     color: $white;
     position: absolute;
+    z-index: $z-level-2;
   }
 }
 
@@ -28,13 +29,13 @@
 
   &::after {
     background: currentColor;
-    bottom: -8px;
+    bottom: -6px;
     content: "";
     height: 1px;
     position: absolute;
     transform-origin: left;
     transform: scaleX(0);
-    transition: transform 0.25s;
+    transition: transform 0.4s;
     width: 100%;
   }
 
