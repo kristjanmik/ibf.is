@@ -11,7 +11,7 @@ const PostCard = ({ title, text, url }) => (
     className={styles.root}
   >
     <H2 bottom="small">{title}</H2>
-    <Body3 light>{text}</Body3>
+    <Body3 bottom="small" light>{text}</Body3>
     <Arrow className={styles.arrow} />
   </a>
 );

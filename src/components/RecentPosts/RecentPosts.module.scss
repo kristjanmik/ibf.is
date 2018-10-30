@@ -6,7 +6,8 @@
     margin-right: -16px;
   }  
   @include respond-to(md) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     min-height: 545px;
     margin-bottom: $ms4;
   }
