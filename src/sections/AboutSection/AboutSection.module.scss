@@ -19,6 +19,7 @@
   @include respond-to(md) {
     flex: 0 1 50%;
     margin-right: $ms4;
+    min-height: 450px;
   }
 }
 

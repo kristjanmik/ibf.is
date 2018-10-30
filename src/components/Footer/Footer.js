@@ -99,7 +99,7 @@ const Footer = () => (
         <ul className={styles.list}>
           {footer.resources.map(link => (
             <li key={link.title}>
-              <a href={link.url} target="_blank">{link.title}</a>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
             </li>
           ))}
         </ul>
@@ -111,7 +111,7 @@ const Footer = () => (
         <ul className={styles.list}>
           {footer.learn.map(link => (
             <li key={link.title}>
-              <a href={link.url} target="_blank">{link.title}</a>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
             </li>
           ))}
         </ul>

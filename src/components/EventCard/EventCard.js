@@ -4,9 +4,9 @@ import styles from "./EventCard.module.scss";
 import { workingGroups } from "../../data/working-groups";
 import { Body2, Body4, H2 } from "../Typography";
 
-const splitNum = (text) => {
-  return [text.match(/\d+/g), text.match(/[a-zA-Z]+/g), ]
-}
+const splitNum = text => {
+  return [text.match(/\d+/g), text.match(/[a-zA-Z]+/g)];
+};
 const EventCard = ({
   workingGroupName,
   title,
@@ -16,21 +16,26 @@ const EventCard = ({
   color,
   url,
 }) => {
-  const group = workingGroups.find(
-    group => group.name === workingGroupName
-  );
+  const group = workingGroups.find(group => group.name === workingGroupName);
 
   if (!group) return null;
-  
-  const [dateNum, dateStr] = splitNum(date)
+
+  const [dateNum, dateStr] = splitNum(date);
 
   return (
-    <a href={url} target="_blank" className={styles.root}>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.root}
+    >
       <div className={styles.date} style={{ background: color }}>
         <p className={styles.dateNumber}>{dateNum}</p>
         <p className={styles.dateString}>{dateStr}</p>
       </div>
-      <div className={styles.decorator} style={{ color }}>{group.name}</div>
+      <div className={styles.decorator} style={{ color }}>
+        {group.name}
+      </div>
       <H2 bold bottom="xsmall" className={styles.title}>
         {title}
       </H2>
