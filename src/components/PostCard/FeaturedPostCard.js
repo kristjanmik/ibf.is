@@ -9,7 +9,12 @@ const FeaturedPostCard = ({ title, text, imageUrl, url }) => (
       className={styles.image}
       style={{ backgroundImage: `url(${imageUrl})` }}
     />
-    <a href={url} target="blank" rel="noopener norefferer" className={styles.card}>
+    <a
+      href={url}
+      target="blank"
+      rel="noopener noreferrer"
+      className={styles.card}
+    >
       <H2 bottom="small">{title}</H2>
       <Body3 light>{text}</Body3>
       <Arrow className={styles.arrow} top="medium" />

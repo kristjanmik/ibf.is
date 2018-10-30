@@ -26,7 +26,7 @@ const EventCard = ({
     <a
       href={url}
       target="_blank"
-      rel="noopener norefferer"
+      rel="noopener noreferrer"
       className={styles.root}
     >
       <div className={styles.date} style={{ background: color }}>

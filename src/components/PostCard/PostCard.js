@@ -7,7 +7,7 @@ const PostCard = ({ title, text, url }) => (
   <a
     href={url}
     target="_blank"
-    rel="noopener norefferer"
+    rel="noopener noreferrer"
     className={styles.root}
   >
     <H2 bottom="small">{title}</H2>
