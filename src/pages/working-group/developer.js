@@ -18,7 +18,7 @@ const DevelopersGroupPage = () => (
       <AboutSection data={aboutDevelopersGroup} />
     </Section>
     <Section top="xlarge" bottom="xlarge" backgroundText="board">
-      <SectionLegend number="02" text="Board Members" textColor="dark" />
+      <SectionLegend number="02" text="Members" textColor="dark" />
       <Members of={group} />
     </Section>
     <Section colored top="xlarge" bottom="xlarge" backgroundText="groups">

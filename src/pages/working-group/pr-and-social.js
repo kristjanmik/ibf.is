@@ -18,7 +18,7 @@ const PRSocialGroupPage = () => (
       <AboutSection data={aboutPRSocialGroup} />
     </Section>
     <Section top="xlarge" bottom="xlarge" backgroundText="members">
-      <SectionLegend number="02" text="Board Members" textColor="dark" />
+      <SectionLegend number="02" text="Members" textColor="dark" />
       <Members of={group} />
     </Section>
     <Section colored top="xlarge" bottom="xlarge" backgroundText="groups">
