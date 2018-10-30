@@ -14,7 +14,8 @@
   background: $white;
   box-shadow: 0 9px 21px 0 rgba(214, 214, 214, 0.5);
   padding: 40px 18px;
-  width: 100%;  
+  width: 100%;
+  display: block;
 
   @include respond-to(lg) {
     margin-left: auto;
