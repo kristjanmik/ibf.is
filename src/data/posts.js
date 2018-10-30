@@ -4,7 +4,7 @@ export const posts = [
     title: "ISX.is becomes a registered financial entity",
     text:
       "A cryptocurrency exchange in Iceland received its license from the Financial Supervisory Authority that enables it to operate in full compliance of the Icelandic law.",
-    image: "http://www.vb.is/media/cache/6b/f8/6bf8081b458758b6f82a6c5baba4f2d4.jpg",
+    image: "https://assets.ibf.is/6bf8081b458758b6f82a6c5baba4f2d4.jpg",
     url: "http://www.vb.is/frettir/skiptimynt-verdur-skradur-thjonustuveitandi/149471/",
     isFeatured: true,
   },

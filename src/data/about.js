@@ -10,7 +10,7 @@ export const aboutIBF = {
     {
       title: "Serve",
       text:
-        "The Foundation serves as a self-governed council for cryptocurrencies and blockchain entities in Iceland",
+        "The Foundation serves as a self-governed council for cryptocurrencies and blockchain entities in Iceland.",
     },
     {
       title: "Educate",
@@ -40,7 +40,7 @@ export const aboutDevelopersGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
@@ -60,7 +60,7 @@ export const aboutCommunityGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
@@ -80,7 +80,7 @@ export const aboutEducationGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
@@ -100,7 +100,7 @@ export const aboutLegislationGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
@@ -120,7 +120,7 @@ export const aboutMiningGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
@@ -140,7 +140,7 @@ export const aboutPRSocialGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
@@ -160,7 +160,7 @@ export const aboutBitcoinGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
@@ -181,7 +181,7 @@ export const aboutAuroracoinGroup = {
     {
       title: "Meetups",
       text:
-        "You can see the planned meetups by this group on the frontpage",
+        "You can see the planned meetups by this group on the frontpage.",
     }
   ],
 };
