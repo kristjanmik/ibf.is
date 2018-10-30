@@ -1,7 +1,7 @@
 const kristjanmik = {
-  name: "Kristján Mikaelsson",
+  name: "Kristján Ingi Mikaelsson",
   image: "https://assets.ibf.is/kristjan.jpg",
-  title: "Managing Director",
+  title: "Managing Director, IBF",
   email: "kristjan@ibf.is",
 };
 
@@ -9,84 +9,84 @@ const einar = {
   name: "Einar Alexander Eymundsson",
   image: "https://assets.ibf.is/einar.jpg",
   title: "Software Specialist",
-  email: "noreply@ibf.is",
+  email: "einaralex@gmail.com",
 }
 
 const gisli = {
   name: "Gísli Kristjánsson",
   image: "https://assets.ibf.is/gisli.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "Board Member, IBF",
+  email: "",
 }
 
 const atli = {
   name: "Atli Óðinsson",
   image: "https://assets.ibf.is/atli.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "",
+  email: "atlipetur@gmail.com",
 }
 
 const daniel = {
   name: "Daniel F. Jonsson",
   image: "https://assets.ibf.is/daniel.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "",
+  email: "",
 }
 
 const petur = {
   name: "Pétur Árnason",
   image: "https://assets.ibf.is/petur.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "Board Member, IBF",
+  email: "petur@ibf.is",
 }
 
 const hlynur = {
   name: "Hlynur Þór Björnsson",
   image: "https://assets.ibf.is/hlynur.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "Chairman, IBF",
+  email: "hlynur@ibf.is",
 }
 
 const hermann = {
   name: "Hermann Ingi Finnbjörnsson",
   image: "https://assets.ibf.is/hermann.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "Board Member, IBF",
+  email: "",
 }
 
 const chris = {
   name: "Chris McClure",
   image: "https://assets.ibf.is/chris.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "Board Member, IBF",
+  email: "",
 }
 
 const brian = {
   name: "Brian Goldberg",
   image: "https://assets.ibf.is/brian.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "",
+  email: "briandgoldberg@gmail.com",
 }
 
 const jason = {
   name: "Jason",
   image: "https://assets.ibf.is/jason.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "",
+  email: "",
 }
 
 const erna = {
   name: "Erna Sigurðardóttir",
   image: "https://assets.ibf.is/erna.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "",
+  email: "",
 }
 
 const mikki = {
   name: "Mikjáll Hannes Zuntag",
   image: "https://assets.ibf.is/mikki.jpg",
-  title: "Managing Director",
-  email: "noreply@ibf.is",
+  title: "",
+  email: "",
 }
 
 export const workingGroups = [
@@ -154,7 +154,6 @@ export const workingGroups = [
       gisli,
       chris,
       atli,
-      brian,
       kristjanmik,
     ],
   },

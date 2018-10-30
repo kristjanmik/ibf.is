@@ -8,7 +8,7 @@ import WorkingGroups from "../../components/WorkingGroups";
 import AboutSection from "../../sections/AboutSection";
 import { workingGroups, aboutCommunityGroup } from '../../data'
 
-const group = workingGroups.find(group => group.name === 'Community')
+const group = workingGroups.find(group => group.name === 'Community Engagement')
 
 const CommunityPage = () => (
   <Layout>

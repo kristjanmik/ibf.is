@@ -8,7 +8,7 @@ import WorkingGroups from "../../components/WorkingGroups";
 import AboutSection from "../../sections/AboutSection";
 import { workingGroups, aboutDevelopersGroup } from '../../data'
 
-const group = workingGroups.find(group => group.name === 'Developers')
+const group = workingGroups.find(group => group.name === 'Developer')
 
 const DevelopersGroupPage = () => (
   <Layout>
