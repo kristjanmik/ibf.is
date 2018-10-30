@@ -5,7 +5,7 @@ import { H2, Body3 } from "../Typography";
 import { SubmitArrow } from "./SubmitArrow";
 import { validateEmail } from "../../utils/validateEmail";
 
-const noop = () => {};
+const noop = () => { };
 
 class NewsletterForm extends Component {
   constructor(props) {
@@ -18,29 +18,44 @@ class NewsletterForm extends Component {
     };
   }
 
-  handleSubmit(event, onSubmit) {
+  async handleSubmit(event, onSubmit) {
     const { isSubmitted } = this.state;
     const value = this.inputRef.current.value
-  
-    if (!value) {
-      return event.preventDefault();
-    }
+
+    event.preventDefault();
 
     const isValidEmail = validateEmail(value);
 
-    if (isValidEmail) {
-      this.setState(
-        {
-          isSubmitted: !isSubmitted,
-        },
-        () => onSubmit()
-      );
-    } else {
-      event.preventDefault();
+    const fail = () => {
       this.setState({
         showError: true,
       });
     }
+
+    if (!isValidEmail) {
+      return fail();
+    }
+
+    const rawResponse = await fetch('https://old.ibf.is/newsletter/signup-api', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email: value })
+    });
+    const { success } = await rawResponse.json();
+
+    if (!success) {
+      fail()
+    }
+
+    this.setState(
+      {
+        isSubmitted: !isSubmitted,
+      },
+      () => onSubmit()
+    );
   }
 
   render() {
@@ -50,24 +65,24 @@ class NewsletterForm extends Component {
     return isSubmitted ? (
       <div className={styles.thanks}>Thank you for joining our newsletter.</div>
     ) : (
-      <>
-        <form
-          onSubmit={event => this.handleSubmit(event, onSubmit)}
-          className={cn(styles.root, inHero && styles.inHero)}
-        >
-          <div className={cn(styles.inputWrap, showError && styles.error)}>
-            <input ref={this.inputRef} className={styles.input} placeholder={placeholder} />
-          </div>
-          <button type="button" className={styles.submit} type="submit">
-            <H2 className={styles.submitText}>Join</H2>
-            <SubmitArrow className={styles.submitArrow} />
-          </button>
-        </form>
-        <Body3 className={styles.fineprint} light bottom="large">
-          Monthly updates and news, never spam
+        <>
+          <form
+            onSubmit={event => this.handleSubmit(event, onSubmit)}
+            className={cn(styles.root, inHero && styles.inHero)}
+          >
+            <div className={cn(styles.inputWrap, showError && styles.error)}>
+              <input ref={this.inputRef} className={styles.input} placeholder={placeholder} />
+            </div>
+            <button type="button" className={styles.submit} type="submit">
+              <H2 className={styles.submitText}>Join</H2>
+              <SubmitArrow className={styles.submitArrow} />
+            </button>
+          </form>
+          <Body3 className={styles.fineprint} light bottom="large">
+            Monthly updates and news, never spam
         </Body3>
-      </>
-    );
+        </>
+      );
   }
 }
 
