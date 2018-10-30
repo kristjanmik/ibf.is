@@ -16,6 +16,7 @@
   padding: 40px 18px;
   width: 100%;
   display: block;
+  min-height: 315px;
 
   @include respond-to(lg) {
     margin-left: auto;
