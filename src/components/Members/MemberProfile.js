@@ -17,7 +17,7 @@ const MemberProfile = ({ name, title, email, image, themeColor }) => {
           <span style={{ color: themeColor }}>{title}</span>
         </Body4>
         <Body2 bold className={styles.name}>{name}</Body2>
-        <Body2 className={styles.email}>{email}</Body2>
+        <Body2 className={styles.email}><a href={`mailto:${email}`}>{email}</a></Body2>
       </div>
     </div>
   );
