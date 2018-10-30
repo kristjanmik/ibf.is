@@ -16,7 +16,7 @@ export const events = [
     title: "Community Engagement Meeting",
     subtitle: "8:00 PM GMT @ Miami Bar",
     text:
-      "The community engagement committee holds its first meeting after a successful run of a crypto scavenger hunt in October.",
+      "The community engagement committee holds its first meeting after a successful run of a crypto scavenger hunt in September.",
     color: "#FF7816",
     url:
       "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/255358964/",

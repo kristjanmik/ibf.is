@@ -133,7 +133,7 @@ export const workingGroups = [
   {
     name: "PR and Social",
     slug: "pr-and-social",
-    leader: "Einar Eymundsson",
+    leader: "Chris McClure",
     color: "#B8D85E",
     description:
       "Oversees outreach, public relations and social media for the Foundation.",
