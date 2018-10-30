@@ -41,17 +41,17 @@ const IndexPage = () => (
     >
       <SectionLegend number="03" text="Events" />
       <UpcomingEvents events={events} />
-      <SectionFooter text="go to events" textColor="light" />
+      <SectionFooter text="go to events" textColor="light" url="#events" />
     </Section>
     <Section top="xlarge" bottom="xlarge" backgroundText="posts" id="posts">
       <SectionLegend number="04" text="Recent posts" textColor="dark" />
       <RecentPosts posts={posts} />
-      <SectionFooter text="visit blog" textColor="dark" />
+      <SectionFooter text="visit blog" textColor="dark" url="https://medium.com/icelandic-blockchain-foundation" />
     </Section>
     <Section colored top="xlarge" bottom="xlarge" backgroundText="groups" id="working-groups">
       <SectionLegend number="05" text="Working Groups" />
       <WorkingGroups groups={workingGroups} />
-      <SectionFooter text="visit working groups" textColor="light" />
+      <SectionFooter text="visit working groups" textColor="light" url="#working-groups" />
     </Section>
     <Section top="huge" bottom="huge" id="newsletter">
       <SectionLegend number="06" text="Newsletter" textColor="dark" />
