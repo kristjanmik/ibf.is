@@ -40,7 +40,7 @@
   &::after {
     content: '';
     z-index: $z-level-1;
-    background: linear-gradient(to right, transparent 40%, $white 75%);
+    background: linear-gradient(to right, rgba($white, 0) 40%, $white 75%);
     position: absolute;
     left: 0;
     right: 0;
