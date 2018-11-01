@@ -1,16 +1,5 @@
 export const events = [
   {
-    date: "31 oct",
-    workingGroupName: "Bitcoin",
-    title: "Bitcoin White Paper 10 Year Anniversary Celebration",
-    subtitle: "8:00 PM GMT @ Engjateigur 3",
-    text:
-      "The Bitcoin white paper is approaching its ten year anniversary on the 31st of October. The Foundation is hosting a reception at its headquarters to celebrate this milestone and to reflect on how far we have become. Beverages will be served, sponsored by the Foundation.",
-    color: "#FFD800",
-    url:
-      "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/255359939/",
-  },
-  {
     date: "08 nov",
     workingGroupName: "Community Engagement",
     title: "Community Engagement Meeting",
