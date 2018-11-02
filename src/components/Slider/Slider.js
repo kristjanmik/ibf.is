@@ -40,7 +40,7 @@ class Slider extends Component {
     const DEFAULT_SETTINGS = {
       infinite: true,
       speed: 300,
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 1,
       dots: false,
       beforeChange: this.handleChange,
