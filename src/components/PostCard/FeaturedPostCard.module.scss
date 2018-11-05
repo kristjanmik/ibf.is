@@ -47,7 +47,8 @@
 }
 
 .image {
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
   padding-bottom: 66%;
 
