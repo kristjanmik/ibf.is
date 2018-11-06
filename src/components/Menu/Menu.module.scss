@@ -9,8 +9,9 @@
   color: $dark;
   width: 100%;
   padding: 32px 16px 0;
+
   @include respond-to(md) {
-    padding: 100px 100px 0;
+    padding: 100px $horizontalSpacing 0;
   }
   
   &.inHero {
