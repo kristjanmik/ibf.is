@@ -16,9 +16,9 @@
   padding: 40px 18px;
   width: 100%;
   display: block;
-  min-height: 315px;
-
+  
   @include respond-to(lg) {
+    min-height: 315px;
     margin-left: auto;
     margin-top: -140px;
     padding: $ms3 $ms2 $ms3 $ms1;
@@ -48,6 +48,7 @@
 
 .image {
   background-size: cover;
+  background-position: center;
   position: relative;
   padding-bottom: 66%;
 

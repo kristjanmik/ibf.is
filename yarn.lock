@@ -4581,6 +4581,13 @@ gatsby-link@^2.0.4:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
+gatsby-plugin-google-analytics@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.0.7.tgz#22ac5fe3a226c19bd523997cb3891ab0d3454e37"
+  integrity sha512-BJXtj+LryPvntQ3Z1IVWi/WsZIIrC8a8OFsSdW7ivhaxMloCNH3Pm4wA9K09v1OljLbXSNUr46qkaBPUVC7shg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-manifest@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.5.tgz#511b604dd92d7917d06a338b338b63d621282c23"
@@ -5903,7 +5910,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-isomorphic-fetch@^2.1.1:
+isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
