@@ -176,7 +176,7 @@ export const workingGroups = [
     leader: "Erna Sigurðardóttir",
     color: "#FF6272",
     description:
-      "The developer group hosts regular meetups on blockchain implementations, cryptography and other related topics",
+      "The education group gives talks and produces content to spread awareness of blockchain and cryptocurrencies.",
     members: [
       erna,
       kristjanmik,
