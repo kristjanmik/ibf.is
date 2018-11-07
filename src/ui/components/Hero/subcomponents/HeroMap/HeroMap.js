@@ -1,8 +1,8 @@
 import React from "react";
 import world from "src/images/world.png";
-import styles from "./Map.module.scss";
+import styles from "./HeroMap.module.scss";
 
-const Map = () => (
+const HeroMap = () => (
   <svg
     xmlns="http://wwww.w3.org/2000/svg"
     viewBox="0 0 1589.6 1150.8"
@@ -32,4 +32,4 @@ const Map = () => (
   </svg>
 );
 
-export default Map
+export default HeroMap

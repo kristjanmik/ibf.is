@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Members.module.scss";
-import MemberProfile from "./elements/MemberProfile";
+import MemberProfile from "./subcomponents/MemberProfile";
 
 const Members = ({ of: group }) => {
 

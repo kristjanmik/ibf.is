@@ -6,9 +6,8 @@ import Hero from "src/ui/components/Hero";
 import Section from "src/ui/components/Section";
 import WorkingGroupsSection from "src/ui/sections/WorkingGroupsSection";
 import UpcomingEventsSection from "src/ui/sections/UpcomingEventsSection";
-import NewsletterForm, {
-  NewsletterAnchorButton,
-} from "src/ui/components/NewsletterForm";
+import NewsletterForm from "src/ui/components/NewsletterForm";
+import NewsletterAnchorButton from "src/ui/components/NewsletterAnchorButton"
 import RecentPostsSection from "src/ui/sections/RecentPostsSection";
 import AboutSection from "src/ui/sections/AboutSection";
 import NewsletterSection from "src/ui/sections/NewsletterSection";

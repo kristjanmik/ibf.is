@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import styles from "./WorkingGroupCard.module.scss";
 import { workingGroups } from "src/data/working-groups";
 import Avatar from "../Avatar";
-import WorkingGroupIcon from "./elements/WorkingGroupIcon";
+import WorkingGroupIcon from "./subcomponents/WorkingGroupIcon";
 import { Body2, H2, H3 } from "src/ui/components/Typography";
 import Arrow from 'src/ui/components/Arrow';
 
