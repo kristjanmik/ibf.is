@@ -1,0 +1,136 @@
+@import "src/utility/responsive";
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 0.2s, transform 0.2s;
+  &:hover,
+  &:focus {
+    transform: translate(0, -50%) scale(1.1);
+    opacity: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    bottom: -40%;
+    right: -40%;
+  }
+  
+  &.slick-disabled {
+    opacity: 0;
+  }
+
+  @include respond-to(md) {
+    opacity: 0.5;
+  }
+}
+
+.slick-prev {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjUgMTkuNzUzTDExLjE4OCAyMSAuNSAxMC41IDExLjE4OCAwIDEyLjUgMS4yNDcgMy4xMjUgMTAuNXoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
+}
+
+.slick-next {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS41IDEuMjQ3TDEuODEzIDAgMTIuNSAxMC41IDEuODEzIDIxIC41IDE5Ljc1MyA5Ljg3NSAxMC41eiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
+}
+
+.slick-prev {
+  left: 8px;
+  @include respond-to(md) {
+    left: -25px;
+  }
+}
+
+.slick-next {
+  right: 8px;
+  @include respond-to(md) {
+    right: -25px;
+  }
+}
+
+/* Dots */
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+      &:hover::before,
+      &:focus::before {
+        opacity: 1;
+      }
+      &::before {
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: "•";
+        text-align: center;
+        opacity: 0.25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+    &.slick-active button::before {
+      opacity: 0.75;
+      color: black;
+    }
+  }
+}

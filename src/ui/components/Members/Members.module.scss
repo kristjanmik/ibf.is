@@ -1,0 +1,15 @@
+@import "src/utility/variables";
+@import "src/utility/functions";
+@import "src/utility/responsive";
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+  @include respond-to(md) {
+    row-gap: between(20px, 45px, $sm, $xlg);
+    column-gap: between(20px, 160px, $sm, $xlg);
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

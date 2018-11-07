@@ -1,0 +1,63 @@
+@import "src/utility/variables";
+@import 'src/utility/responsive';
+
+.root {
+  position: relative;
+  background: $white;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
+  padding: 28px;
+
+  @include respond-to(md) {
+    padding: $ms4;
+    flex: 0 1 50%;
+    &::after {
+      content: "";
+      background: url("src/images/dots-decorator.svg") no-repeat;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      z-index: -1;
+      left: 0;
+      transform: translateX(-50%) translateY(50%);
+      bottom: 0;
+    }
+  }
+
+}
+
+.heading {
+  color: $blue;
+  padding: $ms1 0;
+}
+
+.block {
+  padding-bottom: 32px;
+  line-height: 1.75;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include respond-to(md) {
+    padding-bottom: $ms2;
+  }
+}
+
+.icon {
+  margin-right: $ms2;
+  display: flex;
+
+  @include respond-to(md) {
+    margin-right: $ms1;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding-bottom: $ms1;
+
+  @include respond-to(md) {
+    padding: 0;
+  }
+}

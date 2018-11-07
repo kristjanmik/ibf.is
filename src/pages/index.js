@@ -1,20 +1,20 @@
 import React from "react";
 
-import Layout from "../components/Layout";
-import Menu from "../components/Menu";
-import Hero from "../components/Hero";
-import Section from "../components/Section";
-import SectionLegend from "../components/SectionLegend";
-import SectionFooter from "../components/SectionFooter";
-import WorkingGroups from "../components/WorkingGroups";
-import UpcomingEvents from "../components/UpcomingEvents";
+import Layout from "src/ui/components/Layout";
+import Menu from "src/ui/components/Menu";
+import Hero from "src/ui/components/Hero";
+import Section from "src/ui/components/Section";
+import SectionLegend from "src/ui/components/SectionLegend";
+import SectionFooter from "src/ui/components/SectionFooter";
+import WorkingGroups from "src/ui/components/WorkingGroups";
+import UpcomingEvents from "src/ui/components/UpcomingEvents";
 import NewsletterForm, {
   NewsletterAnchorButton,
-} from "../components/NewsletterForm";
-import RecentPosts from "../components/RecentPosts";
-import AboutSection from "../sections/AboutSection";
-import NewsletterSection from "../sections/NewsletterSection";
-import { events, workingGroups, posts, aboutIBF } from "../data";
+} from "src/ui/components/NewsletterForm";
+import RecentPosts from "src/ui/components/RecentPosts";
+import AboutSection from "src/ui/sections/AboutSection";
+import NewsletterSection from "src/ui/sections/NewsletterSection";
+import { events, workingGroups, posts, aboutIBF } from "src/data";
 
 const IndexPage = () => (
   <Layout>

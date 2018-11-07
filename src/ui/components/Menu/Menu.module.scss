@@ -1,0 +1,67 @@
+@import "src/utility/variables";
+@import "src/utility/responsive";
+@import "src/utility/functions";
+
+.root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: $dark;
+  width: 100%;
+  padding: 32px 16px 0;
+
+  @include respond-to(md) {
+    padding: 100px $horizontalSpacing 0;
+  }
+  
+  &.inHero {
+    color: $white;
+    position: absolute;
+    z-index: $z-level-2;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  margin: $ms1 $ms3;
+  position: relative;
+
+  &::after {
+    background: currentColor;
+    bottom: -6px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    width: 100%;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  @include respond-to(md) {
+    &:hover {
+      &::after {
+        transform: scaleX(0.4);
+      }
+    }
+  }
+}
+
+.links {
+  display: none;
+
+  @include respond-to(md) {
+    display: flex;
+  }
+}
+
+.logo {
+  height: between(62px, 112px, $sm, $xlg);
+  width: between(62px, 112px, $sm, $xlg);
+}

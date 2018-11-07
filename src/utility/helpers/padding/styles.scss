@@ -1,0 +1,105 @@
+@import "../../functions";
+@import "../../variables";
+@import "../../responsive";
+
+// Padding top
+.u-paddingTopHuge {
+  padding-top: $ms6;
+
+  @include respond-to(onlySmall) {
+    padding-top: 121px;
+  }
+}
+
+.u-paddingTopXLarge {
+  padding-top: $ms5;
+
+  @include respond-to(onlySmall) {
+    padding-top: 81px;
+  }
+}
+
+.u-paddingTopLarge {
+  padding-top: $ms4;
+
+  @include respond-to(onlySmall) {
+    padding-top: 54px;
+  }
+}
+
+.u-paddingTopMedium {
+  padding-top: $ms3;
+
+  @include respond-to(onlySmall) {
+    padding-top: 36px;
+  }
+}
+
+.u-paddingTopSmall {
+  padding-top: $ms2;
+
+  @include respond-to(onlySmall) {
+    padding-top: 24px;
+  }
+}
+
+.u-paddingTopXSmall {
+  padding-top: $ms1;
+
+  @include respond-to(onlySmall) {
+    padding-top: 16px;
+  }
+}
+
+// Padding bottom
+.u-paddingBottomHuge {
+  padding-bottom: $ms6;
+
+  @include respond-to(onlySmall) {
+    padding-bottom: 121px;
+  }
+}
+
+.u-paddingBottomXLarge {
+  padding-bottom: $ms5;
+
+  @include respond-to(onlySmall) {
+    padding-bottom: 81px;
+  }
+}
+
+.u-paddingBottomLarge {
+  padding-bottom: $ms4;
+
+  @include respond-to(onlySmall) {
+    padding-bottom: 54px;
+  }
+}
+
+.u-paddingBottomMedium {
+  padding-bottom: $ms3;
+
+  @include respond-to(onlySmall) {
+    padding-bottom: 36px;
+  }
+}
+
+.u-paddingBottomSmall {
+  padding-bottom: $ms2;
+
+  @include respond-to(onlySmall) {
+    padding-bottom: 24px;
+  }
+}
+
+.u-paddingBottomXSmall {
+  padding-bottom: $ms1;
+
+  @include respond-to(onlySmall) {
+    padding-bottom: 12px;
+  }
+}
+
+@include respond-to(xlg) {
+  //todo
+}

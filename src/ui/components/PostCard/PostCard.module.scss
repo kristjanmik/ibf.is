@@ -1,0 +1,46 @@
+@import "src/utility/variables";
+@import "src/utility/responsive";
+
+.root {
+  background: $white;
+  box-shadow: 0 9px 21px 0 rgba(214, 214, 214, 0.5);
+  padding: 40px 20px 75px;
+  flex: none;
+  width: 260px;
+  position: relative;
+
+  @include respond-to(onlySmall) {
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+  }
+
+  @include respond-to(md) {
+    padding: 40px 20px;
+    width: auto;
+    &.featured {
+      width: 340px;
+    }
+  }
+}
+
+
+.arrow {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  opacity: 0;
+  transform: translateX(-16px);
+  transition: opacity 0.25s, transform 0.35s;
+
+  @include respond-to(md) {
+    .root:hover & {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @include respond-to(onlySmall) {
+    display: none;
+  }
+}

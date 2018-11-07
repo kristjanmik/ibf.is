@@ -1,0 +1,10 @@
+@import "src/utility/responsive";
+
+.root {
+  margin: 0 -16px;
+
+  @include respond-to(md) {
+    margin: 0;
+    padding-bottom: $ms5;
+  }
+}

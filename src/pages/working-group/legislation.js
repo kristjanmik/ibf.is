@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../../components/Layout";
-import Menu from "../../components/Menu";
-import Section from "../../components/Section";
-import SectionLegend from "../../components/SectionLegend";
-import Members from "../../components/Members";
-import WorkingGroups from "../../components/WorkingGroups";
-import AboutSection from "../../sections/AboutSection";
-import { workingGroups, aboutLegislationGroup } from '../../data'
+import Layout from "src/ui/components/Layout";
+import Menu from "src/ui/components/Menu";
+import Section from "src/ui/components/Section";
+import SectionLegend from "src/ui/components/SectionLegend";
+import Members from "src/ui/components/Members";
+import WorkingGroups from "src/ui/components/WorkingGroups";
+import AboutSection from "src/ui/sections/AboutSection";
+import { workingGroups, aboutLegislationGroup } from 'src/data'
 
 const group = workingGroups.find(group => group.name === 'Legislation')
 

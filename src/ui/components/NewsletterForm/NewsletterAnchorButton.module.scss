@@ -1,0 +1,33 @@
+@import "src/utility/variables";
+@import "src/utility/mixins";
+@import "src/utility/functions";
+
+.root {
+  @include respond-to(md) {
+    display: none;
+  }
+}
+
+.submit {
+  background: $blue;
+  color: $white;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  position: relative;
+  width: calc(100% + 32px);
+  padding: 24px;
+  margin: 120px -16px 0;
+  text-align: left;
+}
+
+.submitArrow {
+  position: absolute;
+  right: 24px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 12px;
+}

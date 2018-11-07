@@ -1,0 +1,33 @@
+@import 'src/utility/variables';
+@import 'src/utility/responsive';
+
+.root {
+  display: flex;
+  align-items: center;
+  color: $blue;
+  padding: $ms4 0 $ms6 0;
+
+  @include respond-to(md) {
+    padding: $ms4 0;
+  }
+}
+
+.light {
+  color: $white;
+}
+
+.decorator {
+  padding-left: $ms1;
+  @include respond-to(md) {
+    display: block;
+    padding: 0;
+    margin: 0 $ms1;
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 87px;
+      background: currentColor;
+    }
+  }
+}

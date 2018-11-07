@@ -1,0 +1,105 @@
+@import "src/utility/responsive";
+@import "src/utility/variables";
+@import "src/utility/functions";
+@import "src/utility/mixins";
+
+.root {
+  background: #f5f5f5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include horizontalSpacing();
+  
+  @include respond-to(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: between(50px, 100px, $sm, $xlg);
+    padding-bottom: between(50px, 100px, $sm, $xlg);
+  }
+
+  @include respond-to(xlg) {
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.group {
+  margin: 24px 0;
+  
+  & + & {
+    margin-left: 24px;
+  }
+
+  @include respond-to(xlg) {
+    & + & {
+      margin-left: between(30px, 160px, $sm, $xlg);
+    }
+  }
+}
+
+.socialGroup {
+  order: -1;
+
+  @include respond-to(md) {
+    order: 0;
+  }
+}
+
+.heading {
+  color: $blue;
+}
+
+.list,
+.socialList {
+  line-height: 2;
+  font-weight: 400;
+  list-style: none;
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.socialList {
+  display: flex;
+  justify-content: center;
+
+  > li:not(:first-child) {
+    margin-left: 25px;
+  }
+
+  @include respond-to(md) {
+    > li:not(:first-child) {
+      margin-left: $ms1;
+    }
+  }
+}
+
+
+.socialIcon {
+  &:hover {
+  }
+}
+
+.toes {
+  padding: 25px 0;
+  background: white;
+  font-size: 14px;
+  text-align: center;
+  
+  @include respond-to(md) {
+    @include horizontalSpacing();
+    text-align: right;
+    padding: $ms1;
+  }
+}

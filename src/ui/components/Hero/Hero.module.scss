@@ -1,0 +1,26 @@
+@import "src/utility/variables";
+@import "src/utility/mixins";
+@import "src/utility/responsive";
+@import "src/utility/functions";
+
+.root {
+  color: $white;
+  @include horizontalSpacing();
+  @include gradient();
+  position: relative;
+  z-index: $z-level-1;
+  padding-top: between(160px, 360px, $sm, $xlg);
+  
+  @include respond-to(md) {
+    min-height: 90vh;
+    padding-bottom: $ms4;
+  }
+}
+
+.heading {
+  @include respond-to(onlySmall) {
+    br {
+      display: none;
+    }
+  }
+}
