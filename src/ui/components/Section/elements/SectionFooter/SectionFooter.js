@@ -1,8 +1,8 @@
 import React from "react";
 import cn from 'classnames'
 import styles from "./SectionFooter.module.scss";
-import Arrow from "../Arrow";
-import { Body3 } from "../Typography";
+import Arrow from "src/ui/components/Arrow";
+import { Body3 } from "src/ui/components/Typography";
 
 const SectionFooter = ({ text, url = '/', textColor = "light" }) => (
   <div className={cn(styles.root, styles[textColor])}>

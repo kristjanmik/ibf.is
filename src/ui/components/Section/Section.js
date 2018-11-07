@@ -3,12 +3,15 @@ import cn from "classnames";
 import { Parallax } from "react-scroll-parallax";
 import styles from "./Section.module.scss";
 import padding from "src/utility/helpers/padding";
+import SectionLegend from './elements/SectionLegend';
+import SectionFooter from './elements/SectionFooter';
 
-const Section = ({ children, top, bottom, colored, backgroundText, id }) => (
+const Section = ({ children, top, bottom, colored, backgroundText, id, number, legendText, legendTextColor, footerText, footerTextColor, footerUrl }) => (
   <section
     className={cn(styles.root, styles[id], padding(top, bottom), colored && styles.colored)}
     id={id}
   >
+    <SectionLegend number={number} text={legendText} textColor={legendTextColor} />
     {backgroundText && (
       <Parallax
         className={styles.backgroundText}
@@ -21,6 +24,7 @@ const Section = ({ children, top, bottom, colored, backgroundText, id }) => (
       </Parallax>
     )}
     {children}
+    <SectionFooter text={footerText} textColor={footerTextColor} url={footerUrl} />
   </section>
 );
 

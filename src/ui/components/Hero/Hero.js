@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Hero.module.scss";
 import { H1 } from "../Typography";
 import SectionLegend from "../SectionLegend";
-import { Map } from "./Map";
+import Map from "./elements/Map";
 
 const Hero = ({ children }) => (
   <div className={styles.root}>

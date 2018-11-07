@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import cn from 'classnames'
 import styles from "./SectionLegend.module.scss";
-import { Body3 } from "../Typography";
+import { Body3 } from "src/ui/components/Typography";
 
 const SectionLegend = ({ number, text, textColor = "light" }) => (
   <div className={cn(styles.root, styles[textColor])}>
