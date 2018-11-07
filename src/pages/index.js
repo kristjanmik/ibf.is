@@ -4,7 +4,7 @@ import Layout from "src/ui/components/Layout";
 import Menu from "src/ui/components/Menu";
 import Hero from "src/ui/components/Hero";
 import Section from "src/ui/components/Section";
-import WorkingGroups from "src/ui/components/WorkingGroups";
+import WorkingGroupsSection from "src/ui/sections/WorkingGroupsSection";
 import UpcomingEventsSection from "src/ui/sections/UpcomingEventsSection";
 import NewsletterForm, {
   NewsletterAnchorButton,
@@ -75,7 +75,7 @@ const IndexPage = () => (
       footerTextColor="light"
       footerUrl="#working-groups"
     >
-      <WorkingGroups groups={workingGroups} />
+      <WorkingGroupsSection groups={workingGroups} />
     </Section>
     <Section
       top="huge"
