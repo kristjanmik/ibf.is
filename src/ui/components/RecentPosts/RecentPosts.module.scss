@@ -19,7 +19,6 @@
   padding: 16px;
 
   @include respond-to(md) {
-    flex: 0 1 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: $ms2;

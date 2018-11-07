@@ -1,10 +1,11 @@
 @import "./functions.scss";
 
+$base: 16px;
+
 $sm: 375px;
 $md: 768px;
 $lg: 1024px;
 $xlg: 1400px;
-$max: 2000px;
 
 // modularscale = base: 16px/1rem, ratio: 1.5
 $ms1: between(8px, 16px, $sm, $xlg);
