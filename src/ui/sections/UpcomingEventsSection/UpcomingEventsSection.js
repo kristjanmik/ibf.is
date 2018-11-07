@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./UpcomingEvents.module.scss";
-import Slider from "../Slider";
-import EventCard from "../EventCard";
+import styles from "./UpcomingEventsSection.module.scss";
+import Slider from "src/ui/components/Slider";
+import EventCard from "src/ui/components/EventCard";
 
-const UpcomingEvents = ({ events }) => {
+const UpcomingEventsSection = ({ events }) => {
   if (!events.length) {
     return null;
   }
@@ -28,4 +28,4 @@ const UpcomingEvents = ({ events }) => {
   );
 };
 
-export default UpcomingEvents;
+export default UpcomingEventsSection;

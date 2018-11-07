@@ -5,11 +5,11 @@ import Menu from "src/ui/components/Menu";
 import Hero from "src/ui/components/Hero";
 import Section from "src/ui/components/Section";
 import WorkingGroups from "src/ui/components/WorkingGroups";
-import UpcomingEvents from "src/ui/components/UpcomingEvents";
+import UpcomingEventsSection from "src/ui/sections/UpcomingEventsSection";
 import NewsletterForm, {
   NewsletterAnchorButton,
 } from "src/ui/components/NewsletterForm";
-import RecentPosts from "src/ui/components/RecentPosts";
+import RecentPostsSection from "src/ui/sections/RecentPostsSection";
 import AboutSection from "src/ui/sections/AboutSection";
 import NewsletterSection from "src/ui/sections/NewsletterSection";
 import { events, workingGroups, posts, aboutIBF } from "src/data";
@@ -47,7 +47,7 @@ const IndexPage = () => (
       footerTextColor="light"
       footerUrl="#events"
     >
-      <UpcomingEvents events={events} />
+      <UpcomingEventsSection events={events} />
     </Section>
     <Section
       top="xlarge"
@@ -61,7 +61,7 @@ const IndexPage = () => (
       footerTextColor="dark"
       footerUrl="https://medium.com/icelandic-blockchain-foundation"
     >
-      <RecentPosts posts={posts} />
+      <RecentPostsSection posts={posts} />
     </Section>
     <Section
       colored
