@@ -35,7 +35,7 @@ export const events = [
   {
     date: "6 dec",
     workingGroupName: "Community Engagement",
-    title: "Blockchain and Cryptocurrency Meetup by IBF",
+    title: "Blockchain and Cryptocurrency Meetup",
     subtitle: "5:30 PM GMT @ Kex Hostel",
     text:
       "Memorable evening of Blockchain and Cryptocurrency discussion at Kex Hostel, Reykjavík at 17:30.",
