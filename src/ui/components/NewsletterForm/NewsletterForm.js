@@ -10,12 +10,17 @@ const noop = () => { };
 class NewsletterForm extends Component {
   constructor(props) {
     super(props);
+    this.handleFocus = this.handleFocus.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.inputRef = createRef();
     this.state = {
       isSubmitted: false,
       showError: false,
     };
+  }
+
+  handleFocus() {
+    this.inputRef.current.focus()
   }
 
   async handleSubmit(event, onSubmit) {
@@ -70,7 +75,7 @@ class NewsletterForm extends Component {
             onSubmit={event => this.handleSubmit(event, onSubmit)}
             className={cn(styles.root, inHero && styles.inHero)}
           >
-            <div className={cn(styles.inputWrap, showError && styles.error)}>
+            <div className={cn(styles.inputWrap, showError && styles.error)} onClick={this.handleFocus}>
               <input ref={this.inputRef} className={styles.input} placeholder={placeholder} />
             </div>
             <button type="button" className={styles.submit} type="submit">
