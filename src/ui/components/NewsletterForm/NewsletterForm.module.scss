@@ -1,0 +1,155 @@
+@import "src/utility/variables";
+@import "src/utility/functions";
+@import "src/utility/responsive";
+
+.root {
+  @include respond-to(onlySmall) {
+    &.inHero {
+      display: none;
+    }
+  }
+
+  @include respond-to(md) {
+    display: flex;
+    width: between(200px, 550px, $sm, $xlg);
+
+    &.inHero {
+      padding-top: $ms6;
+      padding-bottom: $ms2;
+    }
+  }
+}
+
+.thanks {
+  font-size: $t3;
+  padding-top: $ms6;
+  padding-bottom: $ms2;
+}
+
+.inputWrap {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  background: $white;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 27px;
+  border: 2px solid $blue;
+  color: $blue;
+  cursor: pointer;
+
+  &::before {
+    content: "@";
+    font-size: 16px;
+    color: $blue;
+    font-weight: 600;
+    z-index: $z-level-1;
+    padding-right: $ms2;
+
+    @include respond-to(md) {
+      font-size: $t3;
+    }
+  }
+
+  &.error {
+    border-color: $red;
+    &::before {
+      color: $red;
+    }
+
+    .input {
+      color: $red;
+    }
+  }
+
+  .inHero & {
+    border: none;
+  }
+
+  @include respond-to(md) {
+    padding: $ms2;
+    margin: 0;
+  }
+}
+
+.input {
+  border: 0;
+  background: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: $blue;
+  width: 100%;
+
+  @include respond-to(md) {
+    font-size: $t3;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+  &::placeholder {
+    color: rgba($dark, 0.6);
+  }
+  &:focus::placeholder {
+    color: rgba($dark, 0.2);
+  }
+}
+
+.submit {
+  background: $blue;
+  color: $white;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  position: relative;
+  width: 100%;
+  padding: 24px;
+
+  @include respond-to(md) {
+    padding: $ms1;
+    display: flex;
+    cursor: pointer;
+    width: between(40px, 72px, $sm, $xlg);
+    margin-left: $ms1;
+    &:hover {
+      .submitArrow {
+        transform: translateX(8px);
+      }
+    }
+  }
+}
+
+.submitText {
+  @include respond-to(md) {
+    display: none;
+  }
+}
+
+.submitArrow {
+  width: 20px;
+  height: 12px;
+  transform: translateX(0);
+  transition: transform 0.4s;
+
+  @include respond-to(onlySmall) {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.fineprint {
+  color: rgba($white, 0.75);
+  display: none;
+
+  .inHero + & {
+    display: block;
+
+    @include respond-to(onlySmall) {
+      display: none;
+    }
+  }
+}

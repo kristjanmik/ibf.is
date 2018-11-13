@@ -32,6 +32,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.4",
     "prettier": "^1.14.2"
   },
   "repository": {

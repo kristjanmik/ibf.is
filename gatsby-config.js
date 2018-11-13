@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: "Icelandic Blockchain Foundation",
@@ -23,8 +25,15 @@ module.exports = {
         display: "minimal-ui",
       },
     },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        pages: path.join(__dirname, 'src/pages')
+      }
+    },
     "gatsby-plugin-offline",
     "gatsby-plugin-sass",
-
+    
   ],
 };

@@ -1,0 +1,47 @@
+@import 'src/utility/responsive';
+@import 'src/utility/variables';
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond-to(md) {
+    flex-wrap: nowrap;
+    padding-bottom: $ms5;
+  }
+}
+
+.text {
+  line-height: 2;
+  padding-bottom: 36px;
+  position: relative;
+  
+  @include respond-to(md) {
+    flex: 0 1 50%;
+    margin-right: $ms4;
+    min-height: 450px;
+  }
+}
+
+@keyframes arrow {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.arrow {
+  animation: arrow 2s infinite;
+  animation-direction: alternate;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  > svg {
+    transform: translateX(-50%);
+  }
+  @include respond-to(md) {
+    display: block;
+  }
+}

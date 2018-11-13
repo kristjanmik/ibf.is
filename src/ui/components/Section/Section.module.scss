@@ -1,0 +1,57 @@
+@import "src/utility/variables";
+@import "src/utility/mixins";
+@import "src/utility/functions";
+@import "src/utility/responsive";
+
+%sectionDecorator {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: between(100px, 150px, $sm, $xlg);
+    height: between(100px, 150px, $sm, $xlg);
+    top: 0;
+    z-index: -1;
+    background-image: url("src/images/section-dots-decorator.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 16px;
+
+    @include respond-to(md) {
+      right: $horizontalSpacing;
+    }
+  }
+}
+
+.root {
+  position: relative;
+  z-index: $z-level-1;
+  @include horizontalSpacing();
+}
+
+.colored {
+  @include gradient();
+}
+
+.backgroundText {
+  position: absolute;
+  font-size: between(80px, 200px, $sm, $xlg);
+  text-transform: lowercase;
+  top: 0;
+  z-index: -1;
+  font-weight: 600;
+  line-height: 2;
+  color: #fbfbfb;
+
+  @include respond-to(md) {
+    right: $horizontalSpacing;
+  }
+
+  .root.colored & {
+    color: #0e4c88;
+  }
+}
+
+.newsletter {
+  @extend %sectionDecorator;
+}

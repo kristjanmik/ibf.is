@@ -1,8 +1,0 @@
-@import '../../utils/variables';
-
-.root {
-  > svg {
-    display: block;
-    transition: transform 0.15s $easeSmooth;
-  }
-}

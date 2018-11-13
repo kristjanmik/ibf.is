@@ -1,0 +1,18 @@
+@import 'src/utility/functions';
+@import 'src/utility/responsive';
+
+.root {
+  @include respond-to(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.heading {
+  @include respond-to(md) {
+    margin-right: between(20px, 30px, $sm, $xlg);
+  }
+}
+
+.form {}
