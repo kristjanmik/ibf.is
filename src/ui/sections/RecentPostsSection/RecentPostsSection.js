@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "./RecentPosts.module.scss";
-import PostCard, { FeaturedPostCard } from "../PostCard";
+import styles from "./RecentPostsSection.module.scss";
+import PostCard from "src/ui/components/PostCard";
+import FeaturedPostCard from 'src/ui/components/FeaturedPostCard'
 import { truncateText } from "src/utility/helpers/truncateText";
 
-const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
+const RecentPostsSection = ({ posts: _posts, maxPosts = 5 }) => {
   if (!_posts || !Array.isArray(_posts)) {
     return null;
   }
@@ -43,4 +44,4 @@ const RecentPosts = ({ posts: _posts, maxPosts = 5 }) => {
   );
 };
 
-export default RecentPosts;
+export default RecentPostsSection;

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./WorkingGroups.module.scss";
-import WorkingGroupCard from "./elements/WorkingGroupCard";
+import styles from "./WorkingGroupsSection.module.scss";
+import WorkingGroupCard from "src/ui/components/WorkingGroupCard";
 
 const WorkingGroups = ({ groups }) => {
   if (!groups || !groups.length) {

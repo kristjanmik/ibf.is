@@ -1,8 +1,8 @@
 import React, { Component, createRef } from "react";
 import cn from "classnames";
 import styles from "./NewsletterForm.module.scss";
-import { H2, Body3 } from "../Typography";
-import { SubmitArrow } from "./SubmitArrow";
+import { H2, Body3 } from "src/ui/components/Typography";
+import  SubmitArrow from "src/ui/components/SubmitArrow";
 import { validateEmail } from "src/utility/helpers/validateEmail";
 
 const noop = () => { };

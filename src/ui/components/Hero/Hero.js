@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Hero.module.scss";
-import { H1 } from "../Typography";
-import SectionLegend from "../SectionLegend";
-import { Map } from "./Map";
+import { H1 } from "src/ui/components/Typography";
+import SectionLegend from "src/ui/components/Section/subcomponents/SectionLegend";
+import HeroMap from "./subcomponents/HeroMap";
 
 const Hero = ({ children }) => (
   <div className={styles.root}>
@@ -14,7 +14,7 @@ const Hero = ({ children }) => (
       <br />
     </H1>
     {children}
-    <Map />
+    <HeroMap />
   </div>
 );
 

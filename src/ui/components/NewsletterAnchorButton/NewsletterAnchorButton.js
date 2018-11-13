@@ -1,8 +1,8 @@
 import React from "react";
-import ScrollLink from "src/utility/components/ScrollLink";
+import ScrollLink from "src/ui/components/ScrollLink";
+import { H2 } from "src/ui/components/Typography";
+import SubmitArrow from 'src/ui/components/SubmitArrow';
 import styles from './NewsletterAnchorButton.module.scss'
-import { H2 } from "../Typography";
-import { SubmitArrow } from './SubmitArrow';
 
 export const NewsletterAnchorButton = () => (
   <ScrollLink to="#newsletter" className={styles.root}>

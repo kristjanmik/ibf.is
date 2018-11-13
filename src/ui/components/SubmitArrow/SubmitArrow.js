@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SubmitArrow = ({ className }) => (
+const SubmitArrow = ({ className }) => (
   <svg
     viewBox="0 0 20 12"
     xmlns="http://www.w3.org/2000/svg"
@@ -13,3 +13,5 @@ export const SubmitArrow = ({ className }) => (
     />
   </svg>
 );
+
+export default SubmitArrow

@@ -5,7 +5,7 @@ import styles from "./Menu.module.scss";
 import { Body1 } from "../Typography";
 import darkLogo from "src/images/logo-dark.svg";
 import whiteLogo from "src/images/logo.svg";
-import ScrollLink from 'src/utility/components/ScrollLink'
+import ScrollLink from 'src/ui/components/ScrollLink'
 
 const Menu = ({ inHero }) => (
   <nav className={cn(styles.root, inHero && styles.inHero)}>
