@@ -25,7 +25,7 @@ export const events = [
     date: "14 nov",
     workingGroupName: "Community Engagement",
     title: "Cryptocurrency Trading Meetup",
-    subtitle: "5:30 PM GMT @ TBA",
+    subtitle: "5:30 PM GMT @ Loft Hostel",
     text:
       "The Icelandic Blockchain Foundation hosts the first cryptocurrency trading meetup. More information will be announced soon",
     color: "#FF7816",
