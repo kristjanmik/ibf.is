@@ -34,13 +34,24 @@ export const events = [
   },
   {
     date: "6 dec",
-    workingGroupName: "Bitcoin",
+    workingGroupName: "Community Engagement",
     title: "Blockchain and Cryptocurrency Meetup by IBF",
     subtitle: "5:30 PM GMT @ Kex Hostel",
     text:
       "Memorable evening of Blockchain and Cryptocurrency discussion at Kex Hostel, Reykjavík at 17:30.",
-    color: "#FFD800",
+    color: "#FF7816",
     url:
       "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/255583852/",
+  },
+  {
+    date: "10 dec",
+    workingGroupName: "Bitcoin",
+    title: "The Bitcoin Meetup",
+    subtitle: "8:00 PM GMT @ Hlemmur Square",
+    text:
+      "A casual monthly meetup held at Hlemmur Square, Reykjavík at 20:00. Join us for a lively discussion on the blockchain, cryptocurrencies, and everything in-between!",
+    color: "#FFD800",
+    url:
+      "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/253332900/",
   },
 ];
