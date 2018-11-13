@@ -3,8 +3,8 @@ import cn from "classnames";
 import { Parallax } from "react-scroll-parallax";
 import styles from "./Section.module.scss";
 import padding from "src/utility/helpers/padding";
-import SectionLegend from './subcomponents/SectionLegend';
-import SectionFooter from './subcomponents/SectionFooter';
+import SectionLegend from './components/SectionLegend';
+import SectionFooter from './components/SectionFooter';
 
 const Section = ({ children, top = "xlarge", bottom = "xlarge", colored, backgroundText, id, number, legendText, legendTextColor, footerText, footerTextColor, footerUrl }) => (
   <section

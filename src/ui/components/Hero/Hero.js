@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import { H1 } from "src/ui/components/Typography";
-import SectionLegend from "src/ui/components/Section/subcomponents/SectionLegend";
-import HeroMap from "./subcomponents/HeroMap";
+import SectionLegend from "src/ui/components/Section/components/SectionLegend";
+import HeroMap from "./components/HeroMap";
 
 const Hero = ({ children }) => (
   <div className={styles.root}>

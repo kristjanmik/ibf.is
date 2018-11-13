@@ -78,7 +78,7 @@ class NewsletterForm extends Component {
             <div className={cn(styles.inputWrap, showError && styles.error)} onClick={this.handleFocus}>
               <input ref={this.inputRef} className={styles.input} placeholder={placeholder} />
             </div>
-            <button type="button" className={styles.submit} type="submit">
+            <button className={styles.submit} type="submit">
               <H2 className={styles.submitText}>Join</H2>
               <SubmitArrow className={styles.submitArrow} />
             </button>
