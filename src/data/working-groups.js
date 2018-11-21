@@ -83,10 +83,10 @@ const erna = {
 }
 
 const mikki = {
-  name: "Mikjáll Hannes Zuntag",
+  name: "Michael Hannes",
   image: "https://assets.ibf.is/mikki.jpg",
-  title: "",
-  email: "",
+  title: "Auroracoin Advocate",
+  email: "mikki@auroracoin101.is",
 }
 
 export const workingGroups = [
@@ -163,7 +163,7 @@ export const workingGroups = [
     leader: "Mikki",
     color: "#FF7816",
     description:
-      "The Auroracoin working group",
+      "The Auroracoin group leverages IBF resources and liasons with the Auroracoin offical team to promote awareness, adoption and develop real-world solutions.",
     members: [
       mikki,
       petur,
