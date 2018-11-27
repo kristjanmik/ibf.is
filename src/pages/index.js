@@ -44,7 +44,7 @@ const IndexPage = () => (
       legendText="Events"
       footerText="go to events"
       footerTextColor="light"
-      footerUrl="#events"
+      footerUrl="https://www.meetup.com/Icelandic-Blockchain-Foundation"
     >
       <UpcomingEventsSection events={events} />
     </Section>
