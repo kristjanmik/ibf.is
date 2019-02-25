@@ -1,17 +1,6 @@
 export const events = [
   {
-    date: "11 feb",
-    workingGroupName: "Bitcoin",
-    title: "The Bitcoin Meetup",
-    subtitle: "8:00 PM GMT @ Hlemmur Square",
-    text:
-      "A casual monthly meetup held at Hlemmur Square, Reykjavík at 20:00. Join us for a lively discussion on the blockchain, cryptocurrencies, and everything in-between!",
-    color: "#FFD800",
-    url:
-      "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/256758069",
-  },
-  {
-    date: "11 mar",
+    date: "25 mar",
     workingGroupName: "Developer",
     title: "Waves Platform Developer Meetup & Workshop",
     subtitle: "5:30 PM GMT @ Moonlight Hall (Hard Rock)",
