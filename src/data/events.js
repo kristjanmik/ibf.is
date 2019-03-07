@@ -1,5 +1,16 @@
 export const events = [
   {
+    date: "8 mar",
+    workingGroupName: "Community Engagement",
+    title: "Housewarming and Anniversary party by IBF",
+    subtitle: "4:30 PM GMT @ Laugavegur 77",
+    text:
+      "The Icelandic Blockchain Foundation is celebrating its fourth anniversary as well as moving into a new office space on Laugavegur 77. We are feeling increased momentum both in our work and the companies and institutions around us. Join us and celebrate this Friday! The setup will be a reception, and we will have some food and drinks.",
+    color: "#7E8AEE",
+    url:
+      "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/259502310",
+  },
+  {
     date: "11 mar",
     workingGroupName: "Bitcoin",
     title: "The Bitcoin Meetup",
@@ -12,12 +23,12 @@ export const events = [
   },
   {
     date: "25 mar",
-    workingGroupName: "Developer",
-    title: "Waves Platform Developer Meetup & Workshop",
-    subtitle: "5:30 PM GMT @ Moonlight Hall (Hard Rock)",
+    workingGroupName: "Community Engagement",
+    title: "TBA",
+    subtitle: "5:30 PM GMT @ Moon Hall (Hard Rock)",
     text:
-      "Waves Platform will be flying over to host a workshop and an introduction to smart contract development at the Moonlight Hall in the loft of Hard Rock Reykjavik at 17:30. Remember to bring your laptop!",
-    color: "#70D8CA",
+      "Details will be announced at a later date",
+    color: "#7E8AEE",
     url:
       "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/#",
   },
