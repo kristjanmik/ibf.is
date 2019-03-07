@@ -122,8 +122,8 @@ const Footer = () => (
         </H3>
         <ul className={styles.list}>
           <li><a href="mailto:ibf@ibf.is">ibf@ibf.is</a></li>
-          <li>Engjateigur 3</li>
-          <li>105 Reykjavík</li>
+          <li>Laugavegur 77</li>
+          <li>101 Reykjavík</li>
         </ul>
       </div>
       <div className={cn(styles.group, styles.socialGroup)}>
