@@ -10,13 +10,38 @@
   }
 }
 
+.fullWidth {
+  .image {
+    @include respond-to(md) {
+      width: calc(50%);
+    }
+    @include respond-to(lg) {
+      width: calc(50%);
+    }
+  }
+
+  .card {
+    @include respond-to(md) {
+      min-height: 315px;
+      margin-left: auto;
+      margin-top: -140px;
+      padding: $ms3 $ms2 $ms3 $ms1;
+      position: relative;
+      width: 60%;
+    }
+    @include respond-to(lg) {
+      width: 60%;
+    }
+  }
+}
+
 .card {
   background: $white;
   box-shadow: 0 9px 21px 0 rgba(214, 214, 214, 0.5);
   padding: 40px 18px;
   width: 100%;
   display: block;
-  
+
   @include respond-to(lg) {
     min-height: 315px;
     margin-left: auto;
@@ -25,7 +50,6 @@
     position: relative;
     width: 50%;
   }
-
 
   &::after {
     display: none;
@@ -40,8 +64,8 @@
 
     @include respond-to(lg) {
       display: block;
-      width: 140px; 
-      height: 140px; 
+      width: 140px;
+      height: 140px;
     }
   }
 }
@@ -59,12 +83,11 @@
     left: 0;
     top: 0;
   }
-  
+
   @include respond-to(lg) {
     width: calc(100% - 137px);
     padding-bottom: 65%;
   }
-
 
   &::before {
     background: $white;

@@ -3,8 +3,8 @@ import styles from "./FeaturedPostCard.module.scss";
 import { H2, Body3 } from "../Typography";
 import Arrow from "../Arrow";
 
-const FeaturedPostCard = ({ title, text, imageUrl, url }) => (
-  <div className={styles.root}>
+const FeaturedPostCard = ({ title, text, imageUrl, url, fullWidth }) => (
+  <div className={`${styles.root} ${fullWidth ? styles.fullWidth : ""}`}>
     <div
       className={styles.image}
       style={{ backgroundImage: `url(${imageUrl})` }}
