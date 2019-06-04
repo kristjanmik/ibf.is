@@ -3,10 +3,8 @@ import PropTypes from "prop-types";
 import styles from "./EventCard.module.scss";
 import { workingGroups } from "src/data/working-groups";
 import { Body2, Body4, H2 } from "../Typography";
+import DateCube from "src/ui/components/DateCube";
 
-const splitNum = text => {
-  return [text.match(/\d+/g), text.match(/[a-zA-Z]+/g)];
-};
 const EventCard = ({
   workingGroupName,
   title,
@@ -20,8 +18,6 @@ const EventCard = ({
 
   if (!group) return null;
 
-  const [dateNum, dateStr] = splitNum(date);
-
   return (
     <a
       href={url}
@@ -29,10 +25,7 @@ const EventCard = ({
       rel="noopener noreferrer"
       className={styles.root}
     >
-      <div className={styles.date} style={{ background: color }}>
-        <p className={styles.dateNumber}>{dateNum}</p>
-        <p className={styles.dateString}>{dateStr}</p>
-      </div>
+      <DateCube date={date} color={color} />
       <div className={styles.decorator} style={{ color }}>
         {group.name}
       </div>

@@ -12,6 +12,7 @@
 
 .fullWidth {
   .image {
+    padding-bottom: 40%;
     @include respond-to(md) {
       width: calc(50%);
     }
@@ -24,13 +25,28 @@
     @include respond-to(md) {
       min-height: 315px;
       margin-left: auto;
-      margin-top: -140px;
+      margin-top: -230px;
       padding: $ms3 $ms2 $ms3 $ms1;
       position: relative;
       width: 60%;
     }
-    @include respond-to(lg) {
-      width: 60%;
+
+    &::after {
+      content: "";
+      background: url("src/images/dots-decorator.svg") no-repeat;
+      position: absolute;
+      width: 9.3rem;
+      height: 9.3rem;
+      z-index: -1;
+      left: 0;
+      transform: translateX(-50%) translateY(50%);
+      bottom: 0;
+
+      @include respond-to(mg) {
+        display: block;
+        width: 140px;
+        height: 140px;
+      }
     }
   }
 }
