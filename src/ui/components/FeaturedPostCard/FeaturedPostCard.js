@@ -1,10 +1,19 @@
 import React from "react";
 import styles from "./FeaturedPostCard.module.scss";
 import DateCube from "src/ui/components/DateCube";
-import { H2, Body3 } from "../Typography";
+import { H2, Body3, Body4 } from "../Typography";
 import Arrow from "../Arrow";
 
-const FeaturedPostCard = ({ date, title, text, imageUrl, url, fullWidth }) => (
+const FeaturedPostCard = ({
+  color,
+  date,
+  fullWidth,
+  imageUrl,
+  text,
+  title,
+  subtitle,
+  url,
+}) => (
   <div className={`${styles.root} ${fullWidth ? styles.fullWidth : ""}`}>
     <div
       className={styles.image}
@@ -16,12 +25,15 @@ const FeaturedPostCard = ({ date, title, text, imageUrl, url, fullWidth }) => (
       rel="noopener noreferrer"
       className={styles.card}
     >
-      {/* TODO: replace hardcoded values */}
-      {console.log(date)}
-      <DateCube date={"13 may"} color={"red"} />
+      {fullWidth && <DateCube date={date} color={color} />}
       <H2 bottom="small">{title}</H2>
+      {fullWidth && (
+        <Body4 bottom="small" className={styles.subtitle}>
+          {subtitle}
+        </Body4>
+      )}
       <Body3 light>{text}</Body3>
-      <Arrow className={styles.arrow} top="medium" />
+      {fullWidth || <Arrow className={styles.arrow} top="medium" />}
     </a>
   </div>
 );

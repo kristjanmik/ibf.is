@@ -6,7 +6,7 @@ import Members from "src/ui/components/Members";
 import Section from "src/ui/components/Section";
 import AboutSection from "src/ui/sections/AboutSection";
 import WorkingGroupsSection from "src/ui/sections/WorkingGroupsSection";
-import { aboutDevelopersGroup, posts, workingGroups } from "src/data";
+import { aboutDevelopersGroup, events, workingGroups } from "src/data";
 import { truncateText } from "src/utility/helpers/truncateText";
 
 const group = workingGroups.find(group => group.name === "Developer");
@@ -33,22 +33,26 @@ const DevelopersGroupPage = () => (
       number="02"
       legendText="Next event in the group"
       legendTextColor="dark"
-      footerText="see more events"
-      footerTextColor="dark"
-      footerUrl="https://link-to-meetups"
+      // footerText="see more events"
+      // footerTextColor="dark"
+      // footerUrl="https://link-to-meetups"
     >
       {/* TODO: change content } */}
-      {posts
-        .filter(post => post.isFeatured)
+      {events
+        // .filter(event => event.workingGroupName === group.name)
         .slice(0, 1)
-        .map(post => (
+        .map(event => (
           <FeaturedPostCard
-            key={post.title}
-            title={post.title}
-            text={truncateText.apply(post.text)}
-            imageUrl={post.image}
-            date={post.date}
-            url={post.url}
+            key={event.title}
+            title={event.title}
+            text={event.text}
+            imageUrl={
+              "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+            }
+            date={event.date}
+            color={event.color}
+            subtitle={event.subtitle}
+            url={event.url}
             fullWidth
           />
         ))}

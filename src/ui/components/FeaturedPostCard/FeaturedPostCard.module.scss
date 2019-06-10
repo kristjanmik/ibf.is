@@ -22,6 +22,9 @@
   }
 
   .card {
+    h2 {
+      padding-top: 20px;
+    }
     @include respond-to(md) {
       min-height: 315px;
       margin-left: auto;
@@ -36,7 +39,7 @@
       background: url("src/images/dots-decorator.svg") no-repeat;
       position: absolute;
       width: 9.3rem;
-      height: 9.3rem;
+      height: 11.3rem;
       z-index: -1;
       left: 0;
       transform: translateX(-50%) translateY(50%);
@@ -59,7 +62,7 @@
   display: block;
 
   @include respond-to(lg) {
-    min-height: 315px;
+    min-height: 285px;
     margin-left: auto;
     margin-top: -140px;
     padding: $ms3 $ms2 $ms3 $ms1;
