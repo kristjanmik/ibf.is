@@ -13,6 +13,8 @@ const WorkingGroupLayout = ({ aboutGroup }) => {
   const featuredEvent = events
     .filter(event => event.workingGroupName === group.name)
     .slice(0, 1);
+  const defaultEventImage =
+    'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
   return (
     <>
@@ -39,9 +41,7 @@ const WorkingGroupLayout = ({ aboutGroup }) => {
               key={event.title}
               title={event.title}
               text={event.text}
-              imageUrl={
-                "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-              }
+              imageUrl={event.imageUrl || defaultEventImage}
               date={event.date}
               color={group.color}
               subtitle={event.subtitle}
