@@ -18,7 +18,7 @@
   display: block;
 
   @include respond-to(lg) {
-    min-height: 285px;
+    min-height: 315px;
     margin-left: auto;
     margin-top: -140px;
     padding: $ms3 $ms2 $ms3 $ms1;
