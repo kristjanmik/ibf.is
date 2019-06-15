@@ -1,26 +1,13 @@
 import React from "react";
 import Layout from "src/ui/components/Layout";
 import Menu from "src/ui/components/Menu";
-import Section from "src/ui/components/Section";
-import Members from "src/ui/components/Members";
-import WorkingGroupsSection from "src/ui/sections/WorkingGroupsSection";
-import AboutSection from "src/ui/sections/AboutSection";
-import { workingGroups, aboutEducationGroup } from 'src/data'
-
-const group = workingGroups.find(group => group.name === 'Education')
+import WorkingGroupLayout from "src/ui/components/WorkingGroupLayout";
+import { aboutEducationGroup } from "src/data";
 
 const EducationGroupPage = () => (
   <Layout>
     <Menu />
-    <Section top="xlarge" bottom="xlarge" backgroundText="About" number="03" legendText="About" legendTextColor="dark">
-      <AboutSection data={aboutEducationGroup} />
-    </Section>
-    <Section top="xlarge" bottom="xlarge" backgroundText="members" number="02" legendText="Members" legendTextColor="dark">
-      <Members of={group} />
-    </Section>
-    <Section colored top="xlarge" bottom="xlarge" backgroundText="groups" number="03" legendText="Working Groups">
-      <WorkingGroupsSection groups={workingGroups} />
-    </Section>
+    <WorkingGroupLayout aboutGroup={aboutEducationGroup} />
   </Layout>
 );
 
