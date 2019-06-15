@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./DateCube.module.scss";
-// import { workingGroups } from "src/data/working-groups";
-// import { Body2, Body4, H2 } from "../Typography";
 
 const splitNum = text => {
   return [text.match(/\d+/g), text.match(/[a-zA-Z]+/g)];
