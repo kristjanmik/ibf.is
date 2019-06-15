@@ -27,9 +27,9 @@
   }
 
   @include respond-to(md) {
-    min-height: 400px;
+    min-height: 285px;
     margin-left: auto;
-    margin-top: -320px;
+    margin-top: -220px;
     padding: $ms3 $ms2 $ms3 $ms2;
     position: relative;
     width: 60%;
@@ -48,6 +48,9 @@
     transform: translateX(-50%) translateY(50%);
     bottom: 0;
 
+    @include respond-to(onlySmall) {
+      display: none;
+    }
     @include respond-to(mg) {
       display: block;
       width: 140px;
