@@ -54,13 +54,13 @@
   width: 100%;
 
   @include respond-to(md) {
-    width: calc(50%);
+    width: 50%;
     padding-bottom: 45%;
     left: 0;
     top: -130px;
   }
 
   @include respond-to(lg) {
-    width: calc(50%);
+    width: 50%;
   }
 }
