@@ -12,7 +12,7 @@ const FeaturedPostCard = ({ imageUrl, text, title, url }) => (
     <a
       href={url}
       target="blank"
-      rel="noopener wnoreferrer"
+      rel="noopener noreferrer"
       className={styles.card}
     >
       <H2 bottom="small">{title}</H2>

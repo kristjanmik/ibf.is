@@ -20,7 +20,7 @@ const FeaturedEventCard = ({
     <a
       href={url}
       target="blank"
-      rel="noopener wnoreferrer"
+      rel="noopener noreferrer"
       className={styles.card}
     >
       <DateCube date={date} color={color} />
