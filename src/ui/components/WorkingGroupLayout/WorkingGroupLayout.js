@@ -53,7 +53,7 @@ const WorkingGroupLayout = ({ aboutGroup }) => {
       <Section
         top="xlarge"
         bottom="xlarge"
-        backgroundText="board"
+        backgroundText={group.name}
         number={featuredEvent.length > 0 ? "03" : "02"}
         legendText="Members"
         legendTextColor="dark"
