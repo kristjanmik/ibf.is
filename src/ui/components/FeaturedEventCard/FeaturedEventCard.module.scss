@@ -10,6 +10,11 @@
   }
 }
 
+.subtitle {
+  color: rgba($dark, 0.6);
+  text-transform: none;
+}
+
 .card {
   background: $white;
   box-shadow: 0 9px 21px 0 rgba(214, 214, 214, 0.5);
@@ -17,27 +22,36 @@
   width: 100%;
   display: block;
 
-  @include respond-to(lg) {
-    min-height: 315px;
+  h2 {
+    padding-top: 20px;
+  }
+
+  @include respond-to(md) {
+    min-height: 285px;
     margin-left: auto;
-    margin-top: -140px;
-    padding: $ms3 $ms2 $ms3 $ms1;
+    margin-top: -220px;
+    padding: $ms3 $ms2 $ms3 $ms2;
     position: relative;
-    width: 50%;
+    width: 60%;
   }
 
   &::after {
-    display: none;
     background-image: url("src/images/dots-decorator.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    bottom: 90px;
     content: "";
-    left: -90px;
     position: absolute;
     z-index: -1;
+    width: 9.3rem;
+    height: 11.3rem;
+    left: 0;
+    transform: translateX(-50%) translateY(50%);
+    bottom: 0;
 
-    @include respond-to(lg) {
+    @include respond-to(onlySmall) {
+      display: none;
+    }
+    @include respond-to(mg) {
       display: block;
       width: 140px;
       height: 140px;
@@ -50,18 +64,17 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding-bottom: 66%;
+  padding-bottom: 30%;
 
   @include respond-to(md) {
-    width: 100%;
-    padding-bottom: 100%;
+    width: calc(50%);
+    padding-bottom: 40%;
     left: 0;
     top: 0;
   }
 
   @include respond-to(lg) {
-    width: calc(100% - 137px);
-    padding-bottom: 65%;
+    width: calc(50%);
   }
 
   &::before {
@@ -73,11 +86,5 @@
     top: 0;
     transform: translateX(50%) translateY(-50%) rotateZ(-45deg);
     width: 60px;
-  }
-}
-
-.arrow {
-  > svg {
-    margin-left: auto;
   }
 }

@@ -45,3 +45,22 @@
     display: block;
   }
 }
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+
+  @include respond-to(md) {
+    width: 50%;
+    padding-bottom: 45%;
+    left: 0;
+    top: -130px;
+  }
+
+  @include respond-to(lg) {
+    width: 50%;
+  }
+}

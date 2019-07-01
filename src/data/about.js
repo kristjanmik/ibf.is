@@ -29,159 +29,79 @@ export const aboutDevelopersGroup = {
   main: {
     title: "Developer",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'developer')[0].description,
+    text: workingGroups.filter(g => g.slug === "developer")[0].description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
 
 export const aboutCommunityGroup = {
   main: {
     title: "Community Engagement",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'community-engagement')[0].description
+    text: workingGroups.filter(g => g.slug === "community-engagement")[0]
+      .description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
 
 export const aboutEducationGroup = {
   main: {
     title: "Education",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'education')[0].description
+    text: workingGroups.filter(g => g.slug === "education")[0].description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
 
 export const aboutLegislationGroup = {
   main: {
     title: "Legislation",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'legislation')[0].description
+    text: workingGroups.filter(g => g.slug === "legislation")[0].description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
 
 export const aboutMiningGroup = {
   main: {
     title: "Mining",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'mining')[0].description
+    text: workingGroups.filter(g => g.slug === "mining")[0].description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
 
 export const aboutPRSocialGroup = {
   main: {
     title: "PR and Social",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'pr-and-social')[0].description
+    text: workingGroups.filter(g => g.slug === "pr-and-social")[0].description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
 
 export const aboutBitcoinGroup = {
   main: {
     title: "Bitcoin",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'bitcoin')[0].description
+    text: workingGroups.filter(g => g.slug === "bitcoin")[0].description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
-
 
 export const aboutAuroracoinGroup = {
   main: {
     title: "Auroracoin",
     subtitle: "Working Group",
-    text: workingGroups.filter(g => g.slug === 'auroracoin')[0].description
+    text: workingGroups.filter(g => g.slug === "auroracoin")[0].description,
   },
-  aside: [
-    {
-      title: "Join the group!",
-      text:
-        "This group is open for new members. Reach out to the group leader to learn more.",
-    },
-    {
-      title: "Meetups",
-      text:
-        "You can see the planned meetups by this group on the frontpage.",
-    }
-  ],
+  imageUrl:
+    "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png",
 };
