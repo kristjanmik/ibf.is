@@ -9,7 +9,7 @@ import Footer from "../Footer";
 const Layout = ({ children }) => (
   <ParallaxProvider>
     <Helmet>
-      <title>Rafmyntaráð</title>
+      <title>Icelandic Blockchain Foundation</title>
       <link
         href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600"
         rel="stylesheet"
