@@ -17,19 +17,19 @@ const Menu = ({ inHero }) => (
       />
     </Link>
     <div className={styles.links}>
-      <ScrollLink className={styles.link} to="#about">
+      <ScrollLink className={styles.link} to="/#about">
         <Body1>About</Body1>
       </ScrollLink>
-      <ScrollLink className={styles.link} to="#events">
+      <ScrollLink className={styles.link} to="/#events">
         <Body1>Events</Body1>
       </ScrollLink>
-      <ScrollLink className={styles.link} to="#posts">
+      <ScrollLink className={styles.link} to="/#posts">
         <Body1>Posts</Body1>
       </ScrollLink>
-      <ScrollLink className={styles.link} to="#working-groups">
+      <ScrollLink className={styles.link} to="/#working-groups">
         <Body1>Working Groups</Body1>
       </ScrollLink>
-      <ScrollLink className={styles.link} to="#newsletter">
+      <ScrollLink className={styles.link} to="/#newsletter">
         <Body1>Newsletter</Body1>
       </ScrollLink>
     </div>
