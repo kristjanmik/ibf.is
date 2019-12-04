@@ -1,5 +1,5 @@
 import React from "react";
-import cn from 'classnames'
+import cn from "classnames";
 import styles from "./Footer.module.scss";
 import { H3, Body3 } from "../Typography";
 
@@ -8,7 +8,6 @@ import twitterIcon from "src/images/social/twitter.svg";
 import telegramIcon from "src/images/social/telegram.svg";
 import instagramIcon from "src/images/social/instagram.svg";
 import youtubeIcon from "src/images/social/youtube.svg";
-
 
 const footer = {
   resources: [
@@ -43,7 +42,8 @@ const footer = {
     // },
     {
       title: "What is Cryptocurrency?",
-      url: "https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies",
+      url:
+        "https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies",
     },
     {
       title: "What is Blockchain?",
@@ -99,7 +99,9 @@ const Footer = () => (
         <ul className={styles.list}>
           {footer.resources.map(link => (
             <li key={link.title}>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -111,7 +113,9 @@ const Footer = () => (
         <ul className={styles.list}>
           {footer.learn.map(link => (
             <li key={link.title}>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -121,7 +125,9 @@ const Footer = () => (
           Contact
         </H3>
         <ul className={styles.list}>
-          <li><a href="mailto:ibf@ibf.is">ibf@ibf.is</a></li>
+          <li>
+            <a href="mailto:ibf@ibf.is">ibf@ibf.is</a>
+          </li>
           <li>Laugavegur 77</li>
           <li>101 Reykjavík</li>
         </ul>
@@ -133,7 +139,12 @@ const Footer = () => (
         <ul className={styles.socialList}>
           {socialMedia.map(social => (
             <li key={social.icon}>
-              <a target="_blank" href={social.url} className={styles.socialIcon}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={social.url}
+                className={styles.socialIcon}
+              >
                 <img src={social.icon} alt={`Follow us on ${social.name}`} />
               </a>
             </li>
@@ -142,7 +153,9 @@ const Footer = () => (
       </div>
     </div>
     <div className={styles.toes}>
-      <Body3>© 2015 - {currentYear() || "present"} Icelandic Blockchain Foundation</Body3>
+      <Body3>
+        © 2015 - {currentYear() || "present"} Icelandic Blockchain Foundation
+      </Body3>
     </div>
   </>
 );
