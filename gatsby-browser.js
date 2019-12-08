@@ -5,4 +5,4 @@
  */
 
 // You can delete this file if you're not using it
-require('isomorphic-fetch');
+require("isomorphic-fetch");

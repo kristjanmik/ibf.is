@@ -1,0 +1,72 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID"
+      }
+    },
+    "internal_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Internal Name"
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "subheading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Subheading"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em",
+        "label": "Description"
+      }
+    },
+    "date": {
+      "type": "Timestamp",
+      "config": {
+        "label": "Date"
+      }
+    },
+    "working_group": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["working_group"],
+        "label": "Working Group"
+      }
+    },
+    "address": {
+      "type": "Text",
+      "config": {
+        "label": "Address"
+      }
+    },
+    "url": {
+      "type": "Link",
+      "config": {
+        "label": "URL"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    }
+  }
+}

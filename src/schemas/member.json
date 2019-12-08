@@ -1,0 +1,38 @@
+{
+  "Main": {
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Name"
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Title"
+      }
+    },
+    "email": {
+      "type": "Text",
+      "config": {
+        "label": "Email"
+      }
+    },
+    "profile": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [
+          {
+            "name": "size800x800",
+            "width": 800,
+            "height": 800
+          }
+        ],
+        "label": "Profile"
+      }
+    }
+  }
+}

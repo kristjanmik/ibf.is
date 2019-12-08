@@ -1,1 +1,1 @@
-export { default } from './WorkingGroupsSection'
+export { default } from "./WorkingGroupsSection";

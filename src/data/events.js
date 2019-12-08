@@ -4,7 +4,8 @@ export const events = [
     workingGroupName: "Community Engagement",
     title: "Mapping of the crypto and blockchain industry in Iceland",
     subtitle: "5 PM GMT @ Moon Hall (Hard Rock)",
-    text: "We are due for an event where we observe how our industry is doing and where it is going. Where are the opportunities? What are the obstacles? What are governments abroad doing? The Icelandic Blockchain Foundation is hosting an event at the Moon hall, on the fourth floor of Hard Rock at Lækjargata 2A.Kristjan Mikaelsson, the Managing Director of the Foundation, will discuss the state of the industry in Iceland.A Q& A session will take place after the talk that starts at 17: 15. All discussion will be in English.Beer and sodas will be available.",
+    text:
+      "We are due for an event where we observe how our industry is doing and where it is going. Where are the opportunities? What are the obstacles? What are governments abroad doing? The Icelandic Blockchain Foundation is hosting an event at the Moon hall, on the fourth floor of Hard Rock at Lækjargata 2A.Kristjan Mikaelsson, the Managing Director of the Foundation, will discuss the state of the industry in Iceland.A Q& A session will take place after the talk that starts at 17: 15. All discussion will be in English.Beer and sodas will be available.",
     color: "#7E8AEE",
     url:
       "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/259817879",
@@ -97,5 +98,4 @@ export const events = [
     url:
       "https://www.meetup.com/Icelandic-Blockchain-Foundation/events/259818976/",
   },
-
 ];

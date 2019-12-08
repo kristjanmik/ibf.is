@@ -1,1 +1,1 @@
-export { default } from './RecentPostsSection'
+export { default } from "./RecentPostsSection";

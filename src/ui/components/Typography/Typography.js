@@ -14,7 +14,7 @@ const createStyle = (defaultComponent, style, substyles = {}) => {
       style,
       padding(props.top, props.bottom),
       substyleKeys.map(key => props[key] && substyles[key]),
-      props.className,
+      props.className
     );
     return React.createElement(
       props.component || defaultComponent,
@@ -88,4 +88,3 @@ export const Body3 = createStyle("p", "t-Body3", {
 export const Body4 = createStyle("p", "t-Body4", {
   uppercase: "t-uppercase",
 });
-

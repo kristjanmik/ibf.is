@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import cn from 'classnames'
+import cn from "classnames";
 import styles from "./SectionLegend.module.scss";
 import { Body3 } from "src/ui/components/Typography";
 
@@ -17,7 +17,7 @@ const SectionLegend = ({ number, text, textColor = "light" }) => (
 );
 
 SectionLegend.propTypes = {
-  textColor: PropTypes.oneOf(['light', 'dark']),
+  textColor: PropTypes.oneOf(["light", "dark"]),
 };
 
 export default SectionLegend;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const SubmitArrow = ({ className }) => (
   <svg
@@ -14,4 +14,4 @@ const SubmitArrow = ({ className }) => (
   </svg>
 );
 
-export default SubmitArrow
+export default SubmitArrow;

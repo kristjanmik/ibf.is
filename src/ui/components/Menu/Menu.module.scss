@@ -13,7 +13,7 @@
   @include respond-to(md) {
     padding: 100px $horizontalSpacing 0;
   }
-  
+
   &.inHero {
     color: $white;
     position: absolute;
@@ -25,7 +25,7 @@
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
-  margin: $ms1 $ms3;
+  margin: $ms1 $ms2;
   position: relative;
 
   &::after {

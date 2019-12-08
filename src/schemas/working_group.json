@@ -1,0 +1,86 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID"
+      }
+    },
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Name"
+      }
+    },
+    "order": {
+      "type": "Number",
+      "config": {
+        "label": "Order"
+      }
+    },
+    "subheading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Subheading"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Description"
+      }
+    },
+    "color": {
+      "type": "Color",
+      "config": {
+        "label": "Color"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": null,
+          "height": null
+        },
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "members": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "user": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["member"],
+              "label": "User"
+            }
+          }
+        },
+        "label": "Members"
+      }
+    },
+    "events": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "event": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["event"],
+              "label": "Event"
+            }
+          }
+        },
+        "label": "Events"
+      }
+    }
+  }
+}

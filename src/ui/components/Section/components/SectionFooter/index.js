@@ -1,1 +1,1 @@
-export { default } from './SectionFooter'
+export { default } from "./SectionFooter";

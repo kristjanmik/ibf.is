@@ -11,15 +11,17 @@ const Icon = ({ icon, alt = "" }) => (
 
 const AboutCard = ({ data = [] }) => (
   <aside className={styles.root}>
-    {data.map(block => (
-      <div key={block.title} className={styles.block}>
+    {data.map(({ title, text }) => (
+      <div key={title} className={styles.block}>
         <div className={styles.top}>
-          <Icon icon={serveIcon} alt={block.title} />
+          <Icon icon={serveIcon} alt={title} />
           <H2 bold className={styles.heading}>
-            {block.title}
+            {title}
           </H2>
         </div>
-        <Body2>{block.text}</Body2>
+        <Body2>
+          <span dangerouslySetInnerHTML={{ __html: text }} />
+        </Body2>
       </div>
     ))}
   </aside>

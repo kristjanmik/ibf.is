@@ -47,7 +47,10 @@ class Slider extends Component {
       variableWidth: false,
       arrows: true,
       responsive: [
-        { breakpoint: 600, settings: { slidesToShow: 1.25, infinite: false, arrows: false } },
+        {
+          breakpoint: 600,
+          settings: { slidesToShow: 1.25, infinite: false, arrows: false },
+        },
         { breakpoint: 960, settings: { slidesToShow: 2 } },
         { breakpoint: 1300, settings: { slidesToShow: 3 } },
         { breakpoint: 1800, settings: { slidesToShow: 4 } },

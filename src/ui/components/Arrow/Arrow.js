@@ -12,17 +12,22 @@ const Arrow = ({
 }) =>
   alignment === "horizontal" ? (
     <div className={cn(className, styles.root, padding(top, bottom))}>
-      <svg width="90" height="16" viewBox="0 0 90 16" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M88 8H1"
-            stroke={color}
-            strokeWidth="1.5"
-            strokeLinecap="square"
-          />
-          <path
-            fill={color}
-            d="M81 1.39l.984-.89L90 8l-8.016 7.5-.984-.89L88.031 8z"
-          />
+      <svg
+        width="90"
+        height="16"
+        viewBox="0 0 90 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M88 8H1"
+          stroke={color}
+          strokeWidth="1.5"
+          strokeLinecap="square"
+        />
+        <path
+          fill={color}
+          d="M81 1.39l.984-.89L90 8l-8.016 7.5-.984-.89L88.031 8z"
+        />
       </svg>
     </div>
   ) : (

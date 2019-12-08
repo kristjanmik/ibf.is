@@ -13,12 +13,12 @@ const UpcomingEventsSection = ({ events }) => {
       <Slider>
         {events.map(event => (
           <EventCard
-            key={event.title + String(Math.random()).substr(4, 6)}
+            key={`${event.title}-${event.day}`}
             workingGroupName={event.workingGroupName}
-            date={event.date}
+            date={event.day}
             title={event.title}
-            subtitle={event.subtitle}
-            text={event.text}
+            subtitle={event.subheading}
+            text={event.description}
             color={event.color}
             url={event.url}
           />

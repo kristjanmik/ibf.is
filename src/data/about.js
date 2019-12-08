@@ -1,10 +1,11 @@
-import { workingGroups } from './working-groups'
+import { workingGroups } from "./working-groups";
 
 export const aboutIBF = {
   main: {
     title: "Icelandic Blockchain Foundation",
     subtitle: null,
-    text: " The Foundation was created on the 29th of March 2015 (originally Auraráð). The Foundation was established by a collective of individuals with a shared vision of the positive impact that cryptocurrencies and blockchain technology can have on the Icelandic economy.",
+    text:
+      " The Foundation was created on the 29th of March 2015 (originally Auraráð). The Foundation was established by a collective of individuals with a shared vision of the positive impact that cryptocurrencies and blockchain technology can have on the Icelandic economy.",
   },
   aside: [
     {

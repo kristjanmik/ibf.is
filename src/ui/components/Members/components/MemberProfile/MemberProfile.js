@@ -10,14 +10,23 @@ const MemberProfile = ({ name, title, email, image, themeColor }) => {
           className={styles.imageInner}
           style={{ backgroundImage: `url(${image})` }}
         />
-        <div className={styles.imageOverlay} />
+        <div
+          className={styles.imageOverlay}
+          style={{
+            backgroundImage: `linear-gradient(-180deg, ${themeColor} 0%, #05223d 100%)`,
+          }}
+        />
       </div>
       <div className={styles.content}>
         <Body4 uppercase className={styles.title}>
           <span style={{ color: themeColor }}>{title}</span>
         </Body4>
-        <Body2 bold className={styles.name}>{name}</Body2>
-        <Body2 className={styles.email}><a href={`mailto:${email}`}>{email}</a></Body2>
+        <Body2 bold className={styles.name}>
+          {name}
+        </Body2>
+        <Body2 className={styles.email}>
+          <a href={`mailto:${email}`}>{email}</a>
+        </Body2>
       </div>
     </div>
   );
