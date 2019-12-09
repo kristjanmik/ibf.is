@@ -1,17 +1,13 @@
 {
-    "version": 2,
-    "name": "ibf-website",
-    "alias": [
-        "ibf.is",
-        "www.ibf.is"
-    ],
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "@now/static-build",
-            "config": {
-                "distDir": "public"
-            }
-        }
-    ]
+  "version": 2,
+  "name": "ibf-website",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ]
 }
