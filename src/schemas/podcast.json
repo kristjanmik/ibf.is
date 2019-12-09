@@ -1,0 +1,56 @@
+{
+  "Main": {
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Name"
+      }
+    },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Date"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Description"
+      }
+    },
+    "apple_url": {
+      "type": "Link",
+      "config": {
+        "label": "Apple URL"
+      }
+    },
+    "spotify_url": {
+      "type": "Link",
+      "config": {
+        "label": "Spotify URL"
+      }
+    },
+    "embed": {
+      "type": "Embed",
+      "config": {
+        "label": "Embed"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Cover"
+      }
+    },
+    "promo": {
+      "type": "Link",
+      "config": {
+        "label": "Promo Video"
+      }
+    }
+  }
+}

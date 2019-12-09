@@ -12,7 +12,6 @@ import NewsletterAnchorButton from "src/ui/components/NewsletterAnchorButton";
 import RecentPostsSection from "src/ui/sections/RecentPostsSection";
 import AboutSection from "src/ui/sections/AboutSection";
 import NewsletterSection from "src/ui/sections/NewsletterSection";
-import { posts } from "src/data";
 import { withLang } from "src/utility/Translation";
 import TranslationContext from "src/utility/TranslationContext";
 
@@ -56,7 +55,7 @@ export const query = graphql`
       }
     }
 
-    events: allPrismicEvent(filter: { lang: { eq: "is" } }) {
+    events: allPrismicEvent(filter: { lang: { eq: $lang } }) {
       edges {
         node {
           data {
@@ -94,8 +93,117 @@ export const query = graphql`
         }
       }
     }
+
+    posts: allPrismicPost(filter: { lang: { eq: $lang } }) {
+      edges {
+        node {
+          data {
+            image {
+              url
+            }
+            on_blog
+            date: publish_date(formatString: "DD/MM/YY")
+            summary {
+              text
+            }
+            text {
+              html
+            }
+            title {
+              text
+            }
+            author {
+              document {
+                ... on PrismicMember {
+                  id
+                  data {
+                    name {
+                      text
+                    }
+                    title {
+                      text
+                    }
+                  }
+                }
+              }
+            }
+            body {
+              ... on PrismicPostBodyPodcastSlice {
+                id
+                primary {
+                  podcast {
+                    id
+                    document {
+                      ... on PrismicPodcast {
+                        id
+                        data {
+                          description {
+                            text
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              ... on PrismicPostBodyEventSlice {
+                id
+                primary {
+                  event {
+                    document {
+                      ... on PrismicEvent {
+                        id
+                        data {
+                          address
+                          title {
+                            text
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              ... on PrismicPostBodyExternalLink {
+                id
+                primary {
+                  link {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `;
+
+//@TODO do not do page blank if url is internal
+//@TODO generate correct url based on type
+const cleanPosts = (edge, index) => {
+  let obj = {
+    ...edge.node.data,
+    date: edge.node.data.date,
+    title: edge.node.data.title.text,
+    text: edge.node.data.summary.text,
+    image: edge.node.data.image.url,
+    url: `/en-us/blog/someid`,
+    isFeatured: index === 0,
+  };
+  const body = edge.node.data.body[0];
+
+  //No slice
+  if (!body) return obj;
+
+  if (body.primary.link) {
+    //Type is link
+    obj.url = body.primary.link.url;
+  }
+
+  return obj;
+};
 
 const IndexPage = ({ data, pageContext: { groups, lang } }) => {
   const T = withLang(lang);
@@ -120,6 +228,14 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
   }));
 
   events.sort((a, b) => {
+    if (new Date(a.date) > new Date(b.date)) return 1;
+    if (new Date(a.date) < new Date(b.date)) return -1;
+    return 0;
+  });
+
+  let posts = data.posts.edges.map(cleanPosts);
+
+  posts.sort((a, b) => {
     if (new Date(a.date) > new Date(b.date)) return 1;
     if (new Date(a.date) < new Date(b.date)) return -1;
     return 0;
