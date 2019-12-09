@@ -16,7 +16,7 @@ export default {
   join: "Skrá",
   newsletterDescription:
     "Mánaðarlegar uppfærslur og fréttir, aldrei fjölpóstur",
-  newsletterCTA: `Skráðu þig í <strong>fréttabréfið</strong> <br />fyrir mánaðarlegar uppfærslur og fréttir`,
+  newsletterCTA: `<p>Skráðu þig í <strong>fréttabréfið</strong> <br />fyrir mánaðarlegum uppfærslum og fréttum</p>`,
   enterEmail: "Sláðu inn netfangið þitt",
   eventsBackgroundHeading: "viðburðir",
   postsBackgroundHeading: "greinar",
