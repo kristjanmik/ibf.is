@@ -1,9 +1,9 @@
 export default {
   foundationName: "Rafmyntaráð Íslands",
   newsletterPlaceholder: "Sláðu inn netfangið þitt fyrir fréttabréfið",
-  foundationDescription: `Markmiðið okkar er að gera Ísland <br /> að leiðandi afli í nýsköpun á <br />
+  foundationDescription: `<p>Markmiðið okkar er að gera Ísland <br /> að leiðandi afli í nýsköpun á <br />
       <strong>rafmyntum</strong>
-      og <strong>bálkakeðjum</strong>`,
+      og <strong>bálkakeðjum</strong></p>`,
   aboutHeading: "Um Rafmyntaráð",
   events: "Viðburðir",
   goToEvents: "fleiri viðburðir",

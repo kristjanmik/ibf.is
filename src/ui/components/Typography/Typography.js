@@ -16,75 +16,151 @@ const createStyle = (defaultComponent, style, substyles = {}) => {
       substyleKeys.map(key => props[key] && substyles[key]),
       props.className
     );
-    return React.createElement(
-      props.component || defaultComponent,
-      { className },
-      props.children
-    );
-  };
 
-  component.propTypes = {
-    ...padding.propTypes,
-    children: PropTypes.node,
-    component: PropTypes.node,
+    if (props.dangerouslySetInnerHTML) {
+      return React.createElement(props.component || defaultComponent, {
+        className,
+        dangerouslySetInnerHTML: props.dangerouslySetInnerHTML,
+      });
+    } else {
+      return React.createElement(
+        props.component || defaultComponent,
+        { className },
+        props.children
+      );
+    }
   };
-  substyleKeys.forEach(key => component.propTypes[key]);
 
   return component;
 };
 
-export const H1 = createStyle("h1", "t-h1", {
-  light: "t-light",
-  bold: "t-bold",
-  center: "t-center",
-  uppercase: "t-uppercase",
-});
+export const styledDiv = component => {
+  return createStyle(
+    "div",
+    styles[component].baseStyle,
+    styles[component].styles
+  );
+};
 
-export const H2 = createStyle("h2", "t-h2", {
-  light: "t-light",
-  bold: "t-bold",
-  center: "t-center",
-  uppercase: "t-uppercase",
-});
+const styles = {
+  H1: {
+    baseStyle: "t-h1",
+    styles: {
+      light: "t-light",
+      bold: "t-bold",
+      center: "t-center",
+      uppercase: "t-uppercase",
+    },
+  },
+  H2: {
+    baseStyle: "t-h2",
+    styles: {
+      light: "t-light",
+      bold: "t-bold",
+      center: "t-center",
+      uppercase: "t-uppercase",
+    },
+  },
+  H3: {
+    baseStyle: "t-h3",
+    styles: {
+      light: "t-light",
+      bold: "t-bold",
+      center: "t-center",
+      uppercase: "t-uppercase",
+    },
+  },
+  H4: {
+    baseStyle: "t-h4",
+    styles: {
+      light: "t-light",
+      bold: "t-bold",
+      center: "t-center",
+      uppercase: "t-uppercase",
+    },
+  },
+  Body1: {
+    baseStyle: "t-Body1",
+    styles: {
+      light: "t-light",
+      center: "t-center",
+      bold: "t-bold",
+      uppercase: "t-uppercase",
+      monospace: "t-monospace",
+    },
+  },
+  Body2: {
+    baseStyle: "t-Body2",
+    styles: {
+      light: "t-light",
+      center: "t-center",
+      bold: "t-bold",
+      uppercase: "t-uppercase",
+      monospace: "t-monospace",
+    },
+  },
+  Body3: {
+    baseStyle: "t-Body3",
+    styles: {
+      light: "t-light",
+      center: "t-center",
+      bold: "t-bold",
+      uppercase: "t-uppercase",
+      monospace: "t-monospace",
+    },
+  },
+  Body4: {
+    baseStyle: "t-Body4",
+    styles: {
+      uppercase: "t-uppercase",
+    },
+  },
+};
 
-export const H3 = createStyle("h3", "t-h3", {
-  light: "t-light",
-  bold: "t-bold",
-  center: "t-center",
-  uppercase: "t-uppercase",
-});
+export const H1 = createStyle(
+  "h1",
+  styles["H1"].baseStyle,
+  styles["H1"].styles
+);
 
-export const H4 = createStyle("h4", "t-h4", {
-  light: "t-light",
-  bold: "t-bold",
-  center: "t-center",
-  uppercase: "t-uppercase",
-});
+export const H2 = createStyle(
+  "h2",
+  styles["H2"].baseStyle,
+  styles["H2"].styles
+);
 
-export const Body1 = createStyle("p", "t-Body1", {
-  light: "t-light",
-  center: "t-center",
-  bold: "t-bold",
-  uppercase: "t-uppercase",
-  monospace: "t-monospace",
-});
+export const H3 = createStyle(
+  "h3",
+  styles["H3"].baseStyle,
+  styles["H3"].styles
+);
 
-export const Body2 = createStyle("p", "t-Body2", {
-  light: "t-light",
-  center: "t-center",
-  bold: "t-bold",
-  uppercase: "t-uppercase",
-  monospace: "t-monospace",
-});
+export const H4 = createStyle(
+  "h4",
+  styles["H4"].baseStyle,
+  styles["H4"].styles
+);
 
-export const Body3 = createStyle("p", "t-Body3", {
-  light: "t-light",
-  center: "t-center",
-  bold: "t-bold",
-  uppercase: "t-uppercase",
-  monospace: "t-monospace",
-});
+export const Body1 = createStyle(
+  "p",
+  styles["Body1"].baseStyle,
+  styles["Body1"].styles
+);
 
-export const Body4 = createStyle("p", "t-Body4", {
-  uppercase: "t-uppercase",
-});
+export const Body2 = createStyle(
+  "p",
+  styles["Body2"].baseStyle,
+  styles["Body2"].styles
+);
+
+export const Body3 = createStyle(
+  "p",
+  styles["Body3"].baseStyle,
+  styles["Body3"].styles
+);
+
+export const Body4 = createStyle(
+  "p",
+  styles["Body4"].baseStyle,
+  styles["Body4"].styles
+);

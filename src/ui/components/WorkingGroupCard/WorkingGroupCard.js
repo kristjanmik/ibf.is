@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import styles from "./WorkingGroupCard.module.scss";
-import { workingGroups } from "src/data/working-groups";
 import Avatar from "../Avatar";
 import WorkingGroupIcon from "./components/WorkingGroupIcon";
 import { Body2, H2, H3 } from "src/ui/components/Typography";
@@ -47,10 +45,6 @@ const WorkingGroupCard = ({
       </div>
     </Link>
   );
-};
-
-WorkingGroupCard.propTypes = {
-  workingGroup: PropTypes.oneOf(workingGroups),
 };
 
 export default WorkingGroupCard;

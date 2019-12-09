@@ -147,7 +147,6 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
         >
           <AboutSection
             title={T("foundationName")}
-            subtitle={null}
             text={aboutDescription}
             statements={aboutStatements}
           />
