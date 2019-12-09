@@ -38,7 +38,8 @@ module.exports = {
         pages: path.join(__dirname, "src/pages"),
       },
     },
-    "gatsby-plugin-offline",
+    //@TODO Some issues, skip for now
+    // "gatsby-plugin-offline",
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
