@@ -41,4 +41,5 @@ export default {
   whatIsCrypto: "Hvað eru rafmyntir?",
   whatIsBlockchain: "Hvað eru bálkakeðjur?",
   otherWorkingGroups: "Aðrir vinnuhópar",
+  blog: "blogg",
 };

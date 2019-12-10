@@ -97,12 +97,13 @@ export const query = graphql`
     posts: allPrismicPost(filter: { lang: { eq: $lang } }) {
       edges {
         node {
+          uid
           data {
             image {
               url
             }
             on_blog
-            date: publish_date(formatString: "DD/MM/YY")
+            date: publish_date
             summary {
               text
             }
@@ -139,6 +140,9 @@ export const query = graphql`
                         data {
                           description {
                             text
+                          }
+                          image {
+                            url
                           }
                         }
                       }
@@ -180,31 +184,6 @@ export const query = graphql`
   }
 `;
 
-//@TODO do not do page blank if url is internal
-//@TODO generate correct url based on type
-const cleanPosts = (edge, index) => {
-  let obj = {
-    ...edge.node.data,
-    date: edge.node.data.date,
-    title: edge.node.data.title.text,
-    text: edge.node.data.summary.text,
-    image: edge.node.data.image.url,
-    url: `/en-us/blog/someid`,
-    isFeatured: index === 0,
-  };
-  const body = edge.node.data.body[0];
-
-  //No slice
-  if (!body) return obj;
-
-  if (body.primary.link) {
-    //Type is link
-    obj.url = body.primary.link.url;
-  }
-
-  return obj;
-};
-
 const IndexPage = ({ data, pageContext: { groups, lang } }) => {
   const T = withLang(lang);
 
@@ -233,13 +212,52 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
     return 0;
   });
 
+  //@TODO do not do page blank if url is internal
+  //@TODO generate correct url based on type
+  const cleanPosts = edge => {
+    const uid = edge.node.uid;
+    let obj = {
+      ...edge.node.data,
+      date: edge.node.data.date,
+      title: edge.node.data.title.text,
+      text: edge.node.data.summary.text,
+      image: edge.node.data.image.url,
+      url: `/${lang}/blog/${uid}`,
+      isFeatured: false,
+    };
+    const body = edge.node.data.body[0];
+
+    //No slice
+    if (!body) return obj;
+
+    if (body.primary.link) {
+      //Type is link
+      obj.url = body.primary.link.url;
+    } else if (body.primary.podcast && body.primary.podcast.document) {
+      //Type is podcast
+      //@TODO special links for podcast or just a special type of blog?
+      obj.image = body.primary.podcast.document.data.image.url;
+    }
+
+    return obj;
+  };
+
   let posts = data.posts.edges.map(cleanPosts);
 
   posts.sort((a, b) => {
-    if (new Date(a.date) > new Date(b.date)) return 1;
-    if (new Date(a.date) < new Date(b.date)) return -1;
+    if (new Date(a.date).getTime() > new Date(b.date).getTime()) return -1;
+    if (new Date(a.date).getTime() < new Date(b.date).getTime()) return 1;
     return 0;
   });
+
+  posts = posts.map((obj, index) => {
+    if (index === 0) {
+      obj.isFeatured = true;
+    }
+    return obj;
+  });
+
+  console.log("posts", posts);
 
   return (
     <TranslationContext.Provider value={lang}>

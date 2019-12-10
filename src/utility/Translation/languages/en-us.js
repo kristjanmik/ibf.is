@@ -41,4 +41,5 @@ export default {
   whatIsCrypto: "What is Cryptocurrency?",
   whatIsBlockchain: "What is Blockchain?",
   otherWorkingGroups: "Other working groups",
+  blog: "blog",
 };

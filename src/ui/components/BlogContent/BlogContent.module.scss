@@ -1,0 +1,143 @@
+@import "src/utility/variables";
+@import "src/utility/responsive";
+
+.rootImage {
+  position: relative;
+  background: $white;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
+  max-width: $md;
+  margin: auto;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  // background-image: url("path/to/image.jpg");
+  margin-bottom: 30px;
+
+  height: 100%;
+  min-height: $md;
+  max-height: $md;
+
+  @include respond-to(md) {
+    flex: 0 1 50%;
+  }
+}
+
+.blockImage {
+  position: relative;
+  max-width: $md;
+  margin: auto;
+  background: $white;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* ratio of 1:1*/
+  }
+
+  .boxContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.root {
+  position: relative;
+  background: $white;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
+  max-width: $md;
+  margin: auto;
+
+  @include respond-to(md) {
+    padding: $ms4;
+    flex: 0 1 50%;
+    &::after {
+      content: "";
+      background: url("src/images/dots-decorator.svg") no-repeat;
+      position: absolute;
+      width: 9.3rem;
+      height: 9.3rem;
+      z-index: -1;
+      right: 0;
+      transform: translateX(-50%) translateY(50%);
+      bottom: 0;
+    }
+  }
+}
+
+.title {
+  margin-bottom: $ms3;
+}
+.content {
+  :global .block-img {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // :global .right-align {
+  //   img {
+  //     max-width: 50%;
+  //     margin-left: 50%;
+  //   }
+  // }
+
+  p {
+    padding-bottom: $ms3;
+    font-size: $t4;
+    font-weight: 100;
+    // color: rgba(0, 0, 0, 0.84);
+    color: #000;
+
+    @include respond-to(onlySmall) {
+      font-size: 16px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-size: $t6;
+    line-height: 1.35;
+    margin-bottom: 12px;
+
+    @include respond-to(onlySmall) {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    font-size: $t5;
+    margin-bottom: $ms1;
+
+    @include respond-to(onlySmall) {
+      font-size: 22px;
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowLeft {
+  > svg {
+    transform: scale(-1, 1);
+  }
+}
+
+.arrowRight {
+  > svg {
+  }
+}

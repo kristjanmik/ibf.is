@@ -108,8 +108,50 @@ exports.createPages = async ({
           }
         }
       }
+
+      posts: allPrismicPost {
+        edges {
+          node {
+            uid
+            lang
+            data {
+              date: publish_date
+              on_blog
+            }
+          }
+        }
+      }
     }
   `);
+
+  let posts = data.posts.edges.map(p => ({
+    date: p.node.data.date,
+    uid: p.node.uid,
+    lang: p.node.lang,
+    on_blog: p.node.data.on_blog,
+  }));
+
+  posts.sort((a, b) => {
+    if (new Date(a.date) > new Date(b.date)) return 1;
+    if (new Date(a.date) < new Date(b.date)) return -1;
+    return 0;
+  });
+
+  posts
+    .filter(p => p.on_blog === "yes")
+    .map(({ uid, lang }) => {
+      const url = `${lang}/blog/${uid}`;
+
+      createPage({
+        path: url,
+        component: require.resolve("./src/templates/blog-post.js"),
+        context: {
+          uid: uid,
+          lang,
+          posts: posts.filter(p => p.lang === lang),
+        },
+      });
+    });
 
   const groupsResult = data.groups.edges;
 
