@@ -12,13 +12,13 @@ import { withLang } from "src/utility/Translation";
 const Menu = ({ inHero }) => {
   const lang = useContext(TranslationContext);
   const T = withLang(lang);
-  const langLink = lang === "is" ? "en-us" : "is";
+  const langLink = lang === "is" ? "/is" : "/en-us";
+  const langLinkReverse = lang === "is" ? "/en-us" : "/is";
   const langLinkText = lang === "is" ? "English 🇺🇸" : "Íslenska 🇮🇸";
-  const frontpageLink = lang === "is" ? "/" : "en-us";
 
   return (
     <nav className={cn(styles.root, inHero && styles.inHero)}>
-      <Link to={frontpageLink}>
+      <Link to={langLink}>
         <img
           className={styles.logo}
           src={inHero ? whiteLogo : darkLogo}
@@ -26,22 +26,22 @@ const Menu = ({ inHero }) => {
         />
       </Link>
       <div className={styles.links}>
-        <ScrollLink className={styles.link} to="/#about">
+        <ScrollLink className={styles.link} to={`${langLink}#about`}>
           <Body1>{T("about")}</Body1>
         </ScrollLink>
-        <ScrollLink className={styles.link} to="/#events">
+        <ScrollLink className={styles.link} to={`${langLink}#events`}>
           <Body1>{T("events")}</Body1>
         </ScrollLink>
-        <ScrollLink className={styles.link} to="/#posts">
+        <ScrollLink className={styles.link} to={`${langLink}#posts`}>
           <Body1>{T("posts")}</Body1>
         </ScrollLink>
-        <ScrollLink className={styles.link} to="/#working-groups">
+        <ScrollLink className={styles.link} to={`${langLink}#working-groups`}>
           <Body1>{T("workingGroupsMenu")}</Body1>
         </ScrollLink>
-        <ScrollLink className={styles.link} to="/#newsletter">
+        <ScrollLink className={styles.link} to={`${langLink}#newsletter`}>
           <Body1>{T("newsletter")}</Body1>
         </ScrollLink>
-        <ScrollLink className={styles.link} to={langLink}>
+        <ScrollLink className={styles.link} to={langLinkReverse}>
           <Body1>{langLinkText}</Body1>
         </ScrollLink>
       </div>

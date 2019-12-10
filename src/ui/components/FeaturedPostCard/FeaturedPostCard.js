@@ -11,8 +11,8 @@ const FeaturedPostCard = ({ imageUrl, text, title, url }) => (
     />
     <a
       href={url}
-      target="blank"
-      rel="noopener noreferrer"
+      target={url[0] !== "/" ? "blank" : undefined}
+      rel={url[0] !== "/" ? "noopener noreferrer" : undefined}
       className={styles.card}
     >
       <H2 bottom="small">{title}</H2>
