@@ -53,11 +53,22 @@
   }
 }
 
+//Hide all links in mobile except language changer until we have a proper mobile menu
 .links {
-  display: none;
+  display: flex;
+
+  .link {
+    display: none;
+  }
+
+  .link:last-child {
+    display: flex;
+  }
 
   @include respond-to(md) {
-    display: flex;
+    .link {
+      display: flex;
+    }
   }
 }
 
