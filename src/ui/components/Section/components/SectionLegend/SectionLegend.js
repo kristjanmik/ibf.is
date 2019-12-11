@@ -9,7 +9,7 @@ const SectionLegend = ({ number, text, textColor = "light" }) => (
     <Body3 uppercase monospace bold>
       {number}
     </Body3>
-    <span className={styles.decorator} />
+    {(number || text) && <span className={styles.decorator} />}
     <Body3 uppercase bold>
       {text}
     </Body3>

@@ -277,7 +277,7 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
           id="about"
           number="02"
           legendText={T("aboutHeading")}
-          legendColor="dark"
+          legendTextColor="dark"
         >
           <AboutSection
             title={T("foundationName")}

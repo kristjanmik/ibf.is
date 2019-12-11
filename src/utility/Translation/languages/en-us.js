@@ -42,4 +42,5 @@ export default {
   whatIsBlockchain: "What is Blockchain?",
   otherWorkingGroups: "Other working groups",
   blog: "blog",
+  listenToEpisodeHeading: "Listen to the episode:",
 };

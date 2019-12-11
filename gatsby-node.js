@@ -148,19 +148,17 @@ exports.createPages = async ({
 
   posts
     .filter(p => p.on_blog === "yes")
-    .map(({ uid, lang }) => {
-      const url = `${lang}/blog/${uid}`;
-
+    .map(({ uid, lang }) =>
       createPage({
-        path: url,
+        path: `${lang}/blog/${uid}`,
         component: require.resolve("./src/templates/blog-post.js"),
         context: {
           uid: uid,
           lang,
           posts: posts.filter(p => p.lang === lang),
         },
-      });
-    });
+      })
+    );
 
   const groupsResult = data.groups.edges;
 
@@ -185,38 +183,33 @@ exports.createPages = async ({
   });
 
   //Start creating pages
-  groups.map(({ uid, lang }) => {
-    const url = `${lang}/working-group/${uid}`;
-
+  groups.map(({ uid, lang }) =>
     createPage({
-      path: url,
+      path: `${lang}/working-group/${uid}`,
       component: require.resolve("./src/templates/working-group.js"),
       context: {
         uid: uid,
         lang,
         groups: groups.filter(g => g.lang === lang),
       },
-    });
-  });
+    })
+  );
 
   const pages = data.pages.edges.map(r => ({
     uid: r.node.uid,
     lang: r.node.lang,
   }));
 
-  pages.map(({ uid, lang }) => {
-    const url = `${lang}/page/${uid}`;
-    console.log("creating page", url);
-
+  pages.map(({ uid, lang }) =>
     createPage({
-      path: url,
+      path: `${lang}/page/${uid}`,
       component: require.resolve("./src/templates/static-page.js"),
       context: {
         uid: uid,
         lang,
       },
-    });
-  });
+    })
+  );
 
   languages.map(lang =>
     createPage({
