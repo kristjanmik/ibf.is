@@ -121,6 +121,15 @@ exports.createPages = async ({
           }
         }
       }
+
+      pages: allPrismicStaticPage {
+        edges {
+          node {
+            uid
+            lang
+          }
+        }
+      }
     }
   `);
 
@@ -186,6 +195,25 @@ exports.createPages = async ({
         uid: uid,
         lang,
         groups: groups.filter(g => g.lang === lang),
+      },
+    });
+  });
+
+  const pages = data.pages.edges.map(r => ({
+    uid: r.node.uid,
+    lang: r.node.lang,
+  }));
+
+  pages.map(({ uid, lang }) => {
+    const url = `${lang}/page/${uid}`;
+    console.log("creating page", url);
+
+    createPage({
+      path: url,
+      component: require.resolve("./src/templates/static-page.js"),
+      context: {
+        uid: uid,
+        lang,
       },
     });
   });

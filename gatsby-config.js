@@ -106,6 +106,7 @@ module.exports = {
           about_page: require("./src/schemas/about_page.json"),
           post: require("./src/schemas/post.json"),
           podcast: require("./src/schemas/podcast.json"),
+          static_page: require("./src/schemas/static_page.json"),
         },
         lang: "*",
         shouldDownloadImage: ({ node, key, value }) => {
