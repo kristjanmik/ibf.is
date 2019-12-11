@@ -125,7 +125,6 @@ export const query = graphql`
   }
 `;
 
-//@TODO need to fetch all blog post and filter on on_blog to generate successful bottom links
 const BlogPost = ({ data, pageContext }) => {
   const { uid, lang } = pageContext;
 
@@ -196,13 +195,12 @@ const BlogPost = ({ data, pageContext }) => {
         <Section
           top="xlarge"
           bottom="xlarge"
-          number={date}
           backgroundText={T("blog")}
-          legendText={title}
           legendTextColor="dark"
         >
           <BlogContent
             title={title}
+            date={date}
             content={text}
             slices={slices}
             previous={previous}

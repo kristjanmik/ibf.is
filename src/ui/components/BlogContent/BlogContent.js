@@ -1,9 +1,17 @@
 import React from "react";
 import styles from "./BlogContent.module.scss";
-import { H2 } from "src/ui/components/Typography";
+import { H2, H4 } from "src/ui/components/Typography";
 import Arrow from "src/ui/components/Arrow";
 
-const BlogContent = ({ title, content, slices, previous, next, image }) => {
+const BlogContent = ({
+  title,
+  date,
+  content,
+  slices,
+  previous,
+  next,
+  image,
+}) => {
   const slice = slices[0];
   let Previous;
   let Next;
@@ -23,10 +31,6 @@ const BlogContent = ({ title, content, slices, previous, next, image }) => {
       </a>
     );
   }
-
-  // backgroundImage: `url(https://images.prismic.io/rafmyntarad/240720a9-b817-4d4d-8e82-db11f36c2793_Promo+Episode+Cover.png?auto=compress,format)`,
-  // backgroundImage: `url(https://images.prismic.io/rafmyntarad/b4e5db21-1473-425f-b7c3-8838be2c89c9_Fintech+Cluster.png?auto=compress,format&w=900h=400)`,
-  // backgroundImage: `url(https://images.prismic.io/rafmyntarad/0f18a9b2-f46b-49a7-ba49-f76d588608e3_1_48AmBatwkM_tMUxWCvW2Og.jpeg?auto=compress,format)`,
 
   let Image = null;
 
@@ -53,7 +57,10 @@ const BlogContent = ({ title, content, slices, previous, next, image }) => {
     <>
       {Image}
       <div className={styles.root}>
-        <H2 className={styles.title}>{title}</H2>
+        <H2>{title}</H2>
+        <H4 light className={styles.date}>
+          {date}
+        </H4>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{

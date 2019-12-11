@@ -29,11 +29,14 @@ const Section = ({
     )}
     id={id}
   >
-    <SectionLegend
-      number={number}
-      text={legendText}
-      textColor={legendTextColor}
-    />
+    {(number || legendText) && (
+      <SectionLegend
+        number={number}
+        text={legendText}
+        textColor={legendTextColor}
+      />
+    )}
+
     {backgroundText && (
       <Parallax
         className={styles.backgroundText}
