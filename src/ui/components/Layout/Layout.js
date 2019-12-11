@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
   return (
     <ParallaxProvider>
       <Helmet>
+        <meta charset="UTF-8" />
         <title>{T("foundationName")}</title>
         <link
           href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600"
