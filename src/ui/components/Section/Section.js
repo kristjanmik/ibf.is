@@ -29,21 +29,20 @@ const Section = ({
     )}
     id={id}
   >
-    {(number || legendText) && (
-      <SectionLegend
-        number={number}
-        text={legendText}
-        textColor={legendTextColor}
-      />
-    )}
+    <SectionLegend
+      number={number}
+      text={legendText}
+      textColor={legendTextColor}
+    />
 
     {backgroundText && (
       <Parallax
-        className={styles.backgroundText}
-        offsetXMax="50px"
-        offsetXMin="0px"
-        slowerScrollRate
-        tag="figure"
+        x={["50px", "0px"]}
+        tagInner="figure"
+        className={cn(
+          styles.backgroundText,
+          top === "xsmall" ? styles.xsmall : null
+        )}
       >
         <span>{backgroundText}</span>
       </Parallax>
