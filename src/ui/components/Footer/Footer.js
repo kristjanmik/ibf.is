@@ -56,7 +56,7 @@ const Footer = () => {
     resources: [
       {
         title: T("bylaws"),
-        url: "https://secure-storage.ibf.is/Bylaws.pdf",
+        url: "/is/page/bylaws",
       },
       {
         title: T("executiveSummary"),
@@ -87,9 +87,7 @@ const Footer = () => {
           <ul className={styles.list}>
             {footer.resources.map(link => (
               <li key={link.title}>
-                <a href={link.url} target="_blank" rel="noopener noreferrer">
-                  {link.title}
-                </a>
+                <a href={link.url}>{link.title}</a>
               </li>
             ))}
           </ul>
