@@ -13,8 +13,7 @@
   // background-image: url("path/to/image.jpg");
   margin-bottom: 30px;
 
-  height: 100%;
-  min-height: $md;
+  min-height: calc(#{$md} / 2);
   max-height: $md;
 
   @include respond-to(md) {
@@ -74,7 +73,7 @@
 }
 
 .content {
-  margin-top: $ms2;
+  margin-top: $ms3;
   :global .block-img {
     img {
       max-width: 100%;
