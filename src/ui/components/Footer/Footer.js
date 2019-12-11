@@ -60,7 +60,7 @@ const Footer = () => {
       },
       {
         title: T("executiveSummary"),
-        url: "https://secure-storage.ibf.is/Executive%20Summary.pdf",
+        url: "/en-us/page/executive-summary",
       },
     ],
 
