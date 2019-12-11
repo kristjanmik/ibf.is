@@ -18,22 +18,6 @@ export const query = graphql`
       }
     ) {
       edges {
-        previous {
-          uid
-          data {
-            title {
-              text
-            }
-          }
-        }
-        next {
-          uid
-          data {
-            title {
-              text
-            }
-          }
-        }
         node {
           uid
           data {
@@ -61,6 +45,9 @@ export const query = graphql`
                     }
                     title {
                       text
+                    }
+                    profile {
+                      url
                     }
                   }
                 }
@@ -138,6 +125,15 @@ const BlogPost = ({ data, pageContext }) => {
   const title = post.node.data.title.text;
   const date = post.node.data.date;
   const text = post.node.data.text.html;
+  let author = null;
+
+  if (post.node.data.author.document) {
+    author = {
+      name: post.node.data.author.document.data.name.text,
+      title: post.node.data.author.document.data.title.text,
+      profile: post.node.data.author.document.data.profile.url,
+    };
+  }
 
   const body = post.node.data.body[0];
 
@@ -208,6 +204,7 @@ const BlogPost = ({ data, pageContext }) => {
             previous={previous}
             next={next}
             image={image}
+            author={author}
           />
         </Section>
       </Layout>

@@ -70,10 +70,11 @@
 }
 
 .date {
-  margin-bottom: $ms3;
+  margin-bottom: $ms1;
 }
 
 .content {
+  margin-top: $ms2;
   :global .block-img {
     img {
       max-width: 100%;

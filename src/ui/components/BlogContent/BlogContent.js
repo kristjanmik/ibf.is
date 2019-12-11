@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./BlogContent.module.scss";
 import { H2, H4 } from "src/ui/components/Typography";
 import Arrow from "src/ui/components/Arrow";
+import AuthorCard from "src/ui/components/AuthorCard";
 
 const BlogContent = ({
   title,
@@ -11,6 +12,7 @@ const BlogContent = ({
   previous,
   next,
   image,
+  author,
 }) => {
   const slice = slices[0];
   let Previous;
@@ -38,7 +40,7 @@ const BlogContent = ({
     Image = (
       <div className={styles.blockImage}>
         <div className={styles.boxContent}>
-          <img src={slice.data.image} width="100%" height="100%" />
+          <img src={slice.data.image} width="100%" height="100%" alt={title} />
         </div>
       </div>
     );
@@ -61,6 +63,7 @@ const BlogContent = ({
         <H4 light className={styles.date}>
           {date}
         </H4>
+        {author && <AuthorCard {...author} />}
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{

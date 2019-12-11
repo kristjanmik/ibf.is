@@ -1,5 +1,5 @@
 @import "src/utility/variables";
-@import 'src/utility/responsive';
+@import "src/utility/responsive";
 
 .root {
   position: relative;
@@ -22,7 +22,6 @@
       bottom: 0;
     }
   }
-
 }
 
 .heading {
