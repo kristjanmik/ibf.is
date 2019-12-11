@@ -55,6 +55,10 @@ const Footer = () => {
   const footer = {
     resources: [
       {
+        title: T("register"),
+        url: "https://old.ibf.is/register",
+      },
+      {
         title: T("bylaws"),
         url: "/is/page/bylaws",
       },
