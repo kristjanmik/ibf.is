@@ -160,19 +160,21 @@ const BlogPost = ({ data, pageContext }) => {
 
   if (body) {
     if (body.primary.podcast && body.primary.podcast.document) {
+      const podcastText = body.primary.podcast.document.data.text
+        ? body.primary.podcast.document.data.text.text
+        : null;
+
       slices.push({
         type: "podcast",
         data: {
-          text: body.primary.podcast.document.data.text
-            ? body.primary.podcast.document.data.text.text
-            : null,
+          text: podcastText,
           image: body.primary.podcast.document.data.image
             ? body.primary.podcast.document.data.image.url
             : null,
         },
         component: (
-          <div>
-            <H3>Hlustaðu á þáttinn:</H3>
+          <div key={`podcast-${podcastText}`}>
+            <H3>{T("listenToEpisodeHeading")}</H3>
             <div
               dangerouslySetInnerHTML={{
                 __html: body.primary.podcast.document.data.embed.html,
@@ -193,7 +195,7 @@ const BlogPost = ({ data, pageContext }) => {
       <Layout>
         <Menu />
         <Section
-          top="xlarge"
+          top="xsmall"
           bottom="xlarge"
           backgroundText={T("blog")}
           legendTextColor="dark"

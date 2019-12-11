@@ -42,4 +42,5 @@ export default {
   whatIsBlockchain: "Hvað eru bálkakeðjur?",
   otherWorkingGroups: "Aðrir vinnuhópar",
   blog: "blogg",
+  listenToEpisodeHeading: "Hlustaðu á þáttinn:",
 };
