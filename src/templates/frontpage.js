@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 
 import Layout from "src/ui/components/Layout";
 import Menu from "src/ui/components/Menu";
@@ -16,7 +17,7 @@ import { withLang } from "src/utility/Translation";
 import TranslationContext from "src/utility/TranslationContext";
 
 export const query = graphql`
-  query FrontpageQuery($lang: String!) {
+  query FrontpageQuery($lang: String!, $postFilterDate: Date!) {
     about: prismicAboutPage(lang: { eq: $lang }, uid: { eq: "about" }) {
       id
       data {
@@ -55,7 +56,9 @@ export const query = graphql`
       }
     }
 
-    events: allPrismicEvent(filter: { lang: { eq: $lang } }) {
+    events: allPrismicEvent(
+      filter: { lang: { eq: $lang }, data: { date: { gte: $postFilterDate } } }
+    ) {
       edges {
         node {
           data {
@@ -257,11 +260,15 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
     return obj;
   });
 
-  console.log("posts", posts);
-
   return (
     <TranslationContext.Provider value={lang}>
       <Layout>
+        <Helmet>
+          <meta
+            property="og:url"
+            content={`https://ibf.is/${lang ? lang : ""}`}
+          />
+        </Helmet>
         <Menu inHero />
         <Hero
           title={T("foundationName")}

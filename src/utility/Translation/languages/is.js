@@ -1,10 +1,11 @@
 export default {
   foundationName: "Rafmyntaráð Íslands",
   newsletterPlaceholder: "Sláðu inn netfangið þitt fyrir fréttabréfið",
+  foundationDescriptionText: `Markmiðið okkar er að gera Ísland að leiðandi afli í nýsköpun á rafmyntum og bálkakeðjum`,
   foundationDescription: `<p>Markmiðið okkar er að gera Ísland <br /> að leiðandi afli í nýsköpun á <br />
       <strong>rafmyntum</strong>
       og <strong>bálkakeðjum</strong></p>`,
-  aboutHeading: "Um Rafmyntaráð",
+  aboutHeading: "Um samtökin",
   events: "Viðburðir",
   goToEvents: "fleiri viðburðir",
   recentPosts: "Nýlegar greinar",
@@ -29,7 +30,7 @@ export default {
   followUsOn: "Fylgdu okkur á %s",
   logo: "firmamerki",
   about: "Um Samtökin",
-  posts: "Póstar",
+  posts: "Greinar",
   members: "Meðlimir",
   nextEvent: "Næsti hittingur hjá hóp",
   notFoundHeading: "SÍÐA FANNST EKKI",
@@ -43,4 +44,6 @@ export default {
   otherWorkingGroups: "Aðrir vinnuhópar",
   blog: "blogg",
   listenToEpisodeHeading: "Hlustaðu á þáttinn:",
+  register: "Nýskráning í samtökin",
+  pageNotFound: "Síða fannst ekki",
 };

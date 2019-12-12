@@ -3,6 +3,7 @@ import Layout from "src/ui/components/Layout";
 import Menu from "src/ui/components/Menu";
 import Section from "src/ui/components/Section";
 import TranslationContext from "src/utility/TranslationContext";
+import Helmet from "react-helmet";
 import { withLang } from "src/utility/Translation";
 
 const NotFoundPage = ({ pageContext: { lang } }) => {
@@ -11,6 +12,11 @@ const NotFoundPage = ({ pageContext: { lang } }) => {
   return (
     <TranslationContext.Provider value={lang}>
       <Layout>
+        <Helmet>
+          <title>
+            {T("pageNotFound")} - {T("foundationName")}
+          </title>
+        </Helmet>
         <Menu />
 
         <Section

@@ -133,6 +133,10 @@ exports.createPages = async ({
     }
   `);
 
+  const now = new Date();
+  const postFilterDate = `${now.getFullYear()}-${now.getMonth() +
+    1}-${now.getDate()}`;
+
   let posts = data.posts.edges.map(p => ({
     date: p.node.data.date,
     uid: p.node.uid,
@@ -190,6 +194,7 @@ exports.createPages = async ({
       context: {
         uid: uid,
         lang,
+        postFilterDate,
         groups: groups.filter(g => g.lang === lang),
       },
     })
@@ -217,6 +222,7 @@ exports.createPages = async ({
       component: require.resolve("./src/templates/frontpage.js"),
       context: {
         lang,
+        postFilterDate,
         groups: groups.filter(g => g.lang === lang),
       },
     })
@@ -228,6 +234,7 @@ exports.createPages = async ({
     component: require.resolve("./src/templates/frontpage.js"),
     context: {
       lang: "is",
+      postFilterDate,
       groups: groups.filter(g => g.lang === "is"),
     },
   });

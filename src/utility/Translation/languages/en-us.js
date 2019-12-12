@@ -1,6 +1,7 @@
 export default {
   foundationName: "Icelandic Blockchain Foundation",
   newsletterPlaceholder: "Enter your email and join our newsletter",
+  foundationDescriptionText: `Our mission is to make Iceland the leader in blockchain and cryptocurrency innovation and adoption.`,
   foundationDescription: `Our mission is to make Iceland <br /> the leader in
       <strong>blockchain</strong> <br />
       and <strong>cryptocurrency</strong> innovation <br /> and adoption.
@@ -8,7 +9,7 @@ export default {
   aboutHeading: "About the foundation",
   events: "Events",
   goToEvents: "go to events",
-  recentPosts: "Recent posts",
+  recentPosts: "Recent articles",
   visitBlog: "visit blog",
   workingGroups: "Working groups",
   visitWorkingGroups: "visit working groups",
@@ -19,7 +20,7 @@ export default {
   newsletterCTA: `Join our <strong>newsletter</strong> <br />for monthly updates <br /> and news`,
   enterEmail: "Enter your email here",
   eventsBackgroundHeading: "events",
-  postsBackgroundHeading: "posts",
+  postsBackgroundHeading: "articles",
   foundationBackgroundHeading: "foundation",
   groupsBackgroundHeading: "groups",
   resources: "Resources",
@@ -29,7 +30,7 @@ export default {
   followUsOn: "Follow us on %s",
   logo: "logo",
   about: "About",
-  posts: "Posts",
+  posts: "Articles",
   members: "Members",
   nextEvent: "Next event by the group",
   notFoundHeading: "NOT FOUND",
@@ -43,4 +44,6 @@ export default {
   otherWorkingGroups: "Other working groups",
   blog: "blog",
   listenToEpisodeHeading: "Listen to the episode:",
+  register: "Register",
+  pageNotFound: "Page Not Found",
 };

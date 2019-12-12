@@ -15,7 +15,23 @@ const Layout = ({ children }) => {
     <ParallaxProvider>
       <Helmet>
         <meta charset="UTF-8" />
+        <meta name="twitter:site" content="@rafmyntarad" />
+        <meta name="twitter:creator" content="@rafmyntarad" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:site_name" content={T("foundationName")} />
         <title>{T("foundationName")}</title>
+        <meta property="og:title" content={T("foundationName")} />
+        <meta
+          property="og:description"
+          content={T("foundationDescriptionText")}
+        />
+        <meta name="description" content={T("foundationDescriptionText")} />
+        <meta name="twitter:image:alt" content={T("foundationName")} />
+        {/* @TODO add social image for website */}
+        {/* <meta property="og:image" content="..." />
+        <meta name="image" content="..." />
+        <meta property="og:url" content="..." />
+        <meta property="og:type" content="article" /> */}
         <link
           href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600"
           rel="stylesheet"

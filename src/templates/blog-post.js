@@ -7,6 +7,7 @@ import BlogContent from "src/ui/components/BlogContent";
 import { H3 } from "src/ui/components/Typography";
 import TranslationContext from "src/utility/TranslationContext";
 import { withLang } from "src/utility/Translation";
+import Helmet from "react-helmet";
 
 export const query = graphql`
   query BlogPostQuery($lang: String!, $uid: String!) {
@@ -125,6 +126,7 @@ const BlogPost = ({ data, pageContext }) => {
   const title = post.node.data.title.text;
   const date = post.node.data.date;
   const text = post.node.data.text.html;
+  const summary = post.node.data.summary.text;
   let author = null;
 
   if (post.node.data.author.document) {
@@ -186,9 +188,25 @@ const BlogPost = ({ data, pageContext }) => {
     }
   }
 
+  const pageTitle = `${title} - ${T("foundationName")}`;
+  const pageDescription = summary;
   return (
     <TranslationContext.Provider value={lang}>
       <Layout>
+        <Helmet>
+          <title>{pageTitle}</title>
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:description" content={pageDescription} />
+          <meta name="description" content={pageDescription} />
+          {image && <meta name="twitter:image:alt" content={pageTitle} />}
+          {image && <meta property="og:image" content={image} />}
+          {image && <meta name="image" content={image} />}
+          <meta
+            property="og:url"
+            content={`https://ibf.is/${lang}/blog/${uid}`}
+          />
+          <meta property="og:type" content="article" />
+        </Helmet>
         <Menu />
         <Section
           top="xsmall"

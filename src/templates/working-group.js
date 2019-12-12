@@ -1,9 +1,11 @@
 import React from "react";
+import Helmet from "react-helmet";
 import Layout from "src/ui/components/Layout";
 import Menu from "src/ui/components/Menu";
 import WorkingGroupLayout from "src/ui/components/WorkingGroupLayout";
 import { graphql } from "gatsby";
 import TranslationContext from "src/utility/TranslationContext";
+import { withLang } from "src/utility/Translation";
 
 export const query = graphql`
   query WorkingGroupTemplateQuery($uid: String!, $lang: String!) {
@@ -55,7 +57,7 @@ export const query = graphql`
                     id
                     data {
                       address
-                      date(formatString: "DD/MM/YY HH:mm")
+                      date(formatString: "YYYY/MM/DD HH:mm")
                       day: date(formatString: "DD.MMM")
                       title {
                         text
@@ -133,7 +135,7 @@ const cleanGroup = obj => {
 };
 
 const WorkingGroupTemplate = ({ data, pageContext }) => {
-  const { groups, lang } = pageContext;
+  const { groups, lang, uid } = pageContext;
 
   const groupResult = data.group.edges[0];
 
@@ -141,6 +143,8 @@ const WorkingGroupTemplate = ({ data, pageContext }) => {
     //@TODO Handle error cases
     throw Error("Page not Found");
   }
+
+  const T = withLang(lang);
 
   const {
     name,
@@ -150,14 +154,56 @@ const WorkingGroupTemplate = ({ data, pageContext }) => {
     image,
     members,
     events,
-  } = cleanGroup({ ...groupResult.node.data, uid: groupResult.node.uid });
+  } = cleanGroup({
+    ...groupResult.node.data,
+    uid: groupResult.node.uid,
+  });
   const coverImage =
     image.url ||
     "https://cdn.dribbble.com/users/851350/screenshots/5019761/packing.png";
 
+  const title = `${name} - ${T("foundationName")}`;
+  const now = new Date();
+  const today = new Date(
+    `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`
+  );
+
+  const nextEvents = events
+    .filter(e => e.event.document)
+    .map(cleanEvent)
+    .filter(e => {
+      const eventDate = new Date(e.date);
+      const eventDay = new Date(
+        `${eventDate.getFullYear()}-${eventDate.getMonth() +
+          1}-${eventDate.getDate()}`
+      );
+      if (eventDay >= today) return true;
+      return false;
+    });
+
+  nextEvents.sort((a, b) => {
+    if (new Date(a.date) > new Date(b.date)) return 1;
+    if (new Date(a.date) < new Date(b.date)) return -1;
+    return 0;
+  });
+
   return (
     <TranslationContext.Provider value={lang}>
       <Layout>
+        <Helmet>
+          <title>{title}</title>
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta name="description" content={description} />
+          {image && <meta name="twitter:image:alt" content={title} />}
+          {image && <meta property="og:image" content={image} />}
+          {image && <meta name="image" content={image} />}
+          <meta
+            property="og:url"
+            content={`https://ibf.is/${lang}/blog/${uid}`}
+          />
+          <meta property="og:type" content="article" />
+        </Helmet>
         <Menu />
         <WorkingGroupLayout
           name={name}
@@ -166,7 +212,7 @@ const WorkingGroupTemplate = ({ data, pageContext }) => {
           coverImage={coverImage}
           color={color}
           members={members.map(cleanUser)}
-          events={events.filter(e => e.event.document).map(cleanEvent)}
+          events={nextEvents}
           groups={groups}
         />
       </Layout>

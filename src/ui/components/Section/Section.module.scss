@@ -35,7 +35,6 @@
 
 .backgroundText {
   position: absolute;
-  font-size: between(80px, 200px, $sm, $xlg);
   text-transform: lowercase;
   top: 0;
   z-index: -1;
@@ -50,6 +49,20 @@
   .root.colored & {
     color: #0e4c88;
   }
+}
+
+.largeFont {
+  font-size: between(80px, 200px, $sm, $xlg);
+}
+
+.mediumFont {
+  font-size: between(60px, 150px, $sm, $xlg);
+}
+
+.smallFont {
+  line-height: 3.3;
+
+  font-size: between(40px, 100px, $sm, $xlg);
 }
 
 .xsmall {
