@@ -10,7 +10,15 @@
       "type": "StructuredText",
       "config": {
         "single": "heading1",
-        "label": "Title"
+        "label": "Title",
+        "labels": ["indent-1", "indent-2", "indent-3"]
+      }
+    },
+    "background_text": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Background Text"
       }
     },
     "text": {
