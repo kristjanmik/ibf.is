@@ -1,5 +1,10 @@
 @import "src/utility/variables";
 @import "src/utility/responsive";
+@import "src/utility/content";
+
+.content {
+  @extend .content;
+}
 
 .root {
   position: relative;
@@ -27,70 +32,4 @@
 
 .title {
   margin-bottom: $ms3;
-}
-
-.content {
-  :global .block-img {
-    img {
-      max-width: 100%;
-    }
-  }
-
-  // :global .right-align {
-  //   img {
-  //     max-width: 50%;
-  //     margin-left: 50%;
-  //   }
-  // }
-
-  p,
-  ol,
-  ul {
-    padding-bottom: $ms2;
-    font-size: $t4;
-    font-weight: 100;
-    // color: rgba(0, 0, 0, 0.84);
-    color: #000;
-
-    @include respond-to(onlySmall) {
-      font-size: 16px;
-    }
-  }
-
-  strong {
-    font-weight: bold;
-  }
-
-  //If bullet list is after numbered list, assume it is a sibling of the former
-  ol + ul {
-    margin-left: $ms4;
-    margin-top: -12px;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  h1 {
-    font-size: $t6;
-    line-height: 1.35;
-    margin-bottom: 12px;
-
-    @include respond-to(onlySmall) {
-      font-size: 32px;
-    }
-  }
-
-  h2 {
-    font-size: $t5;
-    margin-bottom: $ms1;
-
-    @include respond-to(onlySmall) {
-      font-size: 22px;
-    }
-  }
-}
-
-iframe {
-  width: 100%;
 }
