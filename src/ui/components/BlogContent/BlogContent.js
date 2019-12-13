@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import styles from "./BlogContent.module.scss";
 import { H2, H4 } from "src/ui/components/Typography";
 import Arrow from "src/ui/components/Arrow";
@@ -70,6 +71,15 @@ const BlogContent = ({
             __html: content,
           }}
         />
+        <Helmet>
+          {content.includes("twitter-tweet") && (
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            />
+          )}
+        </Helmet>
         {slices.map(slice => slice.component)}
 
         <div className={styles.arrows}>

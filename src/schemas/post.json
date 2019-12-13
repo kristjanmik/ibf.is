@@ -25,7 +25,7 @@
       "config": {
         "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
         "label": "Text",
-        "labels": ["right-align", "center-align"]
+        "labels": ["left-align", "center-align", "right-align"]
       }
     },
     "author": {

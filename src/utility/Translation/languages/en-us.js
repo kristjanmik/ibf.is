@@ -42,7 +42,7 @@ export default {
   whatIsCrypto: "What is Cryptocurrency?",
   whatIsBlockchain: "What is Blockchain?",
   otherWorkingGroups: "Other working groups",
-  blog: "blog",
+  blog: "article",
   listenToEpisodeHeading: "Listen to the episode:",
   register: "Register",
   pageNotFound: "Page Not Found",

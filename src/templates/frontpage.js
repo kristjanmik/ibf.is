@@ -248,8 +248,8 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
   let posts = data.posts.edges.map(cleanPosts);
 
   posts.sort((a, b) => {
-    if (new Date(a.date).getTime() > new Date(b.date).getTime()) return -1;
-    if (new Date(a.date).getTime() < new Date(b.date).getTime()) return 1;
+    if (new Date(a.date) > new Date(b.date)) return -1;
+    if (new Date(a.date) < new Date(b.date)) return 1;
     return 0;
   });
 

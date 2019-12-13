@@ -42,7 +42,7 @@ export default {
   whatIsCrypto: "Hvað eru rafmyntir?",
   whatIsBlockchain: "Hvað eru bálkakeðjur?",
   otherWorkingGroups: "Aðrir vinnuhópar",
-  blog: "blogg",
+  blog: "grein",
   listenToEpisodeHeading: "Hlustaðu á þáttinn:",
   register: "Nýskráning í samtökin",
   pageNotFound: "Síða fannst ekki",

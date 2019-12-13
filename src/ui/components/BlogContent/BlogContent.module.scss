@@ -1,5 +1,10 @@
 @import "src/utility/variables";
 @import "src/utility/responsive";
+@import "src/utility/content";
+
+.content {
+  @extend .content;
+}
 
 .rootImage {
   position: relative;
@@ -72,57 +77,6 @@
   margin-bottom: $ms1;
 }
 
-.content {
-  margin-top: $ms3;
-  :global .block-img {
-    img {
-      max-width: 100%;
-    }
-  }
-
-  // :global .right-align {
-  //   img {
-  //     max-width: 50%;
-  //     margin-left: 50%;
-  //   }
-  // }
-
-  p {
-    padding-bottom: $ms3;
-    font-size: $t4;
-    font-weight: 100;
-    // color: rgba(0, 0, 0, 0.84);
-    color: #000;
-
-    @include respond-to(onlySmall) {
-      font-size: 16px;
-    }
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  h1 {
-    font-size: $t6;
-    line-height: 1.35;
-    margin-bottom: 12px;
-
-    @include respond-to(onlySmall) {
-      font-size: 32px;
-    }
-  }
-
-  h2 {
-    font-size: $t5;
-    margin-bottom: $ms1;
-
-    @include respond-to(onlySmall) {
-      font-size: 22px;
-    }
-  }
-}
-
 iframe {
   width: 100%;
 }
@@ -135,10 +89,5 @@ iframe {
 .arrowLeft {
   > svg {
     transform: scale(-1, 1);
-  }
-}
-
-.arrowRight {
-  > svg {
   }
 }

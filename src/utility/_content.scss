@@ -1,0 +1,130 @@
+@import "src/utility/variables";
+@import "src/utility/responsive";
+
+.content {
+  margin-top: $ms3;
+  :global .block-img {
+    padding-bottom: 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include respond-to(md) {
+    :global .left-align {
+      float: left;
+      width: 50%;
+      height: 50%;
+      margin-right: 20px;
+    }
+
+    :global .right-align {
+      float: right;
+      width: 50%;
+      height: 50%;
+      margin-left: 20px;
+    }
+
+    :global .caption {
+      clear: both;
+      width: 50%;
+      padding-bottom: $ms3;
+      text-align: center;
+      overflow-wrap: break-word;
+      font-style: italic;
+    }
+
+    :global .left-align + .caption {
+      float: left;
+      clear: both;
+    }
+
+    :global .right-align + .caption {
+      float: right;
+      clear: both;
+    }
+
+    :global :not(.left-align):not(.right-align) + .caption {
+      width: 100%;
+    }
+  }
+
+  p,
+  ol,
+  ul,
+  pre {
+    margin-bottom: $ms3;
+    font-size: $t4;
+    font-weight: 100;
+    // color: rgba(0, 0, 0, 0.84);
+    color: #000;
+
+    @include respond-to(onlySmall) {
+      font-size: 16px;
+    }
+  }
+
+  pre {
+    border-left: $dark 3px solid;
+    padding-left: $ms2;
+    margin-left: $ms1;
+    font-family: $sans-serif;
+
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+  }
+
+  ol + p {
+    padding-bottom: 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    clear: both;
+  }
+
+  h1 {
+    font-size: $t6;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    @include respond-to(onlySmall) {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    font-size: $t5;
+    margin-bottom: $ms1;
+    @include respond-to(onlySmall) {
+      font-size: 22px;
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  ul {
+    margin-left: $ms3;
+  }
+
+  //If bullet list is after numbered list, assume it is a sibling of the former
+  ol + ul {
+    margin-left: $ms4;
+    margin-top: -12px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}

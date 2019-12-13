@@ -26,7 +26,7 @@ export const query = graphql`
               url
             }
             on_blog
-            date: publish_date(formatString: "DD/MM/YY HH:MM")
+            date: publish_date(formatString: "DD/MM/YY HH:mm")
             summary {
               text
             }
