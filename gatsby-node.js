@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const moment = require("moment");
 
 // this is copied from gatsby-plugin-remove-trailing-slashes because it causes the build to fail if it is used direcly
 const removeTrailingSlash = _path =>
@@ -130,12 +131,19 @@ exports.createPages = async ({
           }
         }
       }
+
+      education: allPrismicEducation {
+        edges {
+          node {
+            uid
+            lang
+          }
+        }
+      }
     }
   `);
 
-  const now = new Date();
-  const postFilterDate = `${now.getFullYear()}-${now.getMonth() +
-    1}-${now.getDate()}`;
+  const postFilterDate = moment().format("YYYY-MM-DD");
 
   let posts = data.posts.edges.map(p => ({
     date: p.node.data.date,
@@ -165,6 +173,7 @@ exports.createPages = async ({
     );
 
   const groupsResult = data.groups.edges;
+  const education = data.education.edges;
 
   if (!groupsResult || groupsResult.length === 0) {
     //@TODO Handle error cases
@@ -216,18 +225,6 @@ exports.createPages = async ({
     })
   );
 
-  languages.map(lang =>
-    createPage({
-      path: `/${lang}`,
-      component: require.resolve("./src/templates/frontpage.js"),
-      context: {
-        lang,
-        postFilterDate,
-        groups: groups.filter(g => g.lang === lang),
-      },
-    })
-  );
-
   //Create extra frontpage until we have fixed redirect problem
   createPage({
     path: `/`,
@@ -239,6 +236,72 @@ exports.createPages = async ({
     },
   });
 
+  createPage({
+    path: `/education`,
+    component: require.resolve("./src/templates/education.js"),
+    context: {
+      lang: "is",
+    },
+  });
+
+  createPage({
+    path: `/podcast`,
+    component: require.resolve("./src/templates/podcasts.js"),
+    context: {
+      lang: "is",
+    },
+  });
+
+  education.map(({ node: { uid, lang } }) =>
+    createPage({
+      path: `${lang}/education/${uid}`,
+      component: require.resolve("./src/templates/education-content.js"),
+      context: {
+        uid: uid,
+        lang,
+      },
+    })
+  );
+
+  //Language routes
+  languages.map(lang => {
+    createPage({
+      path: `/${lang}`,
+      component: require.resolve("./src/templates/frontpage.js"),
+      context: {
+        lang,
+        postFilterDate,
+        groups: groups.filter(g => g.lang === lang),
+      },
+    });
+
+    createPage({
+      path: `/${lang}/education`,
+      component: require.resolve("./src/templates/education.js"),
+      context: {
+        lang,
+      },
+    });
+
+    createPage({
+      path: `/${lang}/podcast`,
+      component: require.resolve("./src/templates/podcasts.js"),
+      context: {
+        lang,
+      },
+    });
+
+    //404 Pages
+    createPage({
+      path: `/${lang}/*`,
+      matchPath: `/${lang}/*`,
+      component: require.resolve("./src/templates/404.js"),
+      context: {
+        lang: lang,
+      },
+    });
+  });
+
   //Start creating redirects
   //@TODO Fix Redirects
   // createRedirect({
@@ -247,18 +310,6 @@ exports.createPages = async ({
   //   redirectInBrowser: true,
   //   toPath: `/is`,
   // });
-
-  //404 Pages
-  languages.forEach(lang =>
-    createPage({
-      path: `/${lang}/*`,
-      matchPath: `/${lang}/*`,
-      component: require.resolve("./src/templates/404.js"),
-      context: {
-        lang: lang,
-      },
-    })
-  );
 
   //404 Pages - Catch all with English
   createPage({

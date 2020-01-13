@@ -38,8 +38,8 @@ const Menu = ({ inHero }) => {
         <ScrollLink className={styles.link} to={`${langLink}#working-groups`}>
           <Body1>{T("workingGroupsMenu")}</Body1>
         </ScrollLink>
-        <ScrollLink className={styles.link} to={`${langLink}#newsletter`}>
-          <Body1>{T("newsletter")}</Body1>
+        <ScrollLink className={styles.link} to={`${langLink}/education`}>
+          <Body1>{T("education")}</Body1>
         </ScrollLink>
         <ScrollLink className={styles.link} to={langLinkReverse}>
           <Body1>{langLinkText}</Body1>

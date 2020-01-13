@@ -58,6 +58,7 @@ export const query = graphql`
 
     events: allPrismicEvent(
       filter: { lang: { eq: $lang }, data: { date: { gte: $postFilterDate } } }
+      sort: { fields: data___date, order: ASC }
     ) {
       edges {
         node {
@@ -97,7 +98,10 @@ export const query = graphql`
       }
     }
 
-    posts: allPrismicPost(filter: { lang: { eq: $lang } }) {
+    posts: allPrismicPost(
+      filter: { lang: { eq: $lang } }
+      sort: { fields: data___publish_date, order: DESC }
+    ) {
       edges {
         node {
           uid
@@ -209,15 +213,9 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
     color: edge.node.data.working_group.document.data.color,
   }));
 
-  events.sort((a, b) => {
-    if (new Date(a.date) > new Date(b.date)) return 1;
-    if (new Date(a.date) < new Date(b.date)) return -1;
-    return 0;
-  });
-
   //@TODO do not do page blank if url is internal
   //@TODO generate correct url based on type
-  const cleanPosts = edge => {
+  const cleanPosts = (edge, index) => {
     const uid = edge.node.uid;
     let obj = {
       ...edge.node.data,
@@ -226,7 +224,7 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
       text: edge.node.data.summary.text,
       image: edge.node.data.image.url,
       url: `/${lang}/blog/${uid}`,
-      isFeatured: false,
+      isFeatured: index === 0,
     };
     const body = edge.node.data.body[0];
 
@@ -246,19 +244,6 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
   };
 
   let posts = data.posts.edges.map(cleanPosts);
-
-  posts.sort((a, b) => {
-    if (new Date(a.date) > new Date(b.date)) return -1;
-    if (new Date(a.date) < new Date(b.date)) return 1;
-    return 0;
-  });
-
-  posts = posts.map((obj, index) => {
-    if (index === 0) {
-      obj.isFeatured = true;
-    }
-    return obj;
-  });
 
   return (
     <TranslationContext.Provider value={lang}>

@@ -13,7 +13,7 @@ const UpcomingEventsSection = ({ events }) => {
       <Slider>
         {events.map(event => (
           <EventCard
-            key={`${event.title}-${event.day}`}
+            key={event.url}
             workingGroupName={event.workingGroupName}
             date={event.day}
             title={event.title}

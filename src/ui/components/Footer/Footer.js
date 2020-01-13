@@ -70,6 +70,10 @@ const Footer = () => {
 
     learn: [
       {
+        title: T("educationMaterial"),
+        url: `${lang}/education`,
+      },
+      {
         title: T("whatIsCrypto"),
         url:
           "https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies",
@@ -118,7 +122,7 @@ const Footer = () => {
             <li>
               <a href="mailto:ibf@ibf.is">ibf@ibf.is</a>
             </li>
-            <li>Katrínartún 4</li>
+            <li>{T("address")}</li>
             <li>105 Reykjavík</li>
           </ul>
         </div>

@@ -1,6 +1,5 @@
-
-@import 'src/utility/responsive';
-@import 'src/utility/variables';
+@import "src/utility/responsive";
+@import "src/utility/variables";
 
 .root {
   background: $white;
@@ -36,9 +35,9 @@
   align-items: flex-end;
   margin-right: -32px;
   position: relative;
-  
+
   &::after {
-    content: '';
+    content: "";
     z-index: $z-level-1;
     background: linear-gradient(to right, rgba($white, 0) 40%, $white 75%);
     position: absolute;

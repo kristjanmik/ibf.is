@@ -46,4 +46,12 @@ export default {
   listenToEpisodeHeading: "Listen to the episode:",
   register: "Register",
   pageNotFound: "Page Not Found",
+  address: "Katrínartún 4, 2nd floor",
+  education: "Education",
+  educationContent:
+    "The Foundation has gathered relevant videos, podcasts and articles for educational purposes.",
+  educationMaterial: "Educational Material",
+  podcast: "Podcast",
+  podcastContent:
+    "The Icelandic Blockchain Foundation's podcast discusses how technology is merging into finance as well a variety of other topics.",
 };

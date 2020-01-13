@@ -6,27 +6,26 @@
   @extend .content;
 }
 
-.rootImage {
+.video {
   position: relative;
-  background: $white;
-  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
   max-width: $md;
   margin: auto;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  // background-image: url("path/to/image.jpg");
+  background: $white;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
   margin-bottom: 30px;
 
-  min-height: calc(#{$md} / 2);
-  max-height: $md;
-
-  @include respond-to(md) {
-    flex: 0 1 50%;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 56.25% ratio of 560:315*/
   }
 
-  @include respond-to(sm) {
-    box-shadow: none;
+  .boxContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 
@@ -53,17 +52,17 @@
   }
 }
 
+.podcast {
+  max-width: $md;
+  margin: auto;
+}
+
 .root {
   position: relative;
   background: $white;
   box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
   max-width: $md;
   margin: auto;
-
-  @include respond-to(sm) {
-    background: "transparent";
-    box-shadow: none;
-  }
 
   @include respond-to(md) {
     padding: $ms4;
@@ -79,24 +78,5 @@
       transform: translateX(-50%) translateY(50%);
       bottom: 0;
     }
-  }
-}
-
-.date {
-  margin-bottom: $ms1;
-}
-
-iframe {
-  width: 100%;
-}
-
-.arrows {
-  display: flex;
-  justify-content: space-between;
-}
-
-.arrowLeft {
-  > svg {
-    transform: scale(-1, 1);
   }
 }

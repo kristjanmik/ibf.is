@@ -191,6 +191,8 @@ module.exports = {
           post: require("./src/schemas/post.json"),
           podcast: require("./src/schemas/podcast.json"),
           static_page: require("./src/schemas/static_page.json"),
+          education: require("./src/schemas/education.json"),
+          education_category: require("./src/schemas/education_category.json"),
         },
         lang: "*",
         shouldDownloadImage: ({ node, key, value }) => {

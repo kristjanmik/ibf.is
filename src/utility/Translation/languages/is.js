@@ -46,4 +46,12 @@ export default {
   listenToEpisodeHeading: "Hlustaðu á þáttinn:",
   register: "Nýskráning í samtökin",
   pageNotFound: "Síða fannst ekki",
+  address: "Katrínartún 4, 2. hæð",
+  education: "Fræðsla",
+  educationContent:
+    "Rafmyntaráð hefur tekið saman viðamikið safn af fræðsluefni í formi myndbanda, hlaðvarpa og greina.",
+  educationMaterial: "Fræðsluefni",
+  podcast: "Hlaðvarp",
+  podcastContent:
+    "Hlaðvarp Rafmyntaráðs fjallar um fjármálakerfið og tækni, ásamt hugvekju um ýmis mál.",
 };

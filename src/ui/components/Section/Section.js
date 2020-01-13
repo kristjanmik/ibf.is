@@ -20,45 +20,42 @@ const Section = ({
   footerText,
   footerTextColor,
   footerUrl,
-}) => {
-  console.log("backgroundTextFontSize", backgroundTextFontSize);
-  return (
-    <section
-      className={cn(
-        styles.root,
-        styles[id],
-        padding(top, bottom),
-        colored && styles.colored
-      )}
-      id={id}
-    >
-      <SectionLegend
-        number={number}
-        text={legendText}
-        textColor={legendTextColor}
-      />
+}) => (
+  <section
+    className={cn(
+      styles.root,
+      styles[id],
+      padding(top, bottom),
+      colored && styles.colored
+    )}
+    id={id}
+  >
+    <SectionLegend
+      number={number}
+      text={legendText}
+      textColor={legendTextColor}
+    />
 
-      {backgroundText && (
-        <Parallax
-          x={["50px", "0px"]}
-          tagInner="figure"
-          className={cn(
-            styles.backgroundText,
-            styles[`${backgroundTextFontSize}Font`],
-            top === "xsmall" ? styles.xsmall : null
-          )}
-        >
-          <span>{backgroundText}</span>
-        </Parallax>
-      )}
-      {children}
-      <SectionFooter
-        text={footerText}
-        textColor={footerTextColor}
-        url={footerUrl}
-      />
-    </section>
-  );
-};
+    {backgroundText && (
+      <Parallax
+        x={["50px", "0px"]}
+        tagInner="figure"
+        className={cn(
+          styles.backgroundText,
+          styles[`${backgroundTextFontSize}Font`],
+          top === "xsmall" ? styles.xsmall : null
+        )}
+      >
+        <span>{backgroundText}</span>
+      </Parallax>
+    )}
+    {children}
+    <SectionFooter
+      text={footerText}
+      textColor={footerTextColor}
+      url={footerUrl}
+    />
+  </section>
+);
 
 export default Section;

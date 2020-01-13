@@ -7,6 +7,7 @@
     padding-bottom: 0;
 
     img {
+      width: 100%;
       max-width: 100%;
     }
   }
@@ -54,6 +55,7 @@
   ol,
   ul,
   pre {
+    line-height: 1.7;
     margin-bottom: $ms3;
     font-size: $t4;
     font-weight: 100;
@@ -98,7 +100,7 @@
     line-height: 1.35;
     margin-bottom: 12px;
     @include respond-to(onlySmall) {
-      font-size: 32px;
+      font-size: 26px;
     }
   }
 
@@ -106,7 +108,8 @@
     font-size: $t5;
     margin-bottom: $ms1;
     @include respond-to(onlySmall) {
-      font-size: 22px;
+      font-size: 20px;
+      font-weight: bold;
     }
   }
 

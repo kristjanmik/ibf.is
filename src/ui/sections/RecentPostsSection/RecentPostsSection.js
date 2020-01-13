@@ -19,7 +19,7 @@ const RecentPostsSection = ({ posts: _posts, maxPosts = 5 }) => {
           .slice(0, 1)
           .map(post => (
             <FeaturedPostCard
-              key={post.title}
+              key={post.url}
               title={post.title}
               text={truncateText.apply(post.text)}
               imageUrl={post.image}
@@ -34,7 +34,7 @@ const RecentPostsSection = ({ posts: _posts, maxPosts = 5 }) => {
           .filter(post => !post.isFeatured)
           .map(post => (
             <PostCard
-              key={post.title}
+              key={post.url}
               title={post.title}
               text={truncateText.apply(post.text)}
               date={post.date}

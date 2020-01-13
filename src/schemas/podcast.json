@@ -1,5 +1,11 @@
 {
   "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID"
+      }
+    },
     "name": {
       "type": "StructuredText",
       "config": {
@@ -11,6 +17,14 @@
       "type": "Date",
       "config": {
         "label": "Date"
+      }
+    },
+    "is_ibf": {
+      "type": "Select",
+      "config": {
+        "options": ["YES", "NO"],
+        "default_value": "YES",
+        "label": "IS IBF"
       }
     },
     "description": {

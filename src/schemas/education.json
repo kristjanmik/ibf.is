@@ -1,0 +1,92 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID"
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Date"
+      }
+    },
+    "summary": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Summary"
+      }
+    },
+    "content": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Content"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "youtube": [],
+          "podcast": []
+        },
+        "choices": {
+          "youtube": {
+            "type": "Slice",
+            "fieldset": "Youtube",
+            "description": "A Youtube Video",
+            "icon": "ondemand_video",
+            "display": "list",
+            "non-repeat": {
+              "url": {
+                "type": "Link",
+                "config": {
+                  "label": "Url"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "podcast": {
+            "type": "Slice",
+            "fieldset": "Podcast",
+            "description": "A podcast slice, with a podcast link",
+            "icon": "headset",
+            "display": "list",
+            "non-repeat": {
+              "podcast": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["podcast"],
+                  "label": "Podcast"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}
