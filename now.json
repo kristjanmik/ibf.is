@@ -1,13 +1,4 @@
 {
   "version": 2,
-  "name": "ibf-website",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "public"
-      }
-    }
-  ]
+  "name": "ibf-website"
 }
