@@ -15,6 +15,7 @@ const EventCard = ({
 }) => {
   return (
     <a
+      key={url}
       href={url}
       target="_blank"
       rel="noopener noreferrer"

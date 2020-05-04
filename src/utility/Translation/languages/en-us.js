@@ -54,4 +54,8 @@ export default {
   podcast: "Podcast",
   podcastContent:
     "The Icelandic Blockchain Foundation's podcast discusses how technology is merging into finance as well a variety of other topics.",
+  phone: "+354 696 4523",
+  donate:
+    "Donate to the Foundation | Bitcoin: 1HN7dLXP9y3Jyn2emS6Jt9M86ecFPaj9hs | Fiat rn: 0133-26-440515, kt: 440515-1340",
+  noUpcomingEvents: "No upcoming events",
 };

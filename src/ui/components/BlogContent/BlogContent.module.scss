@@ -60,7 +60,7 @@
   max-width: $md;
   margin: auto;
 
-  @include respond-to(sm) {
+  @include respond-to(onlySmall) {
     background: "transparent";
     box-shadow: none;
   }

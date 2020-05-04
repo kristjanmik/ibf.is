@@ -212,7 +212,7 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
     workingGroupName: edge.node.data.working_group.document.data.name.text,
     color: edge.node.data.working_group.document.data.color,
   }));
-
+  //
   //@TODO do not do page blank if url is internal
   //@TODO generate correct url based on type
   const cleanPosts = (edge, index) => {
@@ -230,7 +230,7 @@ const IndexPage = ({ data, pageContext: { groups, lang } }) => {
 
     //No slice
     if (!body) return obj;
-
+    //
     if (body.primary.link) {
       //Type is link
       obj.url = body.primary.link.url;

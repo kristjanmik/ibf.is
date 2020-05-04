@@ -27,10 +27,9 @@ const Layout = ({ children }) => {
         />
         <meta name="description" content={T("foundationDescriptionText")} />
         <meta name="twitter:image:alt" content={T("foundationName")} />
-        {/* @TODO add social image for website */}
-        {/* <meta property="og:image" content="..." />
-        <meta name="image" content="..." />
-        <meta property="og:url" content="..." />
+        <meta property="og:image" content="https://ibf.is/og.jpg" />
+        <meta name="image" content="https://ibf.is/og.jpg" />
+        {/* <meta property="og:url" content="..." />
         <meta property="og:type" content="article" /> */}
         <link
           href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600"

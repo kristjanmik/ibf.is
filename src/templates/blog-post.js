@@ -139,7 +139,7 @@ const BlogPost = ({ data, pageContext }) => {
 
   const body = post.node.data.body[0];
 
-  const image = post.node.data.image ? post.node.data.image.url : null;
+  let image = post.node.data.image ? post.node.data.image.url : null;
   let next = null;
   let previous = null;
 
@@ -162,13 +162,19 @@ const BlogPost = ({ data, pageContext }) => {
         ? body.primary.podcast.document.data.text.text
         : null;
 
+      const podcastImage = body.primary.podcast.document.data.image
+        ? body.primary.podcast.document.data.image.url
+        : null;
+
+      if (!image) {
+        image = `${podcastImage}&fit=crop&h=261&w=500&crop=top`;
+      }
+
       slices.push({
         type: "podcast",
         data: {
           text: podcastText,
-          image: body.primary.podcast.document.data.image
-            ? body.primary.podcast.document.data.image.url
-            : null,
+          image: podcastImage,
         },
         component: (
           <div key={`podcast-${podcastText}`}>

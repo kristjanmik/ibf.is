@@ -54,4 +54,8 @@ export default {
   podcast: "Hlaðvarp",
   podcastContent:
     "Hlaðvarp Rafmyntaráðs fjallar um fjármálakerfið og tækni, ásamt hugvekju um ýmis mál.",
+  phone: "696-4523",
+  donate:
+    "Styrktu okkur \n| Bitcoin: 1HN7dLXP9y3Jyn2emS6Jt9M86ecFPaj9hs | Krónur rn: 0133-26-440515, kt: 440515-1340",
+  noUpcomingEvents: "Engir viðburðir á döfinni",
 };

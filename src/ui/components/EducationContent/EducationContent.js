@@ -4,7 +4,7 @@ import { H2 } from "src/ui/components/Typography";
 // import TranslationContext from "src/utility/TranslationContext";
 
 import styles from "./EducationContent.module.scss";
-
+//
 const EducationContent = ({ image, title, content, youtube, podcast }) => {
   // const lang = useContext(TranslationContext);
   // const T = withLang(lang);

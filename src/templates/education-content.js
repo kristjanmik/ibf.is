@@ -101,11 +101,18 @@ const BlogPost = ({ data, pageContext }) => {
     summary = body.primary.podcast.document.data.description.text;
     content = body.primary.podcast.document.data.description.html;
     podcast = body.primary.podcast.document.data.embed.html;
+
+    const podcastImage = body.primary.podcast.document.data.image
+      ? body.primary.podcast.document.data.image.url
+      : null;
+
+    if (podcastImage) {
+      image = `${podcastImage}&fit=crop&h=261&w=500&crop=top`;
+    }
   } else {
     summary = education.summary.text;
     content = education.content.html;
   }
-
   if (body && body.slice_type === "youtube") {
     youtube = {
       url: body.primary.url.url.replace(

@@ -20,6 +20,11 @@ const Paging = ({ totalSlides, activeIndex }) => {
   );
 };
 
+const maxSlidesToShow = (max, actual) => {
+  if (actual < max) return actual;
+  return max;
+};
+
 class Slider extends Component {
   constructor(props) {
     super(props);
@@ -37,23 +42,39 @@ class Slider extends Component {
   }
 
   render() {
+    let itemCount = 4;
+    if (this.props.children) itemCount = this.props.children.length;
+
     const DEFAULT_SETTINGS = {
       infinite: true,
       speed: 300,
-      slidesToShow: 4,
+      slidesToShow: maxSlidesToShow(4, itemCount),
       slidesToScroll: 1,
       dots: false,
       beforeChange: this.handleChange,
-      variableWidth: false,
+      variableWidth: true,
       arrows: true,
       responsive: [
         {
           breakpoint: 600,
-          settings: { slidesToShow: 1.25, infinite: false, arrows: false },
+          settings: {
+            slidesToShow: maxSlidesToShow(1.25, itemCount),
+            infinite: false,
+            arrows: false,
+          },
         },
-        { breakpoint: 960, settings: { slidesToShow: 2 } },
-        { breakpoint: 1300, settings: { slidesToShow: 3 } },
-        { breakpoint: 1800, settings: { slidesToShow: 4 } },
+        {
+          breakpoint: 960,
+          settings: { slidesToShow: maxSlidesToShow(2, itemCount) },
+        },
+        {
+          breakpoint: 1300,
+          settings: { slidesToShow: maxSlidesToShow(3, itemCount) },
+        },
+        {
+          breakpoint: 1800,
+          settings: { slidesToShow: maxSlidesToShow(4, itemCount) },
+        },
       ],
     };
     const { settings = DEFAULT_SETTINGS } = this.props;
