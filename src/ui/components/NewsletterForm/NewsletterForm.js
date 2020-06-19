@@ -44,17 +44,14 @@ class NewsletterForm extends Component {
       return fail();
     }
 
-    const rawResponse = await fetch(
-      "https://old.ibf.is/newsletter/signup-api",
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: value }),
-      }
-    );
+    const rawResponse = await fetch("https://v2.ibf.is/api/newsletter", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: value, language: this.context }),
+    });
     const { success } = await rawResponse.json();
 
     if (!success) {
