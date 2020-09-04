@@ -1,0 +1,38 @@
+@import "src/utility/responsive";
+@import "src/utility/variables";
+@import "src/utility/functions";
+
+.root {
+  background: $white;
+  color: $blue;
+  border: 2px solid $blue;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 100%;
+  padding: 24px;
+  font-weight: bold;
+  cursor: pointer;
+
+  // @include respond-to(md) {
+  //   padding: $ms1;
+  //   display: flex;
+  //   cursor: pointer;
+  //   margin-left: $ms1;
+  //   &:hover {
+  //     .submitArrow {
+  //       transform: translateX(8px);
+  //     }
+  //   }
+  // }
+}
+
+.small {
+  width: 277px;
+}
+
+// .submitText {
+//   @include respond-to(md) {
+//     display: none;
+//   }
+// }

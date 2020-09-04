@@ -1,0 +1,158 @@
+@import "src/utility/variables";
+@import "src/utility/functions";
+@import "src/utility/responsive";
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  // @include respond-to(onlySmall) {
+  //   &.inHero {
+  //     display: none;
+  //   }
+  // }
+
+  @include respond-to(onlyMedium) {
+    flex-direction: column;
+  }
+
+  // @include respond-to(md) {
+  //   display: flex;
+  //   width: between(200px, 550px, $sm, $xlg);
+
+  //   &.inHero {
+  //     padding-top: $ms6;
+  //     padding-bottom: $ms2;
+  //   }
+  // }
+}
+
+.left {
+  display: flex;
+  flex: 0.45;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 440px;
+
+  .policy {
+    text-align: center;
+    margin-bottom: $ms4;
+  }
+
+  @include respond-to(onlyMedium) {
+    max-width: 100%;
+
+    .policy {
+      margin-top: $ms3;
+      margin-bottom: $ms2;
+    }
+  }
+}
+
+$formColor: #97a2c8;
+
+.thanks {
+  font-size: $t3;
+  padding-top: $ms6;
+  padding-bottom: $ms2;
+}
+
+.personIcon {
+  &::before {
+    content: url("src/images/forms/person.svg");
+  }
+}
+
+.emailIcon {
+  &::before {
+    content: url("src/images/forms/email.svg");
+  }
+}
+
+.ssnIcon {
+  &::before {
+    content: url("src/images/forms/ssn.svg");
+  }
+}
+
+.inputWrap {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  background: $white;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 27px 27px 27px 4px;
+  border-bottom: 2px solid #979797;
+  color: $formColor;
+  cursor: pointer;
+
+  &::before {
+    font-size: 16px;
+    color: $formColor;
+    font-weight: 600;
+    z-index: $z-level-1;
+    padding-right: $ms2;
+
+    @include respond-to(md) {
+      font-size: $t3;
+    }
+  }
+
+  &.error {
+    border-color: $red;
+    &::before {
+      color: $red;
+    }
+
+    .input {
+      color: $red;
+    }
+  }
+
+  .inHero & {
+    border: none;
+  }
+
+  @include respond-to(md) {
+    padding: $ms2 $ms2 $ms2 4px;
+    margin: 0;
+  }
+}
+
+.input {
+  border: 0;
+  background: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: $formColor;
+  width: 100%;
+
+  @include respond-to(md) {
+    font-size: $t3;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+  &::placeholder {
+    color: rgba($dark, 0.6);
+  }
+  &:focus::placeholder {
+    color: rgba($dark, 0.2);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 27px;
+  right: 34px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}

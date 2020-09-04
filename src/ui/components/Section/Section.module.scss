@@ -26,6 +26,9 @@
 .root {
   position: relative;
   z-index: $z-level-1;
+}
+
+.horizontalSpacing {
   @include horizontalSpacing();
 }
 

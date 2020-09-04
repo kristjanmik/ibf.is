@@ -1,0 +1,48 @@
+@import "src/utility/variables";
+@import "src/utility/mixins";
+@import "src/utility/functions";
+@import "src/utility/responsive";
+
+.root {
+  position: relative;
+  background: $white;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
+  padding: 28px;
+}
+
+.heading {
+  color: $blue;
+  padding: $ms1 0;
+}
+
+.block {
+  padding-bottom: 2rem;
+  line-height: 1.75;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include respond-to(md) {
+    padding-bottom: $ms2;
+  }
+}
+
+.icon {
+  margin-right: $ms2;
+  display: flex;
+
+  @include respond-to(md) {
+    margin-right: $ms1;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding-bottom: $ms1;
+
+  @include respond-to(md) {
+    padding: 0;
+  }
+}

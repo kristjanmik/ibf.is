@@ -1,0 +1,85 @@
+@import "src/utility/responsive";
+@import "src/utility/variables";
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  @include respond-to(onlyMedium) {
+    flex-wrap: wrap;
+  }
+
+  @include respond-to(onlySmall) {
+    flex-wrap: wrap;
+  }
+}
+
+// @include respond-to(onlyMedium) {
+//   // max-width: 00px;
+// }
+
+// @include respond-to(onlySmall) {
+// }
+
+.description {
+  flex: 3;
+  margin-top: $ms3;
+
+  @include respond-to(onlyMedium) {
+    flex: unset;
+  }
+
+  @include respond-to(onlySmall) {
+    flex: unset;
+  }
+
+  span {
+    color: $blue;
+    font-weight: bold;
+  }
+}
+.donate {
+  flex: 2;
+  margin-top: $ms1;
+  margin-left: $ms3;
+  position: relative;
+  background: $white;
+  box-shadow: 0 21px 28px 0 rgba(201, 201, 201, 0.5);
+  padding: 28px;
+
+  @include respond-to(onlyMedium) {
+    flex: unset;
+    margin-top: 24px;
+    width: 100%;
+    margin-right: $ms3;
+  }
+
+  @include respond-to(onlySmall) {
+    flex: unset;
+    margin-top: 24px;
+    width: 100%;
+    margin-right: $ms3;
+  }
+
+  h2 {
+    font-weight: bold;
+    color: $blue;
+    margin-bottom: $ms2;
+    margin-top: $ms2;
+  }
+
+  span {
+    font-weight: bold;
+    color: $blue;
+  }
+}
+
+.qrContainer {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    padding: $ms1 $ms2;
+    word-wrap: anywhere;
+  }
+}

@@ -55,7 +55,52 @@ export default {
   podcastContent:
     "The Icelandic Blockchain Foundation's podcast discusses how technology is merging into finance as well a variety of other topics.",
   phone: "+354 696 4523",
-  donate:
+  donateFooter:
     "Donate to the Foundation | Bitcoin: 1HN7dLXP9y3Jyn2emS6Jt9M86ecFPaj9hs | Fiat rn: 0133-26-440515, kt: 440515-1340",
   noUpcomingEvents: "No upcoming events",
+  // registrationCount: "Just this month <strong>%s people</strong> registered",
+  registrationCount:
+    "Register as a <strong>member</strong> of the Icelandic Blockchain Foundation",
+  registrationFee:
+    "Yearly fee is only 5,000 ISK and we offer a 25% discount with cryptocurrency payments!",
+
+  becomeMember: "Become a member",
+  benefitsLegend: "Benefits",
+  benefitsBackground: "benefits",
+  donations: "Donations",
+  donate: "donate",
+  name: "name",
+  email: "email",
+  ssn: "(Icelandic) Social Security Number",
+  // registrationPolicy: `By clicking Register, you indicate that you have read and understand our Privacy Policy and Terms of Use`,
+  registrationPolicy: `By clicking Register, you indicate that you allow storing this limited data in our member registry.`,
+  registerNow: "REGISTER NOW",
+  benefitsOfMembership: "Benefits of becoming a member",
+  influenceOurWork: "Influence our work",
+  influenceOurWorkDescription:
+    "We are a member-driven organization and focus our work based on the urgency that is defined by our members.",
+  supportMeaningfulWork: "Support a meaningful effort",
+  supportMeaningfulWorkDescription:
+    "We fight for cryptocurrencies locally as the only interest group in Iceland. The Foundation creates a wealth of educational material in Icelandic and hosts various local events.",
+  campaignTheBoard: "Campaign for the board",
+  campaignTheBoardDescription:
+    "Members can run for a board seat, which renews annually. The board defines goals for the Foundation and makes sure they are achieved.",
+  expandSupportNetwork: "Expand your support network",
+  expandSupportNetworkDescription:
+    "Members create and run focus groups on topics within the crypto and blockchain space. They serve a critical role in drawing likeminded people together.",
+  attendPrivateEvents: "Attend member-only events",
+  attendPrivateEventsDescription:
+    "The Foundation currently organizes a once a year member-only dinner.",
+  supportYourProject: "We support your project",
+  supportYourProjectDescription:
+    "If you are working on a project, we will support your effort to our full extent",
+  weAppreciateDonations: "We appreciate <strong>donations</strong>",
+  weAppreciateDonationsDescription: `To shape the future and get people and companies to embrace the benefits of blockchain technology there is a need for an organization like the <span>Icelandic Blockchain Foundation</span>. An organization that can spearhead the development and implementation of blockchain solutions in our society. A donation will provide the continued support we rely on.`,
+  transferBTC: "Transfer BTC",
+  transferAUR: "Transfer AUR",
+  bankWire: "Bank Wire",
+  bankAccount: "Bank Account",
+  ssnAccount: "Social Security Number",
+  registrationThanks:
+    "Thank you for registering with the Icelandic Blockchain Foundation",
 };

@@ -1,0 +1,31 @@
+@import "src/utility/responsive";
+@import "src/utility/variables";
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 80px;
+  width: 687px;
+  height: 600px;
+  z-index: -1;
+
+  @include respond-to(onlyMedium) {
+    width: 343.5px;
+    height: 300px;
+    top: initial;
+  }
+
+  @include respond-to(onlySmall) {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 650px;
+}
+
+.fee {
+  margin-top: 20px;
+  font-style: italic;
+}

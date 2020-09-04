@@ -151,7 +151,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <H4>{T("donate")}</H4>
+        <H4>{T("donateFooter")}</H4>
       </div>
       <div className={styles.toes}>
         <Body3 className={styles.copyright}>

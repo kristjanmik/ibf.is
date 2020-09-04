@@ -20,13 +20,15 @@ const Section = ({
   footerText,
   footerTextColor,
   footerUrl,
+  horizontalSpacing = true,
 }) => (
   <section
     className={cn(
       styles.root,
       styles[id],
       padding(top, bottom),
-      colored && styles.colored
+      colored && styles.colored,
+      horizontalSpacing && styles.horizontalSpacing
     )}
     id={id}
   >

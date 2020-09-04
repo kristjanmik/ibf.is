@@ -1,0 +1,26 @@
+@import "src/utility/responsive";
+@import "src/utility/variables";
+@import "src/utility/functions";
+
+.root {
+  max-width: 300px;
+  margin-bottom: $ms5;
+}
+.title {
+  color: $blue;
+  max-width: 260px;
+
+  // &::after {
+  //   margin-left: 32px;
+  //   content: url("src/images/benefits.svg");
+  // }
+}
+
+.icon {
+  position: absolute;
+  margin-top: 10px;
+  &::after {
+    margin-left: 260px;
+    content: url("src/images/benefits.svg");
+  }
+}

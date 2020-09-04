@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="27px" viewBox="0 0 20 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>man-user</title>
+    <defs>
+        <rect id="path-1" x="2" y="0" width="1243" height="691"></rect>
+        <filter x="-4.2%" y="-4.6%" width="108.4%" height="115.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="21" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="14" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789248512   0 0 0 0 0.789248512   0 0 0 0 0.789248512  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Become-a-Member-register-modal" transform="translate(-219.000000, -461.000000)">
+            <g id="Group-15" transform="translate(98.000000, 234.000000)">
+                <text id="Just-this-month-14-p" font-family="Montserrat-Regular, Montserrat" font-size="45" font-weight="normal" fill="#454545">
+                    <tspan x="0" y="214">Just this month </tspan>
+                    <tspan x="366.48" y="214" font-family="Montserrat-Bold, Montserrat" font-weight="bold">14</tspan>
+                    <tspan x="415.125" y="214"> people </tspan>
+                    <tspan x="0" y="269">registered</tspan>
+                </text>
+                <g id="Rectangle-8" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-12" transform="translate(116.000000, 227.000000)">
+                    <g id="Group-11"></g>
+                    <g id="man-user" transform="translate(5.000000, 0.000000)" fill-rule="nonzero">
+                        <path d="M9.96282528,13.0417524 C12.8560595,13.0417524 15.20171,10.1222857 15.20171,6.52091429 C15.20171,2.91946667 14.4315985,0 9.96282528,0 C5.49405204,0 4.72379182,2.91946667 4.72379182,6.52091429 C4.72379182,10.1222857 7.06944238,13.0417524 9.96282528,13.0417524 Z" id="Shape" fill="#97A2C8"></path>
+                        <path d="M0.0679390677,23.018777 C0.0667390677,22.759397 0.0655390677,22.945697 0.0679390677,23.018777 L0.0679390677,23.018777 Z" id="Shape" fill="#9B9B9B"></path>
+                        <path d="M19.8576208,23.2059806 C19.8614208,23.1349706 19.8589208,22.7133206 19.8576208,23.2059806 L19.8576208,23.2059806 Z" id="Shape" fill="#9B9B9B"></path>
+                        <path d="M19.8464684,22.7350095 C19.7494424,16.4613333 18.9498885,14.6736762 12.8314498,13.5420952 C12.8314498,13.5420952 11.9701859,14.6667429 9.96275093,14.6667429 C7.95531599,14.6667429 7.09390335,13.5420952 7.09390335,13.5420952 C1.04223048,14.6613333 0.194052045,16.4224762 0.082527881,22.5312 C0.0733828996,23.030019 0.0691449814,23.0562286 0.0675092937,22.9983238 C0.0678810409,23.106819 0.0683271375,23.3075048 0.0683271375,23.6574476 C0.0683271375,23.6574476 1.52498141,26.6666667 9.96275093,26.6666667 C18.4003717,26.6666667 19.8571747,23.6574476 19.8571747,23.6574476 C19.8571747,23.4326095 19.8573234,23.2762667 19.8575465,23.1699048 C19.8559108,23.2057143 19.8526394,23.1363048 19.8464684,22.7350095 Z" id="Shape" fill="#97A2C8"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

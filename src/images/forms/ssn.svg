@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="19px" viewBox="0 0 14 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>lock-2 copy 2</title>
+    <defs>
+        <rect id="path-1" x="2" y="0" width="1243" height="691"></rect>
+        <filter x="-4.2%" y="-4.6%" width="108.4%" height="115.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="21" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="14" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789248512   0 0 0 0 0.789248512   0 0 0 0 0.789248512  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Become-a-Member-register-modal" transform="translate(-225.000000, -767.000000)">
+            <g id="Group-15" transform="translate(98.000000, 234.000000)">
+                <g id="Rectangle-8" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-12" transform="translate(116.000000, 227.000000)">
+                    <g id="Group-14-Copy" transform="translate(1.000000, 305.000000)"></g>
+                </g>
+                <g id="lock-2-copy-2" transform="translate(127.000000, 533.000000)" fill="#97A2C8" fill-rule="nonzero">
+                    <path d="M13.611099,7.125 L12.4444323,7.125 L12.4444323,5.5416543 C12.4444323,2.48595703 10.002125,0 7,0 C3.997875,0 1.55556771,2.48595703 1.55556771,5.5416543 L1.55556771,7.125 L0.388901042,7.125 C0.173942708,7.125 0,7.30204883 0,7.5208457 L0,17.4166914 C0,18.2899121 0.697630208,19 1.55556771,19 L12.4444687,19 C13.3023698,19 14,18.2899121 14,17.4166543 L14,7.5208457 C14,7.30204883 13.8260573,7.125 13.611099,7.125 Z M8.16440625,15.3938223 C8.17654687,15.5055215 8.14125521,15.6176289 8.06757292,15.7015332 C7.99389062,15.7854004 7.88830729,15.8333457 7.77780208,15.8333457 L6.22223437,15.8333457 C6.11172917,15.8333457 6.00614583,15.7854004 5.93246354,15.7015332 C5.85878125,15.617666 5.82345312,15.5055586 5.83563021,15.3938223 L6.08095833,13.148334 C5.68257812,12.8533887 5.44446875,12.3868125 5.44446875,11.875 C5.44446875,11.0017793 6.14209896,10.2916543 7.00003646,10.2916543 C7.85797396,10.2916543 8.55560417,11.0017422 8.55560417,11.875 C8.55560417,12.3868125 8.31749479,12.8533887 7.91911458,13.148334 L8.16440625,15.3938223 Z M10.111099,7.125 L3.88890104,7.125 L3.88890104,5.5416543 C3.88890104,3.79558398 5.2845625,2.375 7,2.375 C8.7154375,2.375 10.111099,3.79558398 10.111099,5.5416543 L10.111099,7.125 L10.111099,7.125 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

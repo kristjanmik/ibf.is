@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Become-a-Member-register-modal" transform="translate(-333.000000, -1275.000000)">
+            <g id="Group" transform="translate(104.000000, 1271.000000)">
+                <text id="Stay-up-to-date" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#00468A">
+                    <tspan x="0" y="24">Stay up to date </tspan>
+                </text>
+                <path d="M229.3,15 C229.1,14.8 229,14.5 229,14.3 C229,14.1 229.1,13.8 229.3,13.6 L230.7,12.2 C231.1,11.8 231.7,11.8 232.1,12.2 L232.2,12.3 L237.7,18.2 C237.9,18.4 238.2,18.4 238.4,18.2 L251.8,4.3 L251.9,4.3 C252.3,3.9 252.9,3.9 253.3,4.3 L254.7,5.7 C255.1,6.1 255.1,6.7 254.7,7.1 L238.7,23.7 C238.5,23.9 238.3,24 238,24 C237.7,24 237.5,23.9 237.3,23.7 L229.5,15.3 L229.3,15 Z" id="Shape" fill="#F61740" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

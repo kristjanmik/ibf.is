@@ -23,6 +23,7 @@
     "node-sass": "^4.9.4",
     "prismic-dom": "^2.1.0",
     "prismic-reactjs": "^1.1.2",
+    "qrcode.react": "^1.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
@@ -34,7 +35,7 @@
     "ibf"
   ],
   "engines": {
-    "node": "10.5.x"
+    "node": "10.21.x"
   },
   "scripts": {
     "build": "gatsby build",

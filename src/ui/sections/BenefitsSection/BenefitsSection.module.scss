@@ -1,0 +1,17 @@
+@import "src/utility/responsive";
+@import "src/utility/variables";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+
+  @include respond-to(onlyMedium) {
+    // max-width: 00px;
+  }
+
+  @include respond-to(onlySmall) {
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close-envelope</title>
+    <defs>
+        <rect id="path-1" x="2" y="0" width="1243" height="691"></rect>
+        <filter x="-4.2%" y="-4.6%" width="108.4%" height="115.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="21" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="14" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789248512   0 0 0 0 0.789248512   0 0 0 0 0.789248512  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Become-a-Member-register-modal" transform="translate(-219.000000, -569.000000)">
+            <g id="Group-15" transform="translate(98.000000, 234.000000)">
+                <g id="Rectangle-8" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-12" transform="translate(116.000000, 227.000000)">
+                    <g id="Group-13" transform="translate(1.000000, 103.000000)"></g>
+                    <g id="close-envelope" transform="translate(5.000000, 108.000000)" fill="#97A2C8" fill-rule="nonzero">
+                        <path d="M10,10 L7.52571429,7.83428571 L0.451428571,13.8985714 C0.708571429,14.1371429 1.05571429,14.2857143 1.43857143,14.2857143 L18.5614286,14.2857143 C18.9428571,14.2857143 19.2885714,14.1371429 19.5442857,13.8985714 L12.4742857,7.83428571 L10,10 Z" id="Shape"></path>
+                        <path d="M19.5485714,0.387142857 C19.2914286,0.147142857 18.9457143,0 18.5614286,0 L1.43857143,0 C1.05714286,0 0.711428571,0.148571429 0.454285714,0.39 L10,8.57142857 L19.5485714,0.387142857 Z" id="Shape"></path>
+                        <polygon id="Shape" points="0 1.25428571 0 13.1228571 6.90428571 7.25571429"></polygon>
+                        <polygon id="Shape" points="13.0957143 7.25571429 20 13.1228571 20 1.25"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

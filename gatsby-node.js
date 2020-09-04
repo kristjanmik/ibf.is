@@ -252,6 +252,14 @@ exports.createPages = async ({
     },
   });
 
+  createPage({
+    path: `/register`,
+    component: require.resolve("./src/templates/register.js"),
+    context: {
+      lang: "is",
+    },
+  });
+
   education.map(({ node: { uid, lang } }) =>
     createPage({
       path: `${lang}/education/${uid}`,
@@ -286,6 +294,14 @@ exports.createPages = async ({
     createPage({
       path: `/${lang}/podcast`,
       component: require.resolve("./src/templates/podcasts.js"),
+      context: {
+        lang,
+      },
+    });
+
+    createPage({
+      path: `/${lang}/register`,
+      component: require.resolve("./src/templates/register.js"),
       context: {
         lang,
       },
