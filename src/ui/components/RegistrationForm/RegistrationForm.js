@@ -113,6 +113,7 @@ class RegistrationForm extends Component {
               onClick={this.handleFocus.bind(this, "name")}
             >
               <input
+                name="name"
                 ref={this.nameRef}
                 className={styles.input}
                 placeholder={T("name")}
@@ -128,6 +129,7 @@ class RegistrationForm extends Component {
               onClick={this.handleFocus.bind(this, "email")}
             >
               <input
+                name="email"
                 ref={this.emailRef}
                 className={styles.input}
                 placeholder={T("email")}
@@ -143,6 +145,7 @@ class RegistrationForm extends Component {
               onClick={this.handleFocus.bind(this, "ssn")}
             >
               <input
+                name="ssn"
                 ref={this.ssnRef}
                 className={styles.input}
                 placeholder={T("ssn")}
