@@ -27,6 +27,11 @@
       margin-left: 20px;
     }
 
+    :global .small-center {
+      margin: auto;
+      max-width: 50%;
+    }
+
     :global .caption {
       clear: both;
       width: 50%;

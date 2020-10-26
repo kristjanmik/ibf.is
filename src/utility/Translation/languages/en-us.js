@@ -103,4 +103,5 @@ export default {
   ssnAccount: "Social Security Number",
   registrationThanks:
     "Thank you for registering with the Icelandic Blockchain Foundation",
+  companiesAndProjects: "Companies and Projects",
 };

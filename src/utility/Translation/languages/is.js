@@ -101,4 +101,5 @@ export default {
   bankAccount: "Reikningsnúmer",
   ssnAccount: "Kennitala",
   registrationThanks: "Takk fyrir að skrá þig í Rafmyntaráð Íslands",
+  companiesAndProjects: "Fyrirtæki og verkefni",
 };

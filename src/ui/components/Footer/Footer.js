@@ -60,11 +60,14 @@ const Footer = () => {
       },
       {
         title: T("bylaws"),
-        url: "/is/page/bylaws",
+        url: "https://wiki.ibf.is/is-is/icelandic-blockchain-foundation/board",
       },
       {
-        title: T("executiveSummary"),
-        url: "/en-us/page/executive-summary",
+        title: T("companiesAndProjects"),
+        url:
+          lang === "is"
+            ? "https://wiki.ibf.is/is-is/projects"
+            : "https://wiki.ibf.is/en/projects",
       },
     ],
 

@@ -1,124 +1,124 @@
 {
-  "Main": {
-    "uid": {
-      "type": "UID",
-      "config": {
-        "label": "UID"
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "UID"
       }
     },
-    "title": {
-      "type": "StructuredText",
-      "config": {
-        "single": "heading1",
-        "label": "Title"
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Title"
       }
     },
-    "summary": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph",
-        "label": "Summary"
+    "summary" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Summary"
       }
     },
-    "text": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
-        "label": "Text",
-        "labels": ["left-align", "center-align", "right-align"]
+    "text" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label" : "Text",
+        "labels" : [ "left-align", "center-align", "right-alig", "small-center" ]
       }
     },
-    "author": {
-      "type": "Link",
-      "config": {
-        "select": "document",
-        "customtypes": ["member"],
-        "label": "Author"
+    "author" : {
+      "type" : "Link",
+      "config" : {
+        "select" : "document",
+        "customtypes" : [ "member" ],
+        "label" : "Author"
       }
     },
-    "publish_date": {
-      "type": "Timestamp",
-      "config": {
-        "label": "Publish Date"
+    "publish_date" : {
+      "type" : "Timestamp",
+      "config" : {
+        "label" : "Publish Date"
       }
     },
-    "image": {
-      "type": "Image",
-      "config": {
-        "constraint": {},
-        "thumbnails": [],
-        "label": "Image"
+    "image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Image"
       }
     },
-    "on_blog": {
-      "type": "Select",
-      "config": {
-        "options": ["yes", "no"],
-        "default_value": "yes",
-        "label": "On Blog"
+    "on_blog" : {
+      "type" : "Select",
+      "config" : {
+        "options" : [ "yes", "no" ],
+        "default_value" : "yes",
+        "label" : "On Blog"
       }
     },
-    "body": {
-      "type": "Slices",
-      "fieldset": "Slice zone",
-      "config": {
-        "labels": {
-          "podcast_slice": [],
-          "event_slice": [],
-          "external_link": []
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "podcast_slice" : [ ],
+          "event_slice" : [ ],
+          "external_link" : [ ]
         },
-        "choices": {
-          "podcast_slice": {
-            "type": "Slice",
-            "fieldset": "Podcast",
-            "description": "A Podcast Slice for Blog",
-            "icon": "mic",
-            "display": "list",
-            "non-repeat": {
-              "podcast": {
-                "type": "Link",
-                "config": {
-                  "select": "document",
-                  "customtypes": ["podcast"],
-                  "label": "Podcast"
+        "choices" : {
+          "podcast_slice" : {
+            "type" : "Slice",
+            "fieldset" : "Podcast",
+            "description" : "A Podcast Slice for Blog",
+            "icon" : "mic",
+            "display" : "list",
+            "non-repeat" : {
+              "podcast" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "podcast" ],
+                  "label" : "Podcast"
                 }
               }
             },
-            "repeat": {}
+            "repeat" : { }
           },
-          "event_slice": {
-            "type": "Slice",
-            "fieldset": "Event",
-            "description": "An Event Slice for Blog",
-            "icon": "event",
-            "display": "list",
-            "non-repeat": {
-              "event": {
-                "type": "Link",
-                "config": {
-                  "select": "document",
-                  "customtypes": ["event"],
-                  "label": "Event"
+          "event_slice" : {
+            "type" : "Slice",
+            "fieldset" : "Event",
+            "description" : "An Event Slice for Blog",
+            "icon" : "event",
+            "display" : "list",
+            "non-repeat" : {
+              "event" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "event" ],
+                  "label" : "Event"
                 }
               }
             },
-            "repeat": {}
+            "repeat" : { }
           },
-          "external_link": {
-            "type": "Slice",
-            "fieldset": "External Link",
-            "description": "An External Link Slice for Blog",
-            "icon": "insert_link",
-            "display": "list",
-            "non-repeat": {
-              "link": {
-                "type": "Link",
-                "config": {
-                  "label": "Link"
+          "external_link" : {
+            "type" : "Slice",
+            "fieldset" : "External Link",
+            "description" : "An External Link Slice for Blog",
+            "icon" : "insert_link",
+            "display" : "list",
+            "non-repeat" : {
+              "link" : {
+                "type" : "Link",
+                "config" : {
+                  "label" : "Link"
                 }
               }
             },
-            "repeat": {}
+            "repeat" : { }
           }
         }
       }
