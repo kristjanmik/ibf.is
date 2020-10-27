@@ -12,6 +12,10 @@
     }
   }
 
+  :global .embed-content {
+    margin-bottom: 16px;
+  }
+
   @include respond-to(md) {
     :global .left-align {
       float: left;
