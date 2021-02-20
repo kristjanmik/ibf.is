@@ -35,7 +35,7 @@
     "ibf"
   ],
   "engines": {
-    "node": "10.21.x"
+    "node": "14.x"
   },
   "scripts": {
     "build": "gatsby build",
