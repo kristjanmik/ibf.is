@@ -46,7 +46,7 @@ export default {
   listenToEpisodeHeading: "Hlustaðu á þáttinn:",
   register: "Nýskráning í samtökin",
   pageNotFound: "Síða fannst ekki",
-  address: "Katrínartún 4, 2. hæð",
+  address: "Bjargargata 1, 2. hæð",
   education: "Fræðsla",
   educationContent:
     "Rafmyntaráð hefur tekið saman viðamikið safn af fræðsluefni í formi myndbanda, hlaðvarpa og greina.",
@@ -54,7 +54,7 @@ export default {
   podcast: "Hlaðvarp",
   podcastContent:
     "Hlaðvarp Rafmyntaráðs fjallar um fjármálakerfið og tækni, ásamt hugvekju um ýmis mál.",
-  phone: "696-4523",
+  phone: "",
   donateFooter:
     "Styrktu okkur \n| Bitcoin: 1HN7dLXP9y3Jyn2emS6Jt9M86ecFPaj9hs | Krónur rn: 0133-26-440515, kt: 440515-1340",
   noUpcomingEvents: "Engir viðburðir á döfinni",

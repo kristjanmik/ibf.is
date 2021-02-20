@@ -46,7 +46,7 @@ export default {
   listenToEpisodeHeading: "Listen to the episode:",
   register: "Register",
   pageNotFound: "Page Not Found",
-  address: "Katrínartún 4, 2nd floor",
+  address: "Bjargargata 1, 2nd floor",
   education: "Education",
   educationContent:
     "The Foundation has gathered relevant videos, podcasts and articles for educational purposes.",
@@ -54,7 +54,7 @@ export default {
   podcast: "Podcast",
   podcastContent:
     "The Icelandic Blockchain Foundation's podcast discusses how technology is merging into finance as well a variety of other topics.",
-  phone: "+354 696 4523",
+  phone: "",
   donateFooter:
     "Donate to the Foundation | Bitcoin: 1HN7dLXP9y3Jyn2emS6Jt9M86ecFPaj9hs | Fiat rn: 0133-26-440515, kt: 440515-1340",
   noUpcomingEvents: "No upcoming events",

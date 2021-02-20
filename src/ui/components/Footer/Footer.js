@@ -97,7 +97,7 @@ const Footer = () => {
               {T("resources")}
             </H3>
             <ul className={styles.list}>
-              {footer.resources.map(link => (
+              {footer.resources.map((link) => (
                 <li key={link.title}>
                   <a href={link.url}>{link.title}</a>
                 </li>
@@ -109,7 +109,7 @@ const Footer = () => {
               {T("learn")}
             </H3>
             <ul className={styles.list}>
-              {footer.learn.map(link => (
+              {footer.learn.map((link) => (
                 <li key={link.title}>
                   <a href={link.url} target="_blank" rel="noopener noreferrer">
                     {link.title}
@@ -127,7 +127,7 @@ const Footer = () => {
                 <a href="mailto:ibf@ibf.is">ibf@ibf.is</a>
               </li>
               <li>{T("address")}</li>
-              <li>105 Reykjavík</li>
+              <li>102 Reykjavík</li>
               <li>
                 <a href={`tel:${T("phone")}`}>{T("phone")}</a>
               </li>
@@ -138,7 +138,7 @@ const Footer = () => {
               {T("followUs")}
             </H3>
             <ul className={styles.socialList}>
-              {socialMedia.map(social => (
+              {socialMedia.map((social) => (
                 <li key={social.icon}>
                   <a
                     target="_blank"
