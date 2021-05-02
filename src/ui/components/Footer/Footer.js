@@ -56,7 +56,7 @@ const Footer = () => {
     resources: [
       {
         title: T("register"),
-        url: "https://old.ibf.is/register",
+        url: "https://ibf.is/register",
       },
       {
         title: T("bylaws"),
@@ -97,7 +97,7 @@ const Footer = () => {
               {T("resources")}
             </H3>
             <ul className={styles.list}>
-              {footer.resources.map((link) => (
+              {footer.resources.map(link => (
                 <li key={link.title}>
                   <a href={link.url}>{link.title}</a>
                 </li>
@@ -109,7 +109,7 @@ const Footer = () => {
               {T("learn")}
             </H3>
             <ul className={styles.list}>
-              {footer.learn.map((link) => (
+              {footer.learn.map(link => (
                 <li key={link.title}>
                   <a href={link.url} target="_blank" rel="noopener noreferrer">
                     {link.title}
@@ -138,7 +138,7 @@ const Footer = () => {
               {T("followUs")}
             </H3>
             <ul className={styles.socialList}>
-              {socialMedia.map((social) => (
+              {socialMedia.map(social => (
                 <li key={social.icon}>
                   <a
                     target="_blank"
