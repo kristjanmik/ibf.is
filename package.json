@@ -19,7 +19,7 @@
     "gatsby-source-prismic": "^3.0.0-beta.19",
     "gatsby-transformer-sharp": "^2.3.9",
     "isomorphic-fetch": "^2.2.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-sass": "^4.9.4",
     "prismic-dom": "^2.1.0",
     "prismic-reactjs": "^1.1.2",
