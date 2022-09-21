@@ -5,5 +5,5 @@ yarn-error.log
 
 # Build directory
 /public/static
-/public/icons
+#/public/icons
 .DS_Store
